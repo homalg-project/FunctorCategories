@@ -3,14 +3,14 @@
 LoadPackage( "FunctorCategories" );
 
 #! To illustrate our implementation of the category of functors, we consider the following example.
-#! First, create a quiver with one vertex 1 and one edge $t$.
+#! First, create a quiver $q$ with one vertex 1 and one edge $t$.
 
 #! @Example
 q := RightQuiver( "q(1)[t:1->1]" );
 #! q(1)[t:1->1]
 #! @EndExample
 
-#! Construct the path algebra of this quiver over $\mathbb{Q}$.
+#! Construct the path algebra $\mathbb{Q}q$ of this quiver over $\mathbb{Q}$.
 
 #! @Example
 Q := HomalgFieldOfRationals( );
