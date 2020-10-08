@@ -1,7 +1,7 @@
 name: FunctorCategories
-version: "2020.07.04"
+version: "2020.09.01"
 license: "GPL-2.0-or-later"
-date: 2020-07-04
+date: 2020-09-01
 description: |
     Categories of functors
 
@@ -39,7 +39,7 @@ needed-pkgs:
       url: "https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP"
     - name: "CategoryConstructor"
       version: ">= 2020.04.05"
-      url: "https://github.com/homalg-project/CategoryConstructor"
+      url: "https://homalg-project.github.io/CategoryConstructor"
 
 www: https://homalg-project.github.io/FunctorCategories
 readme: README.md
@@ -47,7 +47,7 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.07.04/FunctorCategories-2020.07.04.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.09.01/FunctorCategories-2020.09.01.tar.gz
 
 abstract: |
 
@@ -60,7 +60,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Bar20</span>]   <b class='BibAuthor'>Barakat, M.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2020.07.04</i>
+             Version 2020.09.01</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/FunctorCategories">https://homalg-project.github.io/FunctorCategories</a></span>.
@@ -68,10 +68,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2020.07.04,
+    @misc{ FunctorCategories2020.09.01,
       author =           {Barakat, M.},
-      title =            {{FunctorCategories}, Categories of functors, {V}ersion 2020.07.04},
-      month =            {Jul},
+      title =            {{FunctorCategories}, Categories of functors, {V}ersion 2020.09.01},
+      month =            {Sep},
       year =             {2020},
       note =             {GAP package},
       howpublished =     {\href {https://homalg-project.github.io/FunctorCategories} {\texttt{https://homalg-project.github.io/}\discretionary {}{}{}\texttt{FunctorCategories}}},
