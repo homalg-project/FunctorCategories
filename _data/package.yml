@@ -1,7 +1,7 @@
 name: FunctorCategories
-version: "2020.10-03"
+version: "2020.10-04"
 license: "GPL-2.0-or-later"
-date: 2020-10-19
+date: 2020-10-26
 description: |
     Categories of functors
 
@@ -26,7 +26,7 @@ needed-pkgs:
       version: ">= 2020.03.01"
       url: "https://homalg-project.github.io/CAP_project/MonoidalCategories"
     - name: "Algebroids"
-      version: ">= 2020.04.24"
+      version: ">= 2020.10-08"
       url: "https://homalg-project.github.io/Algebroids"
     - name: "RingsForHomalg"
       version: ">= 2020.02.04"
@@ -47,11 +47,11 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.10-03/FunctorCategories-2020.10-03.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.10-04/FunctorCategories-2020.10-04.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.10-03/FunctorCategories-2020.10-03.zip
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.10-04/FunctorCategories-2020.10-04.zip
 
-pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.10-03/FunctorCategories-2020.10-03.pdf
+pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.10-04/FunctorCategories-2020.10-04.pdf
 
 abstract: |
 
@@ -64,7 +64,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Bar20</span>]   <b class='BibAuthor'>Barakat, M.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2020.10-03</i>
+             Version 2020.10-04</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/FunctorCategories">https://homalg-project.github.io/FunctorCategories</a></span>.
@@ -72,10 +72,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2020.10-03,
+    @misc{ FunctorCategories2020.10-04,
       author =           {Barakat, M.},
       title =            {{FunctorCategories}, Categories of functors, {V}ersion
-                          2020.10-03},
+                          2020.10-04},
       month =            {Oct},
       year =             {2020},
       note =             {GAP package},
