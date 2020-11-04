@@ -1,7 +1,7 @@
 name: FunctorCategories
-version: "2020.11-01"
+version: "2020.11-02"
 license: "GPL-2.0-or-later"
-date: 2020-10-31
+date: 2020-11-04
 description: |
     Categories of functors
 
@@ -47,11 +47,11 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.11-01/FunctorCategories-2020.11-01.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.11-02/FunctorCategories-2020.11-02.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.11-01/FunctorCategories-2020.11-01.zip
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.11-02/FunctorCategories-2020.11-02.zip
 
-pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.11-01/FunctorCategories-2020.11-01.pdf
+pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2020.11-02/FunctorCategories-2020.11-02.pdf
 
 abstract: |
 
@@ -64,7 +64,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Bar20</span>]   <b class='BibAuthor'>Barakat, M.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2020.11-01</i>
+             Version 2020.11-02</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/FunctorCategories">https://homalg-project.github.io/FunctorCategories</a></span>.
@@ -72,11 +72,11 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2020.11-01,
+    @misc{ FunctorCategories2020.11-02,
       author =           {Barakat, M.},
       title =            {{FunctorCategories}, Categories of functors, {V}ersion
-                          2020.11-01},
-      month =            {Oct},
+                          2020.11-02},
+      month =            {Nov},
       year =             {2020},
       note =             {GAP package},
       howpublished =     {\href
