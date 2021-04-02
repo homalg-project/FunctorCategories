@@ -257,3 +257,29 @@ InstallMethod( YonedaEmbedding,
     
 end );
 
+##
+InstallMethod( RadicalFunctorAttr,
+          [ IsCapHomCategory ],
+          
+  function( Hom )
+    local rad;
+    
+    rad := CapFunctor( "Radical endofunctor", Hom, Hom );
+    
+    AddObjectFunction( rad,
+      F -> Source( RadicalInclusion( F ) )
+    );
+    
+    AddMorphismFunction( rad,
+      { s, eta, r } -> LiftAlongMonomorphism(
+                          PreCompose( RadicalInclusion( Source( eta ) ), eta ),
+                          RadicalInclusion( Range( eta ) )
+                        )
+    );
+    
+    return rad;
+    
+end );
+
+##
+InstallMethod( RadicalFunctor, [ IsCapHomCategory ], RadicalFunctorAttr );

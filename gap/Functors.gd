@@ -35,3 +35,13 @@ DeclareAttribute( "IsomorphismFromCategoryOfQuiverRepresentations", IsCapHomCate
 #! @Arguments B
 #! @Returns a &CAP; functor
 DeclareAttribute( "YonedaEmbedding", IsAlgebroid );
+
+DeclareAttribute( "RadicalFunctorAttr", IsCapHomCategory );
+
+#! @Description
+#! The input is a Hom-category <A>H</A><C>:=Hom(B,C)</C> where <C>B</C> is an algebroid defined by some quiver algebra <C>A</C> and
+#! <C>C</C> is a matrix category over some homalg field <C>K</C>.
+#! The output is the radical endofunctor on <A>H</A>.
+#! @Arguments H
+#! @Returns a &CAP; functor
+DeclareOperation( "RadicalFunctor", [ IsCapHomCategory ] );
