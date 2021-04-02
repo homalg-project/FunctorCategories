@@ -1185,7 +1185,7 @@
   
   [1X1.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[101X
   
-  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X[32X global variable[133X
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X [32X global variable[133X
   
   
   [1X1.5 [33X[0;0YAttributes[133X[101X
@@ -1263,7 +1263,7 @@
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
   [33X[0;0YThe  input  is an algebroid [3XB[103X defined by some quiver [10XK[110X-algebra [10XA[110X. The output
-  is  the  Yondea  embedding  functor  from  [3XB[103X into the functors category [10XHom[110X(
+  is  the  Yoneda  embedding  functor  from  [3XB[103X into the functors category [10XHom[110X(
   [10XOppositeAlgebroidOverOppositeQuiverAlgebra[110X([3XB[103X),[10XC[110X),   where   [10XC[110X  is  a  matrix
   category over [10XK[110X.[133X
   
