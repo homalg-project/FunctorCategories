@@ -11,7 +11,7 @@ SetPackageInfo( rec(
 PackageName := "FunctorCategories",
 Subtitle := "Categories of functors",
 Version := Maximum( [
-                   "2021.07-03", ## Mohamed's version
+                   "2021.07-06", ## Mohamed's version
                    ## this line prevents merge conflicts
                    "2018.10-18", ## Florian's version
                    ## this line prevents merge conflicts
@@ -22,8 +22,8 @@ Version := Maximum( [
                    "2021.06-01", ## Fabian's version
                    ] ),
 
-Date := "02/07/2021",
-Date := "02/07/2021",
+Date := "14/07/2021",
+Date := "14/07/2021",
 License := "GPL-2.0-or-later",
 
 Persons := [
