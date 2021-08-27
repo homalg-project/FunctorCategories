@@ -1264,8 +1264,7 @@
   
   [33X[0;0YThe  input  is an algebroid [3XB[103X defined by some quiver [10XK[110X-algebra [10XA[110X. The output
   is  the  Yoneda  embedding  functor  from  [3XB[103X into the functors category [10XHom[110X(
-  [10XOppositeAlgebroidOverOppositeQuiverAlgebra[110X([3XB[103X),[10XC[110X),   where   [10XC[110X  is  a  matrix
-  category over [10XK[110X.[133X
+  [10XOppositeAlgebroid[110X([3XB[103X),[10XC[110X), where [10XC[110X is a matrix category over [10XK[110X.[133X
   
   
   [1X1.6 [33X[0;0YConstructors[133X[101X
