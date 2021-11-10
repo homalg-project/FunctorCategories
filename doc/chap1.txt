@@ -148,7 +148,7 @@
     [4X[25Xgap>[125X [27Xz( B.1 );[127X[104X
     [4X[28X<A vector space object over Q of dimension 0>[128X[104X
     [4X[25Xgap>[125X [27Xz( B.t );[127X[104X
-    [4X[28X<A zero, identity morphism in Category of matrices over Q>[128X[104X
+    [4X[28X<A morphism in Category of matrices over Q>[128X[104X
     [4X[25Xgap>[125X [27Xidz := IdentityMorphism( z );[127X[104X
     [4X[28X<(1)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xidz( B.1 );[127X[104X
@@ -634,7 +634,7 @@
     [4X[25Xgap>[125X [27Xz( B.1 );[127X[104X
     [4X[28X<A vector space object over Q of dimension 0>[128X[104X
     [4X[25Xgap>[125X [27Xz( B.t );[127X[104X
-    [4X[28X<A zero, identity morphism in Category of matrices over Q>[128X[104X
+    [4X[28X<A morphism in Category of matrices over Q>[128X[104X
   [4X[32X[104X
   
   [33X[0;0YLet [23Xid_z[123X be the identity morphism on [23Xz[123X.[133X
@@ -969,19 +969,19 @@
     [4X[28XImage of (1)-[{ Z(3)^0*(a) }]->(1):[128X[104X
     [4X[28X(an empty 0 x 0 matrix)[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA zero, identity morphism in Category of matrices over GF(3)[128X[104X
+    [4X[28XA morphism in Category of matrices over GF(3)[128X[104X
     [4X[28X[128X[104X
     [4X[28X[128X[104X
     [4X[28XImage of (1)-[{ Z(3)^0*(b) }]->(2):[128X[104X
     [4X[28X(an empty 0 x 0 matrix)[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA zero, identity morphism in Category of matrices over GF(3)[128X[104X
+    [4X[28XA morphism in Category of matrices over GF(3)[128X[104X
     [4X[28X[128X[104X
     [4X[28X[128X[104X
     [4X[28XImage of (2)-[{ Z(3)^0*(c) }]->(2):[128X[104X
     [4X[28X(an empty 0 x 0 matrix)[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA zero, identity morphism in Category of matrices over GF(3)[128X[104X
+    [4X[28XA morphism in Category of matrices over GF(3)[128X[104X
     [4X[25Xgap>[125X [27Xconst := TensorUnit( FunCat );[127X[104X
     [4X[28X<(1)->1, (2)->1; (a)->1x1, (b)->1x1, (c)->1x1>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( const );[127X[104X
