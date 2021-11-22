@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2021.11-01
+                                   2021.11-03
   
   
-                                10 November 2021
+                                22 November 2021
   
   
                                 Mohamed Barakat
@@ -75,8 +75,9 @@
       1.5-9 YonedaEmbedding
     1.6 [33X[0;0YConstructors[133X
       1.6-1 Hom
-      1.6-2 AsObjectInHomCategory
-      1.6-3 AsMorphismInHomCategory
+      1.6-2 PreSheaves
+      1.6-3 AsObjectInHomCategory
+      1.6-4 AsMorphismInHomCategory
   
   
   [32X

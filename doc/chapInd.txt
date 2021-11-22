@@ -5,14 +5,14 @@
   [2XApplyCell[102X, for IsCapCategoryMorphismInHomCategory, IsCapCategoryMorphism 1.2-5 
       for IsCapCategoryMorphismInHomCategory, IsCapCategoryObject 1.2-4 
       for IsCapCategoryObjectInHomCategory, IsCapCategoryCell 1.2-3 
-  [2XAsMorphismInHomCategory[102X, for IsCapCategory, IsCapNaturalTransformation 1.6-3 
-      for IsCapCategoryObjectInHomCategory, IsList, IsCapCategoryObjectInHomCategory 1.6-3 
-      for IsCapCategoryObjectInHomCategory, IsRecord, IsCapCategoryObjectInHomCategory 1.6-3 
-      for IsCapNaturalTransformation 1.6-3 
-  [2XAsObjectInHomCategory[102X, for IsCapCategory, IsCapFunctor 1.6-2 
-      for IsCapCategory, IsList, IsList 1.6-2 
-      for IsCapCategory, IsRecord, IsRecord 1.6-2 
-      for IsCapFunctor 1.6-2 
+  [2XAsMorphismInHomCategory[102X, for IsCapCategory, IsCapNaturalTransformation 1.6-4 
+      for IsCapCategoryObjectInHomCategory, IsList, IsCapCategoryObjectInHomCategory 1.6-4 
+      for IsCapCategoryObjectInHomCategory, IsRecord, IsCapCategoryObjectInHomCategory 1.6-4 
+      for IsCapNaturalTransformation 1.6-4 
+  [2XAsObjectInHomCategory[102X, for IsCapCategory, IsCapFunctor 1.6-3 
+      for IsCapCategory, IsList, IsList 1.6-3 
+      for IsCapCategory, IsRecord, IsRecord 1.6-3 
+      for IsCapFunctor 1.6-3 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X 1.4-1 
   [2XDecomposeOnceByRandomEndomorphism[102X, for IsCapCategoryObjectInHomCategory 1.2-1 
   [2XHom[102X, for IsCapCategory, IsCapCategory 1.6-1 
@@ -25,6 +25,9 @@
   [2XIsCapHomCategory[102X, for IsCapCategory andIsAttributeStoringRep 1.3-1 
   [2XIsomorphismFromCategoryOfQuiverRepresentations[102X, for IsCapHomCategory 1.5-8 
   [2XIsomorphismOntoCategoryOfQuiverRepresentations[102X, for IsCapHomCategory 1.5-7 
+  [2XPreSheaves[102X, for IsCapCategory 1.6-2 
+      for IsCapCategory, IsCapCategory 1.6-2 
+      for IsCapCategory, IsHomalgRing 1.6-2 
   [2XRange[102X, for IsCapCategoryObjectInHomCategory 1.5-2 
   [2XSimpleObjects[102X, for IsCapHomCategory 1.5-6 
   [2XSource[102X, for IsCapCategoryObjectInHomCategory 1.5-1 
@@ -32,7 +35,7 @@
   [2XValuesOnAllGeneratingMorphisms[102X, for IsCapCategoryObjectInHomCategory 1.2-7 
   [2XValuesOnAllObjects[102X, for IsCapCategoryCellInHomCategory 1.2-6 
   [2XWeakDirectSumDecomposition[102X, for IsCapCategoryObjectInHomCategory 1.2-2 
-  [2XYonedaEmbedding[102X, for IsAlgebroid 1.5-9 
+  [2XYonedaEmbedding[102X, for IsCapCategory 1.5-9 
   
   
   -------------------------------------------------------
