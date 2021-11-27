@@ -15,6 +15,8 @@
       for IsCapFunctor 1.6-3 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X 1.4-1 
   [2XDecomposeOnceByRandomEndomorphism[102X, for IsObjectInFunctorCategory 1.2-1 
+  [2XFunctorCategory[102X, for IsCapCategory, IsCapCategory 1.6-1 
+      for IsCapCategory, IsHomalgRing 1.6-1 
   [2XHom[102X, for IsCapCategory, IsCapCategory 1.6-1 
       for IsCapCategory, IsHomalgRing 1.6-1 
   [2XIndecInjectiveObjects[102X, for IsFunctorCategory 1.5-5 
