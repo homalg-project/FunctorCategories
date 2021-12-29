@@ -10,10 +10,10 @@ SetPackageInfo( rec(
 
 PackageName := "FunctorCategories",
 Subtitle := "Categories of functors",
-Version := "2021.12-03",
+Version := "2021.12-04",
 
-Date := "09/12/2021",
-Date := "09/12/2021",
+Date := "29/12/2021",
+Date := "29/12/2021",
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -110,6 +110,7 @@ Keywords := [
              "functors",
              "natural transformations",
              "finitely presented categories",
+             "functors into categories",
              "functors into pre-additive categories",
              "functors into additive categories",
              "functors into pre-abelian categories",
