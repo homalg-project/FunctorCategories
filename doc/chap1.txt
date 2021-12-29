@@ -1136,8 +1136,9 @@
   [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xc[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
   
-  [33X[0;0YReturns  the  values  of  the cell [3Xc[103X (which is either a functor or a natural
-  transformation) on all objects of the source category.[133X
+  [33X[0;0YReturns  the  values  of  the  cell  [3Xc[103X in the functor category [3XHom[103X (which is
+  either  a  functor or a natural transformation) on all objects of the source
+  category of [3XHom[103X.[133X
   
   [1X1.2-7 ValuesOnAllGeneratingMorphisms[101X
   
