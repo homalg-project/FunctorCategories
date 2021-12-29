@@ -147,12 +147,18 @@
     [4X[28X<(1)->0; (t)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xz( B.1 );[127X[104X
     [4X[28X<A vector space object over Q of dimension 0>[128X[104X
+    [4X[25Xgap>[125X [27Xz.1;[127X[104X
+    [4X[28X<A vector space object over Q of dimension 0>[128X[104X
     [4X[25Xgap>[125X [27Xz( B.t );[127X[104X
     [4X[28X<A morphism in Category of matrices over Q>[128X[104X
+    [4X[25Xgap>[125X [27Xz.t = z( B.t );[127X[104X
+    [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27Xidz := IdentityMorphism( z );[127X[104X
     [4X[28X<(1)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xidz( B.1 );[127X[104X
     [4X[28X<A zero, identity morphism in Category of matrices over Q>[128X[104X
+    [4X[25Xgap>[125X [27Xidz.1 = idz( B.1 );[127X[104X
+    [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XDirectSum( z, z );[127X[104X
     [4X[28X<(1)->0; (t)->0x0>[128X[104X
     [4X[25Xgap>[125X [27XDirectSum( z, z ) = z;[127X[104X
@@ -205,10 +211,14 @@
   [33X[0;0YDisplay some of the properties of this functor.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XV( B.1 );[127X[104X
+    [4X[25Xgap>[125X [27XV.1;[127X[104X
     [4X[28X<A vector space object over Q of dimension 3>[128X[104X
-    [4X[25Xgap>[125X [27XV( B.t );[127X[104X
+    [4X[25Xgap>[125X [27XV.1 = V( B.1 );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XV.t;[127X[104X
     [4X[28X<A morphism in Category of matrices over Q>[128X[104X
+    [4X[25Xgap>[125X [27XV.t = V( B.t );[127X[104X
+    [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XDisplay( V( B.t ) );[127X[104X
     [4X[28X[ [  0,  1,  0 ],[128X[104X
     [4X[28X  [  0,  0,  1 ],[128X[104X
