@@ -2,7 +2,7 @@
   [1X1 [33X[0;0YCategories of functors[133X[101X
   
   
-  [1X1.1 [33X[0;0YIntroduction[133X[101X
+  [1X1.1 [33X[0;0YIntroduction and examples[133X[101X
   
   
   [1X1.1-1  [33X[0;0YRepresentations  of  the  cyclic  groups  of order 3 as a category of[101X
@@ -1099,188 +1099,9 @@
   [4X[32X[104X
   
   
-  [1X1.2 [33X[0;0YOperations[133X[101X
+  [1X1.2 [33X[0;0YConstructors[133X[101X
   
-  [1X1.2-1 DecomposeOnceByRandomEndomorphism[101X
-  
-  [33X[1;0Y[29X[2XDecomposeOnceByRandomEndomorphism[102X( [3XF[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturn  a  pair  of  monomorphisms  describing  the embeddings of two direct
-  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
-  
-  [1X1.2-2 WeakDirectSumDecomposition[101X
-  
-  [33X[1;0Y[29X[2XWeakDirectSumDecomposition[102X( [3XF[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturn a list of monomorphisms describing the embeddings of a list of direct
-  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
-  
-  [1X1.2-3 ApplyCell[101X
-  
-  [33X[1;0Y[29X[2XApplyCell[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
-  
-  [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding Hom-category) to the
-  cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
-  
-  [1X1.2-4 ApplyCell[101X
-  
-  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
-  
-  [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
-  Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
-  
-  [1X1.2-5 ApplyCell[101X
-  
-  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xmor[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10YFour  morphisms that form a commutative square that appears in the
-            definition  of  natural  transformations  (as  an  object  in  the
-            corresponding  Hom-category).  These are the four morphisms of the
-            compatibility  diagram  of  a  natural transformation [3Xeta[103X with the
-            morphism [3Xmor[103X.[133X
-  
-  [1X1.2-6 ValuesOnAllObjects[101X
-  
-  [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xc[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturns  the  values  of  the  cell  [3Xc[103X in the functor category [3XHom[103X (which is
-  either  a  functor or a natural transformation) on all objects of the source
-  category of [3XHom[103X.[133X
-  
-  [1X1.2-7 ValuesOnAllGeneratingMorphisms[101X
-  
-  [33X[1;0Y[29X[2XValuesOnAllGeneratingMorphisms[102X( [3XF[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturns the values of the functor [3XF[103X on all morphisms of the source category.[133X
-  
-  
-  [1X1.3 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
-  
-  [1X1.3-1 IsFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsFunctorCategory[102X( [3Xcategory[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe [5XGAP[105X category of Hom-categories of functors between two fixed categories.[133X
-  
-  [1X1.3-2 IsCellInFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsCellInFunctorCategory[102X( [3Xcell[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe  [5XGAP[105X  category  of cells in a Hom-category of functors between two fixed
-  categories.[133X
-  
-  [1X1.3-3 IsObjectInFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsObjectInFunctorCategory[102X( [3Xobj[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe  [5XGAP[105X category of objects in a Hom-category of functors between two fixed
-  categories.[133X
-  
-  [1X1.3-4 IsMorphismInFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsMorphismInFunctorCategory[102X( [3Xmor[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe  [5XGAP[105X  category  of  morphisms  in a Hom-category of functors between two
-  fixed categories.[133X
-  
-  
-  [1X1.4 [33X[0;0YGlobal variables[133X[101X
-  
-  [1X1.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[101X
-  
-  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X [32X global variable[133X
-  
-  
-  [1X1.5 [33X[0;0YAttributes[133X[101X
-  
-  [1X1.5-1 Source[101X
-  
-  [33X[1;0Y[29X[2XSource[102X( [3XF[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
-  
-  [33X[0;0YThe source of the functor underlying functor object [3XF[103X.[133X
-  
-  [1X1.5-2 Range[101X
-  
-  [33X[1;0Y[29X[2XRange[102X( [3XF[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
-  
-  [33X[0;0YThe target of the functor underlying the functor object [3XF[103X.[133X
-  
-  [1X1.5-3 UnderlyingCapTwoCategoryCell[101X
-  
-  [33X[1;0Y[29X[2XUnderlyingCapTwoCategoryCell[102X( [3XF[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
-  
-  [33X[0;0YThe functor underlying the functor object [3XF[103X.[133X
-  
-  [1X1.5-4 IndecProjectiveObjects[101X
-  
-  [33X[1;0Y[29X[2XIndecProjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
-  homalg field. The output is the list of indecomposable projective objects in
-  [3XHom[103X up to isomorphism.[133X
-  
-  [1X1.5-5 IndecInjectiveObjects[101X
-  
-  [33X[1;0Y[29X[2XIndecInjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
-  homalg  field. The output is the list of indecomposable injective objects in
-  [3XHom[103X up to isomorphism.[133X
-  
-  [1X1.5-6 SimpleObjects[101X
-  
-  [33X[1;0Y[29X[2XSimpleObjects[102X( [3XHom[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
-  homalg field. The output is the list of simple objects in [3XHom[103X.[133X
-  
-  [1X1.5-7 IsomorphismOntoCategoryOfQuiverRepresentations[101X
-  
-  [33X[1;0Y[29X[2XIsomorphismOntoCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
-  
-  [33X[0;0YThe  input  is a Hom-category [3XH[103X[10X:=Hom(B,C)[110X where [10XB[110X is an algebroid defined by
-  some  quiver  algebra [10XA[110X and [10XC[110X is a matrix category over some homalg field [10XK[110X.
-  The      output      is      the      isomorphism      from      [3XH[103X      into
-  [10XCategoryOfQuiverRepresentations(A)[110X.[133X
-  
-  [1X1.5-8 IsomorphismFromCategoryOfQuiverRepresentations[101X
-  
-  [33X[1;0Y[29X[2XIsomorphismFromCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
-  
-  [33X[0;0YThe  input  is a Hom-category [3XH[103X[10X:=Hom(B,C)[110X where [10XB[110X is an algebroid defined by
-  some  quiver  algebra [10XA[110X and [10XC[110X is a matrix category over some homalg field [10XK[110X.
-  The  output  is the isomorphism from [10XCategoryOfQuiverRepresentations(A)[110X into
-  [3XH[103X.[133X
-  
-  [1X1.5-9 YonedaEmbedding[101X
-  
-  [33X[1;0Y[29X[2XYonedaEmbedding[102X( [3XB[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
-  
-  [33X[0;0YThe  input  is  a  finitely  presented  category [3XB[103X. The output is the Yoneda
-  embedding    functor    from    [3XB[103X    into   the   functors   category   [10XHom[110X(
-  [10XOppositeAlgebroid[110X([3XB[103X),[23XH[123X), where [23XH[123X=[10XRangeCategoryOfHomomorphismStructure[110X([3XB[103X).[133X
-  
-  
-  [1X1.6 [33X[0;0YConstructors[133X[101X
-  
-  [1X1.6-1 FunctorCategory[101X
+  [1X1.2-1 FunctorCategory[101X
   
   [33X[1;0Y[29X[2XFunctorCategory[102X( [3XB[103X, [3XC[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XFunctorCategory[102X( [3XB[103X, [3Xk[103X ) [32X operation[133X
@@ -1292,7 +1113,7 @@
   the  small  category  [3XB[103X  to  the  category  [3XC[103X  as  objects and their natural
   transformations as morphisms.[133X
   
-  [1X1.6-2 PreSheaves[101X
+  [1X1.2-2 PreSheaves[101X
   
   [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X, [3XC[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X, [3Xk[103X ) [32X operation[133X
@@ -1303,7 +1124,7 @@
   small   category   [3XB[103X  to  the  category  [3XC[103X  as  objects  and  their  natural
   transformations as morphisms.[133X
   
-  [1X1.6-3 AsObjectInFunctorCategory[101X
+  [1X1.2-3 AsObjectInFunctorCategory[101X
   
   [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XH[103X, [3XF[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XF[103X ) [32X attribute[133X
@@ -1326,7 +1147,7 @@
   then   the   two   lists   are  interpreted  as  objects  and  morphisms  in
   [10XMatrixCategory[110X( [23Xk[123X ), respectively.[133X
   
-  [1X1.6-4 AsMorphismInFunctorCategory[101X
+  [1X1.2-4 AsMorphismInFunctorCategory[101X
   
   [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XH[103X, [3Xeta[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3Xeta[103X ) [32X attribute[133X
@@ -1342,4 +1163,237 @@
   [33X[0;0YAn  alternative  input is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a defining record
   of  [3Xeta[103X.  Another  alternative  input  is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a
   defining list of [3Xeta[103X.[133X
+  
+  
+  [1X1.3 [33X[0;0YAttributes[133X[101X
+  
+  [1X1.3-1 Source[101X
+  
+  [33X[1;0Y[29X[2XSource[102X( [3XF[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  
+  [33X[0;0YThe source of the functor underlying functor object [3XF[103X.[133X
+  
+  [1X1.3-2 Range[101X
+  
+  [33X[1;0Y[29X[2XRange[102X( [3XF[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  
+  [33X[0;0YThe target of the functor underlying the functor object [3XF[103X.[133X
+  
+  [1X1.3-3 UnderlyingCapTwoCategoryCell[101X
+  
+  [33X[1;0Y[29X[2XUnderlyingCapTwoCategoryCell[102X( [3XF[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YThe functor underlying the functor object [3XF[103X.[133X
+  
+  [1X1.3-4 IndecProjectiveObjects[101X
+  
+  [33X[1;0Y[29X[2XIndecProjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
+  homalg field. The output is the list of indecomposable projective objects in
+  [3XHom[103X up to isomorphism.[133X
+  
+  [1X1.3-5 IndecInjectiveObjects[101X
+  
+  [33X[1;0Y[29X[2XIndecInjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
+  homalg  field. The output is the list of indecomposable injective objects in
+  [3XHom[103X up to isomorphism.[133X
+  
+  [1X1.3-6 SimpleObjects[101X
+  
+  [33X[1;0Y[29X[2XSimpleObjects[102X( [3XHom[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
+  homalg field. The output is the list of simple objects in [3XHom[103X.[133X
+  
+  [1X1.3-7 IsomorphismOntoCategoryOfQuiverRepresentations[101X
+  
+  [33X[1;0Y[29X[2XIsomorphismOntoCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YThe  input  is a Hom-category [3XH[103X[10X:=Hom(B,C)[110X where [10XB[110X is an algebroid defined by
+  some  quiver  algebra [10XA[110X and [10XC[110X is a matrix category over some homalg field [10XK[110X.
+  The      output      is      the      isomorphism      from      [3XH[103X      into
+  [10XCategoryOfQuiverRepresentations(A)[110X.[133X
+  
+  [1X1.3-8 IsomorphismFromCategoryOfQuiverRepresentations[101X
+  
+  [33X[1;0Y[29X[2XIsomorphismFromCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YThe  input  is a Hom-category [3XH[103X[10X:=Hom(B,C)[110X where [10XB[110X is an algebroid defined by
+  some  quiver  algebra [10XA[110X and [10XC[110X is a matrix category over some homalg field [10XK[110X.
+  The  output  is the isomorphism from [10XCategoryOfQuiverRepresentations(A)[110X into
+  [3XH[103X.[133X
+  
+  [1X1.3-9 YonedaEmbedding[101X
+  
+  [33X[1;0Y[29X[2XYonedaEmbedding[102X( [3XB[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YThe  input  is  a  finitely  presented  category [3XB[103X. The output is the Yoneda
+  embedding    functor    from    [3XB[103X    into   the   functors   category   [10XHom[110X(
+  [10XOppositeAlgebroid[110X([3XB[103X),[23XH[123X), where [23XH[123X=[10XRangeCategoryOfHomomorphismStructure[110X([3XB[103X).[133X
+  
+  [1X1.3-10 NerveTruncatedInDegree2[101X
+  
+  [33X[1;0Y[29X[2XNerveTruncatedInDegree2[102X( [3XB[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YThe  input  is  a  category  [3XB[103Xwith  finitely many objects and a homomorphism
+  structure with values in a finite complete and finite cocomplete category [3XH[103X.
+  The  output  is  the  nerve  of [3XB[103X truncated in degree [23X2[123X, as an object in the
+  category of presheaves on [10XSimplicialCategoryTruncatedInDegree[110X([23X2[123X) with values
+  in [3XH[103X.[133X
+  
+  [33X[0;0YWe  compute  the  nerve  of  the full subcategory of the simplicial category
+  [23X\Delta[123X on the objects [23X[0], [1], [2][123X.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XDelta2 := SimplicialCategoryTruncatedInDegree( 2 );[127X[104X
+    [4X[28XCategory generated by the right quiver[128X[104X
+    [4X[28XDelta(C0,C1,C2)[id:C1->C0,s:C0->C1,t:C0->C1,[128X[104X
+    [4X[28X                is:C2->C1,it:C2->C1,ps:C1->C2,pt:C1->C2,mu:C1->C2][128X[104X
+    [4X[28Xwith relations[128X[104X
+    [4X[25Xgap>[125X [27XRelationsOfFpCategory( Delta2 );[127X[104X
+    [4X[28X[ [ (s*id), (C0) ], [ (t*id), (C0) ],[128X[104X
+    [4X[28X  [ (ps*is), (C1) ], [ (pt*it), (C1) ],[128X[104X
+    [4X[28X  [ (is*id), (it*id) ], [ (pt*is), (id*t) ],[128X[104X
+    [4X[28X  [ (ps*it), (id*s) ], [ (s*pt), (t*ps) ],[128X[104X
+    [4X[28X  [ (s*mu), (s*ps) ], [ (t*mu), (t*pt) ],[128X[104X
+    [4X[28X  [ (mu*is), (C1) ], [ (mu*it), (C1) ] ][128X[104X
+    [4X[25Xgap>[125X [27XSize( Delta2 );[127X[104X
+    [4X[28X31[128X[104X
+    [4X[25Xgap>[125X [27XN := NerveTruncatedInDegree2( Delta2 );[127X[104X
+    [4X[28X<An object in The category of functors: Category generated by the[128X[104X
+    [4X[28X right quiver Delta_op(C0,C1,C2)[128X[104X
+    [4X[28X [id:C0->C1,s:C1->C0,t:C1->C0,is:C1->C2,it:C1->C2,ps:C2->C1,pt:C2->C1,mu:C2->C1][128X[104X
+    [4X[28X with relations -> SkeletalFinSets>[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( N );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XN.C0;[127X[104X
+    [4X[28X<An object in SkeletalFinSets>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( N.C0 );[127X[104X
+    [4X[28X3[128X[104X
+    [4X[25Xgap>[125X [27XN.C1;[127X[104X
+    [4X[28X<An object in SkeletalFinSets>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( N.C1 );[127X[104X
+    [4X[28X31[128X[104X
+    [4X[25Xgap>[125X [27XN.C2;[127X[104X
+    [4X[28X<An object in SkeletalFinSets>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( N.C2 );[127X[104X
+    [4X[28X393[128X[104X
+    [4X[25Xgap>[125X [27XN.id;[127X[104X
+    [4X[28X<A morphism in SkeletalFinSets>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( N.id );[127X[104X
+    [4X[28X[ 3, [ 1, 8, 22 ], 31 ][128X[104X
+  [4X[32X[104X
+  
+  
+  [1X1.4 [33X[0;0YOperations[133X[101X
+  
+  [1X1.4-1 DecomposeOnceByRandomEndomorphism[101X
+  
+  [33X[1;0Y[29X[2XDecomposeOnceByRandomEndomorphism[102X( [3XF[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturn  a  pair  of  monomorphisms  describing  the embeddings of two direct
+  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
+  
+  [1X1.4-2 WeakDirectSumDecomposition[101X
+  
+  [33X[1;0Y[29X[2XWeakDirectSumDecomposition[102X( [3XF[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturn a list of monomorphisms describing the embeddings of a list of direct
+  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
+  
+  [1X1.4-3 ApplyCell[101X
+  
+  [33X[1;0Y[29X[2XApplyCell[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
+  
+  [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding Hom-category) to the
+  cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
+  
+  [1X1.4-4 ApplyCell[101X
+  
+  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
+  
+  [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
+  Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
+  
+  [1X1.4-5 ApplyCell[101X
+  
+  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xmor[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10YFour  morphisms that form a commutative square that appears in the
+            definition  of  natural  transformations  (as  an  object  in  the
+            corresponding  Hom-category).  These are the four morphisms of the
+            compatibility  diagram  of  a  natural transformation [3Xeta[103X with the
+            morphism [3Xmor[103X.[133X
+  
+  [1X1.4-6 ValuesOnAllObjects[101X
+  
+  [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xc[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturns  the  values  of  the  cell  [3Xc[103X in the functor category [3XHom[103X (which is
+  either  a  functor or a natural transformation) on all objects of the source
+  category of [3XHom[103X.[133X
+  
+  [1X1.4-7 ValuesOnAllGeneratingMorphisms[101X
+  
+  [33X[1;0Y[29X[2XValuesOnAllGeneratingMorphisms[102X( [3XF[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturns the values of the functor [3XF[103X on all morphisms of the source category.[133X
+  
+  
+  [1X1.5 [33X[0;0YGlobal variables[133X[101X
+  
+  [1X1.5-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[101X
+  
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X [32X global variable[133X
+  
+  
+  [1X1.6 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
+  
+  [1X1.6-1 IsFunctorCategory[101X
+  
+  [33X[1;0Y[29X[2XIsFunctorCategory[102X( [3Xcategory[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of Hom-categories of functors between two fixed categories.[133X
+  
+  [1X1.6-2 IsCellInFunctorCategory[101X
+  
+  [33X[1;0Y[29X[2XIsCellInFunctorCategory[102X( [3Xcell[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe  [5XGAP[105X  category  of cells in a Hom-category of functors between two fixed
+  categories.[133X
+  
+  [1X1.6-3 IsObjectInFunctorCategory[101X
+  
+  [33X[1;0Y[29X[2XIsObjectInFunctorCategory[102X( [3Xobj[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe  [5XGAP[105X category of objects in a Hom-category of functors between two fixed
+  categories.[133X
+  
+  [1X1.6-4 IsMorphismInFunctorCategory[101X
+  
+  [33X[1;0Y[29X[2XIsMorphismInFunctorCategory[102X( [3Xmor[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe  [5XGAP[105X  category  of  morphisms  in a Hom-category of functors between two
+  fixed categories.[133X
   
