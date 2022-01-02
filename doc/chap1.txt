@@ -1248,11 +1248,11 @@
   [33X[1;0Y[29X[2XNerveTruncatedInDegree2[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
-  [33X[0;0YThe  input  is  a  category  [3XB[103Xwith  finitely many objects and a homomorphism
-  structure with values in a finite complete and finite cocomplete category [3XH[103X.
-  The  output  is  the  nerve  of [3XB[103X truncated in degree [23X2[123X, as an object in the
-  category of presheaves on [10XSimplicialCategoryTruncatedInDegree[110X([23X2[123X) with values
-  in [3XH[103X.[133X
+  [33X[0;0YThe  input  is  a  category  [3XB[103X  with  finitely  many objects equipped with a
+  homomorphism   structure  with  values  in  a  finite  complete  and  finite
+  cocomplete  category  [3XH[103X. The output is the nerve of [3XB[103X truncated in degree [23X2[123X,
+  as     an     object     in     the     category     of     presheaves    on
+  [10XSimplicialCategoryTruncatedInDegree[110X([23X2[123X) with values in [3XH[103X.[133X
   
   [33X[0;0YWe  compute  the  nerve  of  the full subcategory of the simplicial category
   [23X\Delta[123X on the objects [23X[0], [1], [2][123X.[133X
