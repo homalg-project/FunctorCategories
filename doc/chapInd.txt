@@ -5,15 +5,16 @@
   [2XApplyCell[102X, for IsMorphismInFunctorCategory, IsCapCategoryMorphism 1.4-5 
       for IsMorphismInFunctorCategory, IsCapCategoryObject 1.4-4 
       for IsObjectInFunctorCategory, IsCapCategoryCell 1.4-3 
-  [2XAsMorphismInFunctorCategory[102X, for IsCapCategory, IsCapNaturalTransformation 1.2-4 
-      for IsCapNaturalTransformation 1.2-4 
-      for IsObjectInFunctorCategory, IsList, IsObjectInFunctorCategory 1.2-4 
-      for IsObjectInFunctorCategory, IsRecord, IsObjectInFunctorCategory 1.2-4 
-  [2XAsObjectInFunctorCategory[102X, for IsCapCategory, IsCapFunctor 1.2-3 
-      for IsCapCategory, IsList, IsList 1.2-3 
-      for IsCapCategory, IsRecord, IsRecord 1.2-3 
-      for IsCapFunctor 1.2-3 
+  [2XAsMorphismInFunctorCategory[102X, for IsCapCategory, IsCapNaturalTransformation 1.2-5 
+      for IsCapNaturalTransformation 1.2-5 
+      for IsObjectInFunctorCategory, IsList, IsObjectInFunctorCategory 1.2-5 
+      for IsObjectInFunctorCategory, IsRecord, IsObjectInFunctorCategory 1.2-5 
+  [2XAsObjectInFunctorCategory[102X, for IsCapCategory, IsCapFunctor 1.2-4 
+      for IsCapCategory, IsList, IsList 1.2-4 
+      for IsCapCategory, IsRecord, IsRecord 1.2-4 
+      for IsCapFunctor 1.2-4 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X 1.5-1 
+  [2XCategoryOfInternalCategories[102X, for IsCapCategory 1.2-3 
   [2XDecomposeOnceByRandomEndomorphism[102X, for IsObjectInFunctorCategory 1.4-1 
   [2XFunctorCategory[102X, for IsCapCategory, IsCapCategory 1.2-1 
       for IsCapCategory, IsHomalgRing 1.2-1 
