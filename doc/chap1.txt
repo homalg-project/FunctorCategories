@@ -1255,10 +1255,10 @@
   [1X1.3-10 YonedaComposition[101X
   
   [33X[1;0Y[29X[2XYonedaComposition[102X( [3XB[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X natural transformation[133X
+  [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
   
-  [33X[0;0YThe  input  is a finitely presented category [3XB[103X. The output an epimorphism in
-  the       category       of       functors      from      [3XB[103X      into      [23XH
+  [33X[0;0YThe  input  is a finitely presented category [3XB[103X. The output is an epimorphism
+  in      the      category      of     functors     from     [3XB[103X     into     [23XH
   :=[123X[10XRangeCategoryOfHomomorphismStructure[110X( [3XB[103X ). Its source is the functor [23XB \to
   H,  c  \mapsto \sqcup_{a,b\in B} \mathrm{Hom}(a,b) \times \mathrm{Hom}(b,c),
   \psi     \mapsto     \sqcup_{a,b\in    B}    \mathrm{Hom}(1_a,1_b)    \times
