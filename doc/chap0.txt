@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.01-11
+                                   2022.01-12
   
   
                                 16 January 2022
@@ -64,7 +64,7 @@
       1.3-7 IsomorphismOntoCategoryOfQuiverRepresentations
       1.3-8 IsomorphismFromCategoryOfQuiverRepresentations
       1.3-9 YonedaEmbedding
-      1.3-10 YonedaSourceFibration
+      1.3-10 YonedaFibration
       1.3-11 YonedaProjection
       1.3-12 YonedaComposition
       1.3-13 NerveTruncatedInDegree2
