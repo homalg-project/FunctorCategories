@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.04-04
+                                   2022.05-01
   
   
                                    2 May 2022
@@ -52,11 +52,10 @@
       1.1-5 [33X[0;0YThe subobject classifier[133X
       1.1-6 [33X[0;0YThe category of quivers[133X
     1.2 [33X[0;0YConstructors[133X
-      1.2-1 FunctorCategory
-      1.2-2 PreSheaves
-      1.2-3 CategoryOfInternalCategories
-      1.2-4 AsObjectInFunctorCategory
-      1.2-5 AsMorphismInFunctorCategory
+      1.2-1 PreSheaves
+      1.2-2 CategoryOfInternalCategories
+      1.2-3 AsObjectInFunctorCategory
+      1.2-4 AsMorphismInFunctorCategory
     1.3 [33X[0;0YAttributes[133X
       1.3-1 Source
       1.3-2 Range
@@ -87,6 +86,26 @@
       1.6-2 IsCellInFunctorCategory
       1.6-3 IsObjectInFunctorCategory
       1.6-4 IsMorphismInFunctorCategory
+  2 [33X[0;0YCategory of quivers[133X
+    2.1 [33X[0;0Y[5XGAP[105X Categories[133X
+      2.1-1 IsCategoryOfQuivers
+      2.1-2 IsCellInCategoryOfQuivers
+      2.1-3 IsObjectInCategoryOfQuivers
+      2.1-4 IsMorphismInCategoryOfQuivers
+    2.2 [33X[0;0YGlobal variables[133X
+      2.2-1 QuiverOfCategoryOfQuivers
+      2.2-2 Quivers
+    2.3 [33X[0;0YAttributes[133X
+      2.3-1 Arrows
+      2.3-2 SvgString
+      2.3-3 DotVertexLabelledDigraph
+    2.4 [33X[0;0YConstructors[133X
+      2.4-1 CategoryOfQuiversEnrichedOver
+      2.4-2 CreateQuiver
+      2.4-3 CreateQuiver
+      2.4-4 CreateQuiverMorphism
+      2.4-5 Subobject
+      2.4-6 Subobject
   
   
   [32X
