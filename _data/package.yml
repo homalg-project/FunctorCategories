@@ -1,7 +1,7 @@
 name: FunctorCategories
-version: "2022.05-05"
+version: "2022.05-06"
 license: "GPL-2.0-or-later"
-date: 2022-05-18
+date: 2022-05-19
 description: |
     Categories of functors
 
@@ -24,7 +24,7 @@ needed-pkgs:
       version: ">= 1.5"
       url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
     - name: "CAP"
-      version: ">= 2022.04-06"
+      version: ">= 2022.05-07"
       url: "https://homalg-project.github.io/pkg/CAP"
     - name: "MonoidalCategories"
       version: ">= 2020.03.01"
@@ -60,11 +60,11 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.05-05/FunctorCategories-2022.05-05.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.05-06/FunctorCategories-2022.05-06.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.05-05/FunctorCategories-2022.05-05.zip
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.05-06/FunctorCategories-2022.05-06.zip
 
-pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.05-05/FunctorCategories-2022.05-05.pdf
+pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.05-06/FunctorCategories-2022.05-06.pdf
 
 abstract: |
 
@@ -77,7 +77,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS22</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2022.05-05</i>
+             Version 2022.05-06</i>
      (<span class='BibYear'>2022</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/FunctorCategories">https://homalg-project.github.io/pkg/FunctorCategories</a></span>.
@@ -85,10 +85,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2022.05-05,
+    @misc{ FunctorCategories2022.05-06,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{FunctorCategories}, Categories of functors, {V}ersion
-                          2022.05-05},
+                          2022.05-06},
       month =            {May},
       year =             {2022},
       note =             {GAP package},
