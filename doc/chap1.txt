@@ -1893,14 +1893,21 @@
   
   [33X[0;0YThe target of the functor underlying the functor object [3XF[103X.[133X
   
-  [1X1.3-3 UnderlyingCapTwoCategoryCell[101X
+  [1X1.3-3 OppositeOfSource[101X
+  
+  [33X[1;0Y[29X[2XOppositeOfSource[102X( [3XHom[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  
+  [33X[0;0YThe opposite of the source category of the functor category [3XHom[103X.[133X
+  
+  [1X1.3-4 UnderlyingCapTwoCategoryCell[101X
   
   [33X[1;0Y[29X[2XUnderlyingCapTwoCategoryCell[102X( [3XF[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
   [33X[0;0YThe functor underlying the functor object [3XF[103X.[133X
   
-  [1X1.3-4 IndecProjectiveObjects[101X
+  [1X1.3-5 IndecProjectiveObjects[101X
   
   [33X[1;0Y[29X[2XIndecProjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
@@ -1909,7 +1916,7 @@
   homalg field. The output is the list of indecomposable projective objects in
   [3XHom[103X up to isomorphism.[133X
   
-  [1X1.3-5 IndecInjectiveObjects[101X
+  [1X1.3-6 IndecInjectiveObjects[101X
   
   [33X[1;0Y[29X[2XIndecInjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
@@ -1918,7 +1925,7 @@
   homalg  field. The output is the list of indecomposable injective objects in
   [3XHom[103X up to isomorphism.[133X
   
-  [1X1.3-6 SimpleObjects[101X
+  [1X1.3-7 SimpleObjects[101X
   
   [33X[1;0Y[29X[2XSimpleObjects[102X( [3XHom[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
@@ -1926,7 +1933,7 @@
   [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
   homalg field. The output is the list of simple objects in [3XHom[103X.[133X
   
-  [1X1.3-7 IsomorphismOntoCategoryOfQuiverRepresentations[101X
+  [1X1.3-8 IsomorphismOntoCategoryOfQuiverRepresentations[101X
   
   [33X[1;0Y[29X[2XIsomorphismOntoCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -1936,7 +1943,7 @@
   The      output      is      the      isomorphism      from      [3XH[103X      into
   [10XCategoryOfQuiverRepresentations(A)[110X.[133X
   
-  [1X1.3-8 IsomorphismFromCategoryOfQuiverRepresentations[101X
+  [1X1.3-9 IsomorphismFromCategoryOfQuiverRepresentations[101X
   
   [33X[1;0Y[29X[2XIsomorphismFromCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -1946,7 +1953,7 @@
   The  output  is the isomorphism from [10XCategoryOfQuiverRepresentations(A)[110X into
   [3XH[103X.[133X
   
-  [1X1.3-9 NerveTruncatedInDegree2[101X
+  [1X1.3-10 NerveTruncatedInDegree2[101X
   
   [33X[1;0Y[29X[2XNerveTruncatedInDegree2[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -2011,7 +2018,7 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
-  [1X1.3-10 YonedaEmbedding[101X
+  [1X1.3-11 YonedaEmbedding[101X
   
   [33X[1;0Y[29X[2XYonedaEmbedding[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -2020,7 +2027,7 @@
   embedding    functor    from    [3XB[103X    into   the   functors   category   [10XHom[110X(
   [10XOppositeAlgebroid[110X([3XB[103X),[23XH[123X), where [23XH[123X=[10XRangeCategoryOfHomomorphismStructure[110X([3XB[103X).[133X
   
-  [1X1.3-11 YonedaFibration[101X
+  [1X1.3-12 YonedaFibration[101X
   
   [33X[1;0Y[29X[2XYonedaFibration[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -2032,7 +2039,7 @@
   \mathrm{Hom}(a,\psi)[123X.  Its targe is the constant functor of [23X0[123X-cells [23XB \to H,
   c \mapsto B_0, \psi \mapsto \mathrm{id}_{B_0}[123X.[133X
   
-  [1X1.3-12 YonedaProjection[101X
+  [1X1.3-13 YonedaProjection[101X
   
   [33X[1;0Y[29X[2XYonedaProjection[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -2046,7 +2053,7 @@
   \sqcup_{a\in    B}   \mathrm{Hom}(a,c),   \psi   \mapsto   \sqcup_{a\in   B}
   \mathrm{Hom}(a,\psi)[123X.[133X
   
-  [1X1.3-13 YonedaComposition[101X
+  [1X1.3-14 YonedaComposition[101X
   
   [33X[1;0Y[29X[2XYonedaComposition[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -2120,7 +2127,7 @@
     [4X[28XSkeletalFinSets ) given by the above data[128X[104X
   [4X[32X[104X
   
-  [1X1.3-14 SievesOfPathsToTruth[101X
+  [1X1.3-15 SievesOfPathsToTruth[101X
   
   [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3Xiota[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3XHom[103X, [3Xiota[103X ) [32X operation[133X
