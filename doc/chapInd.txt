@@ -39,7 +39,7 @@
   [2XIsomorphismFromCategoryOfQuiverRepresentations[102X, for IsFunctorCategory 1.3-9 
   [2XIsomorphismOntoCategoryOfQuiverRepresentations[102X, for IsFunctorCategory 1.3-8 
   [2XNerveTruncatedInDegree2[102X, for IsCapCategory 1.3-10 
-  [2XOppositeOfSource[102X, for IsObjectInFunctorCategory 1.3-3 
+  [2XOppositeOfSource[102X, for IsFunctorCategory 1.3-3 
   [2XPreSheaves[102X, for IsCapCategory 1.2-1 
       for IsCapCategory, IsCapCategory 1.2-1 
       for IsCapCategory, IsHomalgRing 1.2-1 
