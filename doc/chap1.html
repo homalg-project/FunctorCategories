@@ -1579,13 +1579,13 @@ given by the above data
 
 <h5>1.1-6 <span class="Heading">The category of quivers</span></h5>
 
-<p>In the following we construct the category of quivers:</p>
+<p>In the following we construct the category of finite quivers:</p>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Quivers;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">FinQuivers;</span>
 CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := Quivers.V;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := FinQuivers.V;</span>
 &lt;A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( V );</span>
 Image of &lt;(V)&gt;:
@@ -1606,7 +1606,7 @@ given by the above data
 
 An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
 given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := Quivers.A;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := FinQuivers.A;</span>
 &lt;A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( A );</span>
 Image of &lt;(V)&gt;:
@@ -1627,7 +1627,7 @@ given by the above data
 
 An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
 given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T := TerminalObject( Quivers );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T := TerminalObject( FinQuivers );</span>
 &lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( T );</span>
 Image of &lt;(V)&gt;:
@@ -1883,7 +1883,7 @@ A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
 given by the above data
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEpimorphism( emb_complete );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">s := Quivers.s;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">s := FinQuivers.s;</span>
 &lt;A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( s );</span>
 Image of &lt;(V)&gt;:
@@ -1898,7 +1898,7 @@ given by the above data
 
 A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
 given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">t := Quivers.t;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">t := FinQuivers.t;</span>
 &lt;A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( t );</span>
 Image of &lt;(V)&gt;:
@@ -1913,7 +1913,7 @@ given by the above data
 
 A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
 given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">omega := SubobjectClassifier( Quivers );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">omega := SubobjectClassifier( FinQuivers );</span>
 &lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( omega );</span>
 Image of &lt;(V)&gt;:

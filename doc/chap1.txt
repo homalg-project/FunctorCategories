@@ -1457,12 +1457,12 @@
   
   [1X1.1-6 [33X[0;0YThe category of quivers[133X[101X
   
-  [33X[0;0YIn the following we construct the category of quivers:[133X
+  [33X[0;0YIn the following we construct the category of finite quivers:[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XQuivers;[127X[104X
+    [4X[25Xgap>[125X [27XFinQuivers;[127X[104X
     [4X[28XCategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[25Xgap>[125X [27XV := Quivers.V;[127X[104X
+    [4X[25Xgap>[125X [27XV := FinQuivers.V;[127X[104X
     [4X[28X<A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( V );[127X[104X
     [4X[28XImage of <(V)>:[128X[104X
@@ -1483,7 +1483,7 @@
     [4X[28X[128X[104X
     [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XA := Quivers.A;[127X[104X
+    [4X[25Xgap>[125X [27XA := FinQuivers.A;[127X[104X
     [4X[28X<A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( A );[127X[104X
     [4X[28XImage of <(V)>:[128X[104X
@@ -1504,7 +1504,7 @@
     [4X[28X[128X[104X
     [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XT := TerminalObject( Quivers );[127X[104X
+    [4X[25Xgap>[125X [27XT := TerminalObject( FinQuivers );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( T );[127X[104X
     [4X[28XImage of <(V)>:[128X[104X
@@ -1760,7 +1760,7 @@
     [4X[28Xgiven by the above data[128X[104X
     [4X[25Xgap>[125X [27XIsEpimorphism( emb_complete );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xs := Quivers.s;[127X[104X
+    [4X[25Xgap>[125X [27Xs := FinQuivers.s;[127X[104X
     [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( s );[127X[104X
     [4X[28XImage of <(V)>:[128X[104X
@@ -1775,7 +1775,7 @@
     [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xt := Quivers.t;[127X[104X
+    [4X[25Xgap>[125X [27Xt := FinQuivers.t;[127X[104X
     [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( t );[127X[104X
     [4X[28XImage of <(V)>:[128X[104X
@@ -1790,7 +1790,7 @@
     [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xomega := SubobjectClassifier( Quivers );[127X[104X
+    [4X[25Xgap>[125X [27Xomega := SubobjectClassifier( FinQuivers );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( omega );[127X[104X
     [4X[28XImage of <(V)>:[128X[104X
