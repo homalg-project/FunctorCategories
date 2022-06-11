@@ -1455,459 +1455,137 @@
   [4X[32X[104X
   
   
-  [1X1.1-6 [33X[0;0YThe category of quivers[133X[101X
+  [1X1.2 [33X[0;0YOperations[133X[101X
   
-  [33X[0;0YIn the following we construct the category of finite quivers:[133X
+  [1X1.2-1 DecomposeOnceByRandomEndomorphism[101X
   
-  [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XFinQuivers;[127X[104X
-    [4X[28XCategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[25Xgap>[125X [27XV := FinQuivers.V;[127X[104X
-    [4X[28X<A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( V );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XA := FinQuivers.A;[127X[104X
-    [4X[28X<A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( A );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 1 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XT := TerminalObject( FinQuivers );[127X[104X
-    [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( T );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XG := CreateQuiver( 3, [ 0,1, 0,1, 1,2, 2,1, 2,2 ] );[127X[104X
-    [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( G );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 1, 2, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 1, 1, 2, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xglobal_G := HomStructure( T, G );[127X[104X
-    [4X[28X|1|[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( global_G );[127X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[25Xgap>[125X [27Xdiscrete := DirectProduct( G, V );[127X[104X
-    [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( discrete );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xglobal_discrete := HomStructure( T, discrete );[127X[104X
-    [4X[28X|0|[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( global_discrete );[127X[104X
-    [4X[28X∅[128X[104X
-    [4X[25Xgap>[125X [27Xcomplete := Exponential( V, G );[127X[104X
-    [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( complete );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 8 } ⱶ[ 0, 1, 2, 0, 1, 2, 0, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 8 } ⱶ[ 0, 0, 0, 1, 1, 1, 2, 2, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xglobal_complete := HomStructure( T, complete );[127X[104X
-    [4X[28X|3|[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( global_complete );[127X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[25Xgap>[125X [27XGA := DirectProduct( G, A );[127X[104X
-    [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( GA );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0,..., 5 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 1, 2, 2 ]→ { 0,..., 5 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 4, 4, 5, 4, 5 ]→ { 0,..., 5 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XhomAG := HomStructure( A, G );[127X[104X
-    [4X[28X|5|[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( homAG );[127X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[25Xgap>[125X [27Xarrows := Exponential( A, G );[127X[104X
-    [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( arrows );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 44 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 44 } ⱶ[ 0, 0, 0, 3, 3, 3, 6, 6, 6,[128X[104X
-    [4X[28X                 0, 0, 0, 3, 3, 3, 6, 6, 6,[128X[104X
-    [4X[28X                 2, 2, 2, 5, 5, 5, 8, 8, 8,[128X[104X
-    [4X[28X                 1, 1, 1, 4, 4, 4, 7, 7, 7,[128X[104X
-    [4X[28X                 2, 2, 2, 5, 5, 5, 8, 8, 8 ]→ { 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 44 } ⱶ[ 3, 4, 5, 3, 4, 5, 3, 4, 5,[128X[104X
-    [4X[28X                 3, 4, 5, 3, 4, 5, 3, 4, 5,[128X[104X
-    [4X[28X                 3, 4, 5, 3, 4, 5, 3, 4, 5,[128X[104X
-    [4X[28X                 6, 7, 8, 6, 7, 8, 6, 7, 8,[128X[104X
-    [4X[28X                 6, 7, 8, 6, 7, 8, 6, 7, 8 ]→ { 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xglobal_arrows := HomStructure( T, arrows );[127X[104X
-    [4X[28X|5|[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( global_arrows );[127X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[25Xgap>[125X [27XprjG := ProjectionInFactorOfDirectProduct( [ G, V ], 1 );[127X[104X
-    [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( prjG );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XIsEpimorphism( prjG );[127X[104X
-    [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27Xprj_discrete := ProjectionInFactorOfDirectProduct( [ discrete, V ], 1 );[127X[104X
-    [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( prj_discrete );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅ ⱶ[  ]→ ∅[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XIsEpimorphism( prj_discrete );[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( Exponential( T, G ) );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 2, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 1, 1, 1, 2, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xt := UniversalMorphismIntoTerminalObject( V );[127X[104X
-    [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( t );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XembG := Exponential( t, G );[127X[104X
-    [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( embG );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 3, 3, 5, 7, 8 ]→ { 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XIsEpimorphism( embG );[127X[104X
-    [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27Xemb_complete := Exponential( t, complete );[127X[104X
-    [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( emb_complete );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 8 } ⱶ[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]→ { 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27XIsEpimorphism( emb_complete );[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xs := FinQuivers.s;[127X[104X
-    [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( s );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xt := FinQuivers.t;[127X[104X
-    [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( t );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0 } ⱶ[ 1 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[25Xgap>[125X [27Xomega := SubobjectClassifier( FinQuivers );[127X[104X
-    [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay( omega );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 1, 0, 1, 1 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 1, 1, 1 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-  [4X[32X[104X
+  [33X[1;0Y[29X[2XDecomposeOnceByRandomEndomorphism[102X( [3XF[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturn  a  pair  of  monomorphisms  describing  the embeddings of two direct
+  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
+  
+  [1X1.2-2 WeakDirectSumDecomposition[101X
+  
+  [33X[1;0Y[29X[2XWeakDirectSumDecomposition[102X( [3XF[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturn a list of monomorphisms describing the embeddings of a list of direct
+  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
+  
+  [1X1.2-3 ApplyCell[101X
+  
+  [33X[1;0Y[29X[2XApplyCell[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
+  
+  [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding Hom-category) to the
+  cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
+  
+  [1X1.2-4 ApplyCell[101X
+  
+  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
+  
+  [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
+  Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
+  
+  [1X1.2-5 ApplyCell[101X
+  
+  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xmor[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10YFour  morphisms that form a commutative square that appears in the
+            definition  of  natural  transformations  (as  an  object  in  the
+            corresponding  Hom-category).  These are the four morphisms of the
+            compatibility  diagram  of  a  natural transformation [3Xeta[103X with the
+            morphism [3Xmor[103X.[133X
+  
+  [1X1.2-6 ValuesOnAllObjects[101X
+  
+  [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xc[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturns  the  values  of  the  cell  [3Xc[103X in the functor category [3XHom[103X (which is
+  either  a  functor or a natural transformation) on all objects of the source
+  category of [3XHom[103X.[133X
+  
+  [1X1.2-7 ValuesOnAllGeneratingMorphisms[101X
+  
+  [33X[1;0Y[29X[2XValuesOnAllGeneratingMorphisms[102X( [3XF[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
+  
+  [33X[0;0YReturns the values of the functor [3XF[103X on all morphisms of the source category.[133X
   
   
-  [1X1.2 [33X[0;0YConstructors[133X[101X
+  [1X1.3 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
   
-  [1X1.2-1 PreSheaves[101X
+  [1X1.3-1 IsFunctorCategory[101X
   
-  [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X, [3XC[103X ) [32X operation[133X
-  [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X, [3Xk[103X ) [32X operation[133X
-  [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
+  [33X[1;0Y[29X[2XIsFunctorCategory[102X( [3Xcategory[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
-  [33X[0;0YConstruct  the  category [10XHom( [3XB[103X[10X^op, [3XC[103X[10X )[110X of functors from the opposite of the
-  small   category   [3XB[103X  to  the  category  [3XC[103X  as  objects  and  their  natural
-  transformations as morphisms.[133X
+  [33X[0;0YThe [5XGAP[105X category of Hom-categories of functors between two fixed categories.[133X
   
-  [1X1.2-2 CategoryOfInternalCategories[101X
+  [1X1.3-2 IsCellInFunctorCategory[101X
   
-  [33X[1;0Y[29X[2XCategoryOfInternalCategories[102X( [3XC[103X ) [32X attribute[133X
+  [33X[1;0Y[29X[2XIsCellInFunctorCategory[102X( [3Xcell[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
-  [33X[0;0YConstruct  the  category of categories internal to the monoidal or cartesian
-  category  [3XC[103X.  The output the full subcategory of the subcategory of functors
-  from  the  [10XSimplicialCategoryTruncatedInDegree[110X(2) into [3XC[103X for which each such
-  functor is the nerve truncated in degree [23X2[123X of a category internal to [3XC[103X.[133X
+  [33X[0;0YThe  [5XGAP[105X  category  of cells in a Hom-category of functors between two fixed
+  categories.[133X
   
-  [1X1.2-3 AsObjectInFunctorCategory[101X
+  [1X1.3-3 IsObjectInFunctorCategory[101X
   
-  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XH[103X, [3XF[103X ) [32X operation[133X
-  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XF[103X ) [32X attribute[133X
-  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XB[103X, [3Xrec_images_of_objects[103X, [3Xrec_images_of_morphisms[103X ) [32X operation[133X
-  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XB[103X, [3Ximages_of_objects[103X, [3Ximages_of_morphisms[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Yan object in a [5XCAP[105X category[133X
+  [33X[1;0Y[29X[2XIsObjectInFunctorCategory[102X( [3Xobj[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
-  [33X[0;0YTurn  the  functor [10X[3XF[103X[10X:[3XB[103X[10X[110X [23X\to[123X [10XC[110X into an object in the category of functors [10X[3XH[103X[10X :=
-  Hom( [3XB[103X[10X, C )[110X.[133X
+  [33X[0;0YThe  [5XGAP[105X category of objects in a Hom-category of functors between two fixed
+  categories.[133X
   
-  [33X[0;0YAn  alternative  input  is  the  source  category [3XB[103X and two defining records
-  [3Xrec_images_of_objects[103X  and [3Xrec_images_of_morphisms[103X of [3XF[103X. Another alternative
-  input  is the source category [3XB[103X and two defining lists [3Ximages_of_objects[103X and
-  [3Ximages_of_morphisms[103X of [3XF[103X. The order of their entries must correspond to that
-  of the vertices and arrows of the underlying quiver.[133X
+  [1X1.3-4 IsMorphismInFunctorCategory[101X
   
-  [33X[0;0YFor  the  convenience  of  the  user  the  following input is also valid: If
-  [3Ximages_of_objects[103X  is a list of nonnegative integers, [3Ximages_of_morphisms[103X is
-  a  list of matrices, and [23Xk:=[123X [10XCommutativeRingOfLinearCategory[110X( B ) is a field
-  then   the   two   lists   are  interpreted  as  objects  and  morphisms  in
-  [10XMatrixCategory[110X( [23Xk[123X ), respectively.[133X
+  [33X[1;0Y[29X[2XIsMorphismInFunctorCategory[102X( [3Xmor[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
-  [1X1.2-4 AsMorphismInFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XH[103X, [3Xeta[103X ) [32X operation[133X
-  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3Xeta[103X ) [32X attribute[133X
-  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XU[103X, [3Xe[103X, [3XV[103X ) [32X operation[133X
-  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XU[103X, [3Xe[103X, [3XV[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
-  
-  [33X[0;0YTurn   the  natrual  transformation  [3Xeta[103X:[23XF  \to  G[123X  into  a  morphism  [10X[3XU[103X[10X  :=
-  AsObjectInFunctorCategory(  F  )[110X  [23X\to[123X [10X[3XV[103X[10X := AsObjectInFunctorCategory( G )[110X in
-  the  category of functors [10X[3XH[103X[10X := Hom( B, C )[110X, where [10XB := Source( F ) = Source(
-  G )[110X and [10XC := Range( F ) = Range( G )[110X.[133X
-  
-  [33X[0;0YAn  alternative  input is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a defining record
-  of  [3Xeta[103X.  Another  alternative  input  is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a
-  defining list of [3Xeta[103X.[133X
+  [33X[0;0YThe  [5XGAP[105X  category  of  morphisms  in a Hom-category of functors between two
+  fixed categories.[133X
   
   
-  [1X1.3 [33X[0;0YAttributes[133X[101X
+  [1X1.4 [33X[0;0YGlobal variables[133X[101X
   
-  [1X1.3-1 Source[101X
+  [1X1.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[101X
+  
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X [32X global variable[133X
+  
+  
+  [1X1.5 [33X[0;0YAttributes[133X[101X
+  
+  [1X1.5-1 Source[101X
   
   [33X[1;0Y[29X[2XSource[102X( [3XF[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YThe source of the functor underlying functor object [3XF[103X.[133X
   
-  [1X1.3-2 Range[101X
+  [1X1.5-2 Range[101X
   
   [33X[1;0Y[29X[2XRange[102X( [3XF[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YThe target of the functor underlying the functor object [3XF[103X.[133X
   
-  [1X1.3-3 OppositeOfSource[101X
+  [1X1.5-3 OppositeOfSource[101X
   
   [33X[1;0Y[29X[2XOppositeOfSource[102X( [3XHom[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YThe opposite of the source category of the functor category [3XHom[103X.[133X
   
-  [1X1.3-4 UnderlyingCapTwoCategoryCell[101X
+  [1X1.5-4 UnderlyingCapTwoCategoryCell[101X
   
   [33X[1;0Y[29X[2XUnderlyingCapTwoCategoryCell[102X( [3XF[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
   [33X[0;0YThe functor underlying the functor object [3XF[103X.[133X
   
-  [1X1.3-5 IndecProjectiveObjects[101X
+  [1X1.5-5 IndecProjectiveObjects[101X
   
   [33X[1;0Y[29X[2XIndecProjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
@@ -1916,7 +1594,7 @@
   homalg field. The output is the list of indecomposable projective objects in
   [3XHom[103X up to isomorphism.[133X
   
-  [1X1.3-6 IndecInjectiveObjects[101X
+  [1X1.5-6 IndecInjectiveObjects[101X
   
   [33X[1;0Y[29X[2XIndecInjectiveObjects[102X( [3XHom[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
@@ -1925,7 +1603,7 @@
   homalg  field. The output is the list of indecomposable injective objects in
   [3XHom[103X up to isomorphism.[133X
   
-  [1X1.3-7 SimpleObjects[101X
+  [1X1.5-7 SimpleObjects[101X
   
   [33X[1;0Y[29X[2XSimpleObjects[102X( [3XHom[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X
@@ -1933,7 +1611,7 @@
   [33X[0;0YThe  argument  is  a category of functors [3XHom[103X into some matrix category of a
   homalg field. The output is the list of simple objects in [3XHom[103X.[133X
   
-  [1X1.3-8 IsomorphismOntoCategoryOfQuiverRepresentations[101X
+  [1X1.5-8 IsomorphismOntoCategoryOfQuiverRepresentations[101X
   
   [33X[1;0Y[29X[2XIsomorphismOntoCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -1943,7 +1621,7 @@
   The      output      is      the      isomorphism      from      [3XH[103X      into
   [10XCategoryOfQuiverRepresentations(A)[110X.[133X
   
-  [1X1.3-9 IsomorphismFromCategoryOfQuiverRepresentations[101X
+  [1X1.5-9 IsomorphismFromCategoryOfQuiverRepresentations[101X
   
   [33X[1;0Y[29X[2XIsomorphismFromCategoryOfQuiverRepresentations[102X( [3XH[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -1953,7 +1631,7 @@
   The  output  is the isomorphism from [10XCategoryOfQuiverRepresentations(A)[110X into
   [3XH[103X.[133X
   
-  [1X1.3-10 NerveTruncatedInDegree2[101X
+  [1X1.5-10 NerveTruncatedInDegree2[101X
   
   [33X[1;0Y[29X[2XNerveTruncatedInDegree2[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -2018,7 +1696,7 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
-  [1X1.3-11 YonedaEmbedding[101X
+  [1X1.5-11 YonedaEmbedding[101X
   
   [33X[1;0Y[29X[2XYonedaEmbedding[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -2027,7 +1705,7 @@
   embedding    functor    from    [3XB[103X    into   the   functors   category   [10XHom[110X(
   [10XOppositeAlgebroid[110X([3XB[103X),[23XH[123X), where [23XH[123X=[10XRangeCategoryOfHomomorphismStructure[110X([3XB[103X).[133X
   
-  [1X1.3-12 YonedaFibration[101X
+  [1X1.5-12 YonedaFibration[101X
   
   [33X[1;0Y[29X[2XYonedaFibration[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -2039,7 +1717,7 @@
   \mathrm{Hom}(a,\psi)[123X.  Its targe is the constant functor of [23X0[123X-cells [23XB \to H,
   c \mapsto B_0, \psi \mapsto \mathrm{id}_{B_0}[123X.[133X
   
-  [1X1.3-13 YonedaProjection[101X
+  [1X1.5-13 YonedaProjection[101X
   
   [33X[1;0Y[29X[2XYonedaProjection[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -2053,7 +1731,7 @@
   \sqcup_{a\in    B}   \mathrm{Hom}(a,c),   \psi   \mapsto   \sqcup_{a\in   B}
   \mathrm{Hom}(a,\psi)[123X.[133X
   
-  [1X1.3-14 YonedaComposition[101X
+  [1X1.5-14 YonedaComposition[101X
   
   [33X[1;0Y[29X[2XYonedaComposition[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
@@ -2127,7 +1805,7 @@
     [4X[28XSkeletalFinSets ) given by the above data[128X[104X
   [4X[32X[104X
   
-  [1X1.3-15 SievesOfPathsToTruth[101X
+  [1X1.5-15 SievesOfPathsToTruth[101X
   
   [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3Xiota[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3XHom[103X, [3Xiota[103X ) [32X operation[133X
@@ -2141,102 +1819,65 @@
   [23Xf(x) \in Q(a) \subseteq P(a)[123X.[133X
   
   
-  [1X1.4 [33X[0;0YOperations[133X[101X
+  [1X1.6 [33X[0;0YConstructors[133X[101X
   
-  [1X1.4-1 DecomposeOnceByRandomEndomorphism[101X
+  [1X1.6-1 PreSheaves[101X
   
-  [33X[1;0Y[29X[2XDecomposeOnceByRandomEndomorphism[102X( [3XF[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
+  [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X, [3XC[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X, [3Xk[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XPreSheaves[102X( [3XB[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
-  [33X[0;0YReturn  a  pair  of  monomorphisms  describing  the embeddings of two direct
-  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
+  [33X[0;0YConstruct  the  category [10XHom( [3XB[103X[10X^op, [3XC[103X[10X )[110X of functors from the opposite of the
+  small   category   [3XB[103X  to  the  category  [3XC[103X  as  objects  and  their  natural
+  transformations as morphisms.[133X
   
-  [1X1.4-2 WeakDirectSumDecomposition[101X
+  [1X1.6-2 CategoryOfInternalCategories[101X
   
-  [33X[1;0Y[29X[2XWeakDirectSumDecomposition[102X( [3XF[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
+  [33X[1;0Y[29X[2XCategoryOfInternalCategories[102X( [3XC[103X ) [32X attribute[133X
   
-  [33X[0;0YReturn a list of monomorphisms describing the embeddings of a list of direct
-  summands of the representation [3XF[103X, the direct sum thereof is isomorphic to [3XF[103X.[133X
+  [33X[0;0YConstruct  the  category of categories internal to the monoidal or cartesian
+  category  [3XC[103X.  The output the full subcategory of the subcategory of functors
+  from  the  [10XSimplicialCategoryTruncatedInDegree[110X(2) into [3XC[103X for which each such
+  functor is the nerve truncated in degree [23X2[123X of a category internal to [3XC[103X.[133X
   
-  [1X1.4-3 ApplyCell[101X
+  [1X1.6-3 AsObjectInFunctorCategory[101X
   
-  [33X[1;0Y[29X[2XApplyCell[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
+  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XH[103X, [3XF[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XF[103X ) [32X attribute[133X
+  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XB[103X, [3Xrec_images_of_objects[103X, [3Xrec_images_of_morphisms[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XB[103X, [3Ximages_of_objects[103X, [3Ximages_of_morphisms[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Yan object in a [5XCAP[105X category[133X
   
-  [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding Hom-category) to the
-  cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
+  [33X[0;0YTurn  the  functor [10X[3XF[103X[10X:[3XB[103X[10X[110X [23X\to[123X [10XC[110X into an object in the category of functors [10X[3XH[103X[10X :=
+  Hom( [3XB[103X[10X, C )[110X.[133X
   
-  [1X1.4-4 ApplyCell[101X
+  [33X[0;0YAn  alternative  input  is  the  source  category [3XB[103X and two defining records
+  [3Xrec_images_of_objects[103X  and [3Xrec_images_of_morphisms[103X of [3XF[103X. Another alternative
+  input  is the source category [3XB[103X and two defining lists [3Ximages_of_objects[103X and
+  [3Ximages_of_morphisms[103X of [3XF[103X. The order of their entries must correspond to that
+  of the vertices and arrows of the underlying quiver.[133X
   
-  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
+  [33X[0;0YFor  the  convenience  of  the  user  the  following input is also valid: If
+  [3Ximages_of_objects[103X  is a list of nonnegative integers, [3Ximages_of_morphisms[103X is
+  a  list of matrices, and [23Xk:=[123X [10XCommutativeRingOfLinearCategory[110X( B ) is a field
+  then   the   two   lists   are  interpreted  as  objects  and  morphisms  in
+  [10XMatrixCategory[110X( [23Xk[123X ), respectively.[133X
   
-  [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
-  Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
+  [1X1.6-4 AsMorphismInFunctorCategory[101X
   
-  [1X1.4-5 ApplyCell[101X
+  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XH[103X, [3Xeta[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3Xeta[103X ) [32X attribute[133X
+  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XU[103X, [3Xe[103X, [3XV[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XU[103X, [3Xe[103X, [3XV[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya morphism in a [5XCAP[105X category[133X
   
-  [33X[1;0Y[29X[2XApplyCell[102X( [3Xeta[103X, [3Xmor[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10YFour  morphisms that form a commutative square that appears in the
-            definition  of  natural  transformations  (as  an  object  in  the
-            corresponding  Hom-category).  These are the four morphisms of the
-            compatibility  diagram  of  a  natural transformation [3Xeta[103X with the
-            morphism [3Xmor[103X.[133X
+  [33X[0;0YTurn   the  natrual  transformation  [3Xeta[103X:[23XF  \to  G[123X  into  a  morphism  [10X[3XU[103X[10X  :=
+  AsObjectInFunctorCategory(  F  )[110X  [23X\to[123X [10X[3XV[103X[10X := AsObjectInFunctorCategory( G )[110X in
+  the  category of functors [10X[3XH[103X[10X := Hom( B, C )[110X, where [10XB := Source( F ) = Source(
+  G )[110X and [10XC := Range( F ) = Range( G )[110X.[133X
   
-  [1X1.4-6 ValuesOnAllObjects[101X
-  
-  [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xc[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturns  the  values  of  the  cell  [3Xc[103X in the functor category [3XHom[103X (which is
-  either  a  functor or a natural transformation) on all objects of the source
-  category of [3XHom[103X.[133X
-  
-  [1X1.4-7 ValuesOnAllGeneratingMorphisms[101X
-  
-  [33X[1;0Y[29X[2XValuesOnAllGeneratingMorphisms[102X( [3XF[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturns the values of the functor [3XF[103X on all morphisms of the source category.[133X
-  
-  
-  [1X1.5 [33X[0;0YGlobal variables[133X[101X
-  
-  [1X1.5-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[101X
-  
-  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X [32X global variable[133X
-  
-  
-  [1X1.6 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
-  
-  [1X1.6-1 IsFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsFunctorCategory[102X( [3Xcategory[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe [5XGAP[105X category of Hom-categories of functors between two fixed categories.[133X
-  
-  [1X1.6-2 IsCellInFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsCellInFunctorCategory[102X( [3Xcell[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe  [5XGAP[105X  category  of cells in a Hom-category of functors between two fixed
-  categories.[133X
-  
-  [1X1.6-3 IsObjectInFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsObjectInFunctorCategory[102X( [3Xobj[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe  [5XGAP[105X category of objects in a Hom-category of functors between two fixed
-  categories.[133X
-  
-  [1X1.6-4 IsMorphismInFunctorCategory[101X
-  
-  [33X[1;0Y[29X[2XIsMorphismInFunctorCategory[102X( [3Xmor[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe  [5XGAP[105X  category  of  morphisms  in a Hom-category of functors between two
-  fixed categories.[133X
+  [33X[0;0YAn  alternative  input is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a defining record
+  of  [3Xeta[103X.  Another  alternative  input  is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a
+  defining list of [3Xeta[103X.[133X
   
