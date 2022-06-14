@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.06-17
+                                   2022.06-18
   
   
                                   14 June 2022
@@ -95,9 +95,11 @@
       2.1-5 Subobject
       2.1-6 Subobject
     2.2 [33X[0;0YAttributes[133X
-      2.2-1 Arrows
-      2.2-2 SvgString
-      2.2-3 DotVertexLabelledDigraph
+      2.2-1 UnderlyingCategory
+      2.2-2 YonedaEmbeddingOfUnderlyingCategory
+      2.2-3 Arrows
+      2.2-4 SvgString
+      2.2-5 DotVertexLabelledDigraph
     2.3 [33X[0;0YOperations[133X
     2.4 [33X[0;0YGlobal variables[133X
       2.4-1 QuiverOfCategoryOfQuivers
