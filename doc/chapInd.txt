@@ -2,6 +2,7 @@
   
   [1XIndex[101X
   
+  [2XAbelianClosure[102X, for IsAlgebroid 5.1-1 
   [2XApplyCell[102X, for IsMorphismInFunctorCategory, IsCapCategoryMorphism 1.2-5 
       for IsMorphismInFunctorCategory, IsCapCategoryObject 1.2-4 
       for IsObjectInFunctorCategory, IsCapCategoryCell 1.2-3 
@@ -16,30 +17,39 @@
       for IsCapFunctor 1.6-3 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X 1.4-1 
   [2XCategoryOfInternalCategories[102X, for IsCapCategory 1.6-2 
-  [2XCategoryOfQuiversEnrichedOver[102X, for IsCapCategory 3.1-1 
-  [2XCreateQuiver[102X, for IsCategoryOfQuivers, IsInt, IsList 3.1-2 
-      for IsInt, IsList 3.1-3 
-  [2XCreateQuiverMorphism[102X, for IsObjectInCategoryOfQuivers, IsList, IsList, IsObjectInCategoryOfQuivers 3.1-4 
+  [2XCategoryOfQuiversEnrichedOver[102X, for IsCapCategory 5.1-1 
+  [2XCreateQuiver[102X, for IsCategoryOfQuivers, IsInt, IsList 3.1-1 
+      for IsInt, IsList 3.1-2 
+  [2XCreateQuiverMorphism[102X, for IsObjectInCategoryOfQuivers, IsList, IsList, IsObjectInCategoryOfQuivers 3.1-3 
   [2XDecomposeOnceByRandomEndomorphism[102X, for IsObjectInFunctorCategory 1.2-1 
   [2XDotVertexLabelledDigraph[102X, for IsCellInCategoryOfQuivers 3.2-5 
-  [2XFiniteCocompletion[102X, for IsCapCategory 3.1-1 
-  [2XFunctorCategory[102X, for IsCapCategory, IsCapCategory 3.1-1 
-      for IsCapCategory, IsHomalgRing 3.1-1 
-  [2XHom[102X, for IsCapCategory, IsCapCategory 3.1-1 
-      for IsCapCategory, IsHomalgRing 3.1-1 
+  [2XFiniteCocompletion[102X, for IsCapCategory 5.1-1 
+  [2XFiniteCompletion[102X, for IsCapCategory 5.1-1 
+  [2XFunctorCategory[102X, for IsCapCategory, IsCapCategory 5.1-1 
+      for IsCapCategory, IsHomalgRing 5.1-1 
+  [2XHom[102X, for IsCapCategory, IsCapCategory 5.1-1 
+      for IsCapCategory, IsHomalgRing 5.1-1 
   [2XIndecInjectiveObjects[102X, for IsFunctorCategory 1.5-6 
   [2XIndecProjectiveObjects[102X, for IsFunctorCategory 1.5-5 
+  [2XIsAbelianClosure[102X, for IsCapCategory 5.5-1 
   [2XIsCategoryOfQuivers[102X, for IsCapCategory 3.6-1 
+  [2XIsCellInAbelianClosure[102X, for IsCapCategoryCell 5.5-2 
   [2XIsCellInCategoryOfQuivers[102X, for IsCapCategoryCell 3.6-2 
   [2XIsCellInFiniteCocompletion[102X, for IsCapCategoryCell 2.5-2 
+  [2XIsCellInFiniteCompletion[102X, for IsCapCategoryCell 4.5-2 
   [2XIsCellInFunctorCategory[102X, for IsCapCategoryCell andIsAttributeStoringRep 1.3-2 
   [2XIsFiniteCocompletion[102X, for IsCapCategory 2.5-1 
+  [2XIsFiniteCompletion[102X, for IsCapCategory 4.5-1 
   [2XIsFunctorCategory[102X, for IsCapCategory andIsAttributeStoringRep 1.3-1 
+  [2XIsMorphismInAbelianClosure[102X, for IsCellInAbelianClosure andIsCapCategoryMorphism 5.5-4 
   [2XIsMorphismInCategoryOfQuivers[102X, for IsCellInCategoryOfQuivers andIsCapCategoryMorphism 3.6-4 
   [2XIsMorphismInFiniteCocompletion[102X, for IsCellInFiniteCocompletion andIsCapCategoryMorphism 2.5-4 
+  [2XIsMorphismInFiniteCompletion[102X, for IsCellInFiniteCompletion andIsCapCategoryMorphism 4.5-4 
   [2XIsMorphismInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryMorphism 1.3-4 
+  [2XIsObjectInAbelianClosure[102X, for IsCellInAbelianClosure andIsCapCategoryObject 5.5-3 
   [2XIsObjectInCategoryOfQuivers[102X, for IsCellInCategoryOfQuivers andIsCapCategoryObject 3.6-3 
   [2XIsObjectInFiniteCocompletion[102X, for IsCellInFiniteCocompletion andIsCapCategoryObject 2.5-3 
+  [2XIsObjectInFiniteCompletion[102X, for IsCellInFiniteCompletion andIsCapCategoryObject 4.5-3 
   [2XIsObjectInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryObject 1.3-3 
   [2XIsomorphismFromCategoryOfQuiverRepresentations[102X, for IsFunctorCategory 1.5-9 
   [2XIsomorphismOntoCategoryOfQuiverRepresentations[102X, for IsFunctorCategory 1.5-8 
@@ -55,19 +65,23 @@
       for IsMorphismInFunctorCategory 1.5-15 
   [2XSimpleObjects[102X, for IsFunctorCategory 1.5-7 
   [2XSource[102X, for IsObjectInFunctorCategory 1.5-1 
-  [2XSubobject[102X, for IsObjectInCategoryOfQuivers, IsList 3.1-6 
-      for IsObjectInCategoryOfQuivers, IsList, IsList 3.1-5 
+  [2XSubobject[102X, for IsObjectInCategoryOfQuivers, IsList 3.1-5 
+      for IsObjectInCategoryOfQuivers, IsList, IsList 3.1-4 
   [2XSvgString[102X, for IsCellInCategoryOfQuivers 3.2-4 
   [2XUnderlyingCapTwoCategoryCell[102X, for IsObject 1.5-4 
-  [2XUnderlyingCategory[102X, for IsCategoryOfQuivers 3.2-1 
+  [2XUnderlyingCategory[102X, for IsAbelianClosure 5.2-1 
+      for IsCategoryOfQuivers 3.2-1 
       for IsFiniteCocompletion 2.2-1 
+      for IsFiniteCompletion 4.2-1 
   [2XValuesOnAllGeneratingMorphisms[102X, for IsObjectInFunctorCategory 1.2-7 
   [2XValuesOnAllObjects[102X, for IsCellInFunctorCategory 1.2-6 
   [2XWeakDirectSumDecomposition[102X, for IsObjectInFunctorCategory 1.2-2 
   [2XYonedaComposition[102X, for IsCapCategory 1.5-14 
   [2XYonedaEmbedding[102X, for IsCapCategory 1.5-11 
-  [2XYonedaEmbeddingOfUnderlyingCategory[102X, for IsCategoryOfQuivers 3.2-2 
+  [2XYonedaEmbeddingOfUnderlyingCategory[102X, for IsAbelianClosure 5.2-2 
+      for IsCategoryOfQuivers 3.2-2 
       for IsFiniteCocompletion 2.2-2 
+      for IsFiniteCompletion 4.2-2 
   [2XYonedaFibration[102X, for IsCapCategory 1.5-12 
   [2XYonedaProjection[102X, for IsCapCategory 1.5-13 
   
