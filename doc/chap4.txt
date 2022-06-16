@@ -22,30 +22,105 @@
   [1X4.4 [33X[0;0YGlobal variables[133X[101X
   
   
-  [1X4.5 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
+  [1X4.5 [33X[0;0YExamples[133X[101X
   
-  [1X4.5-1 IsFiniteCompletion[101X
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XT := FiniteCompletion( InitialCategory( ) );[127X[104X
+    [4X[28XFiniteCompletion( InitialCategory( ) )[128X[104X
+    [4X[25Xgap>[125X [27XIsTerminalCategory( T );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XInfoOfInstalledOperationsOfCategory( T );[127X[104X
+    [4X[28X490 primitive operations were used to derive 522 operations for this category[128X[104X
+    [4X[28Xwhich constructively[128X[104X
+    [4X[28X* IsEquippedWithHomomorphismStructure[128X[104X
+    [4X[28X* IsLinearCategoryOverCommutativeRing[128X[104X
+    [4X[28X* IsCodistributiveCocartesianCategory[128X[104X
+    [4X[28X* IsBicartesianClosedCategory[128X[104X
+    [4X[28X* IsBicartesianCoclosedCategory[128X[104X
+    [4X[28X* IsAbelianCategoryWithEnoughInjectives[128X[104X
+    [4X[28X* IsAbelianCategoryWithEnoughProjectives[128X[104X
+    [4X[28X* IsRigidSymmetricClosedMonoidalCategory[128X[104X
+    [4X[28X* IsRigidSymmetricCoclosedMonoidalCategory[128X[104X
+    [4X[25Xgap>[125X [27Xi := InitialObject( T );[127X[104X
+    [4X[28X<An object in FiniteCompletion( InitialCategory( ) )>[128X[104X
+    [4X[25Xgap>[125X [27Xt := TerminalObject( T );[127X[104X
+    [4X[28X<An object in FiniteCompletion( InitialCategory( ) )>[128X[104X
+    [4X[25Xgap>[125X [27Xz := ZeroObject( T );[127X[104X
+    [4X[28X<A zero object in FiniteCompletion( InitialCategory( ) )>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( i );[127X[104X
+    [4X[28XAn object in FunctorCategory( InitialCategory( ), InitialCategory( ) )[128X[104X
+    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in Opposite of[128X[104X
+    [4X[28XFunctorCategory( InitialCategory( ), InitialCategory( ) )[128X[104X
+    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in FiniteCompletion( InitialCategory( ) ) given by the above data[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( t );[127X[104X
+    [4X[28XAn object in FunctorCategory( InitialCategory( ), InitialCategory( ) )[128X[104X
+    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in Opposite of[128X[104X
+    [4X[28XFunctorCategory( InitialCategory( ), InitialCategory( ) )[128X[104X
+    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in FiniteCompletion( InitialCategory( ) ) given by the above data[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( z );[127X[104X
+    [4X[28XAn object in FunctorCategory( InitialCategory( ), InitialCategory( ) )[128X[104X
+    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in Opposite of[128X[104X
+    [4X[28XFunctorCategory( InitialCategory( ), InitialCategory( ) )[128X[104X
+    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in FiniteCompletion( InitialCategory( ) ) given by the above data[128X[104X
+    [4X[25Xgap>[125X [27XIsIdenticalObj( i, z );[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XIsIdenticalObj( t, z );[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XIsEqualForObjects( i, z );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsEqualForObjects( t, z );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( z );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xid_z := IdentityMorphism( z );[127X[104X
+    [4X[28X<A zero, identity morphism in FiniteCompletion( InitialCategory( ) )>[128X[104X
+    [4X[25Xgap>[125X [27Xfn_z := ZeroObjectFunctorial( T );[127X[104X
+    [4X[28X<A morphism in FiniteCompletion( InitialCategory( ) )>[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( fn_z );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsEqualForMorphisms( id_z, fn_z );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsCongruentForMorphisms( id_z, fn_z );[127X[104X
+    [4X[28Xtrue[128X[104X
+  [4X[32X[104X
+  
+  
+  [1X4.6 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
+  
+  [1X4.6-1 IsFiniteCompletion[101X
   
   [33X[1;0Y[29X[2XIsFiniteCompletion[102X( [3Xcategory[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of a finite completion category.[133X
   
-  [1X4.5-2 IsCellInFiniteCompletion[101X
+  [1X4.6-2 IsCellInFiniteCompletion[101X
   
   [33X[1;0Y[29X[2XIsCellInFiniteCompletion[102X( [3Xcell[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of cells in a finite completion category.[133X
   
-  [1X4.5-3 IsObjectInFiniteCompletion[101X
+  [1X4.6-3 IsObjectInFiniteCompletion[101X
   
   [33X[1;0Y[29X[2XIsObjectInFiniteCompletion[102X( [3Xobj[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of objects in a finite completion category.[133X
   
-  [1X4.5-4 IsMorphismInFiniteCompletion[101X
+  [1X4.6-4 IsMorphismInFiniteCompletion[101X
   
   [33X[1;0Y[29X[2XIsMorphismInFiniteCompletion[102X( [3Xmor[103X ) [32X filter[133X
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X

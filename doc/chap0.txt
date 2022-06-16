@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.06-22
+                                   2022.06-23
   
   
-                                  15 June 2022
+                                  16 June 2022
   
   
                                 Mohamed Barakat
@@ -128,11 +128,12 @@
       4.2-2 YonedaEmbeddingOfUnderlyingCategory
     4.3 [33X[0;0YOperations[133X
     4.4 [33X[0;0YGlobal variables[133X
-    4.5 [33X[0;0Y[5XGAP[105X Categories[133X
-      4.5-1 IsFiniteCompletion
-      4.5-2 IsCellInFiniteCompletion
-      4.5-3 IsObjectInFiniteCompletion
-      4.5-4 IsMorphismInFiniteCompletion
+    4.5 [33X[0;0YExamples[133X
+    4.6 [33X[0;0Y[5XGAP[105X Categories[133X
+      4.6-1 IsFiniteCompletion
+      4.6-2 IsCellInFiniteCompletion
+      4.6-3 IsObjectInFiniteCompletion
+      4.6-4 IsMorphismInFiniteCompletion
   5 [33X[0;0YFree Abelian category of a finitely presented category[133X
     5.1 [33X[0;0YConstructors[133X
       5.1-1 AbelianClosure

@@ -1,7 +1,7 @@
 name: FunctorCategories
-version: "2022.06-22"
+version: "2022.06-23"
 license: "GPL-2.0-or-later"
-date: 2022-06-15
+date: 2022-06-16
 description: |
     Categories of functors
 
@@ -27,10 +27,10 @@ needed-pkgs:
       version: ">= 2022.06-02"
       url: "https://homalg-project.github.io/pkg/CAP"
     - name: "MonoidalCategories"
-      version: ">= 2020.03.01"
+      version: ">= 2022.06-04"
       url: "https://homalg-project.github.io/pkg/MonoidalCategories"
     - name: "Algebroids"
-      version: ">= 2022.05-05"
+      version: ">= 2022.06-02"
       url: "https://homalg-project.github.io/pkg/Algebroids"
     - name: "RingsForHomalg"
       version: ">= 2020.02.04"
@@ -48,7 +48,7 @@ needed-pkgs:
       version: ">= 2021.12-01"
       url: "https://homalg-project.github.io/pkg/SubcategoriesForCAP"
     - name: "Toposes"
-      version: ">= 2022.06-06"
+      version: ">= 2022.06-09"
       url: "https://homalg-project.github.io/pkg/Toposes"
     - name: "FinSetsForCAP"
       version: ">= 2022.05-05"
@@ -60,11 +60,11 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.06-22/FunctorCategories-2022.06-22.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.06-23/FunctorCategories-2022.06-23.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.06-22/FunctorCategories-2022.06-22.zip
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.06-23/FunctorCategories-2022.06-23.zip
 
-pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.06-22/FunctorCategories-2022.06-22.pdf
+pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.06-23/FunctorCategories-2022.06-23.pdf
 
 abstract: |
 
@@ -77,7 +77,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS22</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2022.06-22</i>
+             Version 2022.06-23</i>
      (<span class='BibYear'>2022</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/FunctorCategories">https://homalg-project.github.io/pkg/FunctorCategories</a></span>.
@@ -85,10 +85,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2022.06-22,
+    @misc{ FunctorCategories2022.06-23,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{FunctorCategories}, Categories of functors, {V}ersion
-                          2022.06-22},
+                          2022.06-23},
       month =            {Jun},
       year =             {2022},
       note =             {GAP package},
