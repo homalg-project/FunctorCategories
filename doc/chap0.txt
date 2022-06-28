@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.06-25
+                                   2022.06-26
   
   
-                                  19 June 2022
+                                  28 June 2022
   
   
                                 Mohamed Barakat
@@ -114,7 +114,7 @@
     3.3 [33X[0;0YOperations[133X
     3.4 [33X[0;0YGlobal variables[133X
       3.4-1 QuiverOfCategoryOfQuivers
-      3.4-2 Quivers
+      3.4-2 FinQuivers
     3.5 [33X[0;0YExample[133X
     3.6 [33X[0;0Y[5XGAP[105X Categories[133X
       3.6-1 IsCategoryOfQuivers

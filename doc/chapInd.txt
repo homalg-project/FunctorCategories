@@ -25,6 +25,7 @@
   [2XDotVertexLabelledDigraph[102X, for IsCellInCategoryOfQuivers 3.2-5 
   [2XFiniteCocompletion[102X, for IsCapCategory 5.1-1 
   [2XFiniteCompletion[102X, for IsCapCategory 5.1-1 
+  [2XFinQuivers[102X 3.4-2 
   [2XFunctorCategory[102X, for IsCapCategory, IsCapCategory 5.1-1 
       for IsCapCategory, IsHomalgRing 5.1-1 
   [2XHom[102X, for IsCapCategory, IsCapCategory 5.1-1 
@@ -59,7 +60,6 @@
       for IsCapCategory, IsCapCategory 1.6-1 
       for IsCapCategory, IsHomalgRing 1.6-1 
   [2XQuiverOfCategoryOfQuivers[102X 3.4-1 
-  [2XQuivers[102X 3.4-2 
   [2XRange[102X, for IsObjectInFunctorCategory 1.5-2 
   [2XSievesOfPathsToTruth[102X, for IsFunctorCategory, IsMorphismInFunctorCategory 1.5-15 
       for IsMorphismInFunctorCategory 1.5-15 
