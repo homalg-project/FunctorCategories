@@ -1806,13 +1806,13 @@
   
   [1X1.6-3 AsObjectInFunctorCategory[101X
   
-  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XH[103X, [3XF[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XHom[103X, [3XF[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XF[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XB[103X, [3Xrec_images_of_objects[103X, [3Xrec_images_of_morphisms[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAsObjectInFunctorCategory[102X( [3XB[103X, [3Ximages_of_objects[103X, [3Ximages_of_morphisms[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Yan object in a [5XCAP[105X category[133X
   
-  [33X[0;0YTurn  the  functor [10X[3XF[103X[10X:[3XB[103X[10X[110X [23X\to[123X [10XC[110X into an object in the category of functors [10X[3XH[103X[10X :=
+  [33X[0;0YTurn the functor [10X[3XF[103X[10X:[3XB[103X[10X[110X [23X\to[123X [10XC[110X into an object in the category of functors [10X[3XHom[103X[10X :=
   Hom( [3XB[103X[10X, C )[110X.[133X
   
   [33X[0;0YAn  alternative  input  is  the  source  category [3XB[103X and two defining records
@@ -1829,7 +1829,7 @@
   
   [1X1.6-4 AsMorphismInFunctorCategory[101X
   
-  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XH[103X, [3Xeta[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XHom[103X, [3Xeta[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3Xeta[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XU[103X, [3Xe[103X, [3XV[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XAsMorphismInFunctorCategory[102X( [3XU[103X, [3Xe[103X, [3XV[103X ) [32X operation[133X
@@ -1837,8 +1837,8 @@
   
   [33X[0;0YTurn   the  natrual  transformation  [3Xeta[103X:[23XF  \to  G[123X  into  a  morphism  [10X[3XU[103X[10X  :=
   AsObjectInFunctorCategory(  F  )[110X  [23X\to[123X [10X[3XV[103X[10X := AsObjectInFunctorCategory( G )[110X in
-  the  category of functors [10X[3XH[103X[10X := Hom( B, C )[110X, where [10XB := Source( F ) = Source(
-  G )[110X and [10XC := Range( F ) = Range( G )[110X.[133X
+  the  category  of  functors  [10X[3XHom[103X[10X  :=  Hom(  B, C )[110X, where [10XB := Source( F ) =
+  Source( G )[110X and [10XC := Range( F ) = Range( G )[110X.[133X
   
   [33X[0;0YAn  alternative  input is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a defining record
   of  [3Xeta[103X.  Another  alternative  input  is the triple ([3XU[103X, [3Xe[103X, [3XV[103X), where [3Xe[103X is a

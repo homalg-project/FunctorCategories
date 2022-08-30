@@ -1931,13 +1931,13 @@ SkeletalFinSets ) given by the above data
 
 <h5>1.6-3 AsObjectInFunctorCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsObjectInFunctorCategory</code>( <var class="Arg">H</var>, <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsObjectInFunctorCategory</code>( <var class="Arg">Hom</var>, <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsObjectInFunctorCategory</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsObjectInFunctorCategory</code>( <var class="Arg">B</var>, <var class="Arg">rec_images_of_objects</var>, <var class="Arg">rec_images_of_morphisms</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsObjectInFunctorCategory</code>( <var class="Arg">B</var>, <var class="Arg">images_of_objects</var>, <var class="Arg">images_of_morphisms</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: an object in a <strong class="pkg">CAP</strong> category</p>
 
-<p>Turn the functor <code class="code"><var class="Arg">F</var>:<var class="Arg">B</var></code> <span class="SimpleMath">\(\to\)</span> <code class="code">C</code> into an object in the category of functors <code class="code"><var class="Arg">H</var> := Hom( <var class="Arg">B</var>, C )</code>.</p>
+<p>Turn the functor <code class="code"><var class="Arg">F</var>:<var class="Arg">B</var></code> <span class="SimpleMath">\(\to\)</span> <code class="code">C</code> into an object in the category of functors <code class="code"><var class="Arg">Hom</var> := Hom( <var class="Arg">B</var>, C )</code>.</p>
 
 <p>An alternative input is the source category <var class="Arg">B</var> and two defining records <var class="Arg">rec_images_of_objects</var> and <var class="Arg">rec_images_of_morphisms</var> of <var class="Arg">F</var>. Another alternative input is the source category <var class="Arg">B</var> and two defining lists <var class="Arg">images_of_objects</var> and <var class="Arg">images_of_morphisms</var> of <var class="Arg">F</var>. The order of their entries must correspond to that of the vertices and arrows of the underlying quiver.</p>
 
@@ -1947,13 +1947,13 @@ SkeletalFinSets ) given by the above data
 
 <h5>1.6-4 AsMorphismInFunctorCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsMorphismInFunctorCategory</code>( <var class="Arg">H</var>, <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsMorphismInFunctorCategory</code>( <var class="Arg">Hom</var>, <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsMorphismInFunctorCategory</code>( <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsMorphismInFunctorCategory</code>( <var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsMorphismInFunctorCategory</code>( <var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a morphism in a <strong class="pkg">CAP</strong> category</p>
 
-<p>Turn the natrual transformation <var class="Arg">eta</var>:<span class="SimpleMath">\(F \to G\)</span> into a morphism <code class="code"><var class="Arg">U</var> := AsObjectInFunctorCategory( F )</code> <span class="SimpleMath">\(\to\)</span> <code class="code"><var class="Arg">V</var> := AsObjectInFunctorCategory( G )</code> in the category of functors <code class="code"><var class="Arg">H</var> := Hom( B, C )</code>, where <code class="code">B := Source( F ) = Source( G )</code> and <code class="code">C := Range( F ) = Range( G )</code>.</p>
+<p>Turn the natrual transformation <var class="Arg">eta</var>:<span class="SimpleMath">\(F \to G\)</span> into a morphism <code class="code"><var class="Arg">U</var> := AsObjectInFunctorCategory( F )</code> <span class="SimpleMath">\(\to\)</span> <code class="code"><var class="Arg">V</var> := AsObjectInFunctorCategory( G )</code> in the category of functors <code class="code"><var class="Arg">Hom</var> := Hom( B, C )</code>, where <code class="code">B := Source( F ) = Source( G )</code> and <code class="code">C := Range( F ) = Range( G )</code>.</p>
 
 <p>An alternative input is the triple (<var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var>), where <var class="Arg">e</var> is a defining record of <var class="Arg">eta</var>. Another alternative input is the triple (<var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var>), where <var class="Arg">e</var> is a defining list of <var class="Arg">eta</var>.</p>
 
