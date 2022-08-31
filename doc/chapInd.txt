@@ -16,6 +16,8 @@
       for IsCapCategory, IsRecord, IsRecord 1.6-3 
       for IsCapFunctor 1.6-3 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X 1.4-1 
+  [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY[102X 1.4-2 
+  [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS[102X 1.4-3 
   [2XCategoryOfInternalCategories[102X, for IsCapCategory 1.6-2 
   [2XCategoryOfQuiversEnrichedOver[102X, for IsCapCategory 5.1-1 
   [2XCreateQuiver[102X, for IsCategoryOfQuivers, IsInt, IsList 3.1-1 

@@ -29,10 +29,18 @@
   
   [33X[0;0YOut  of  this  path algebra construct the algebroid (actually the algebra) [23XB[123X
   that is obtained as the quotient of the path algebra modulo the ideal [23X(t^3 -
-  1)[123X.[133X
+  1)[123X.  Let  [23XA[123X be the category of matrices as a skeletal model for the category
+  of  finite  dimensional  vector  spaces  over  [23X\mathbb{Q}[123X.  Its  objects are
+  non-negative  integers  and  its morphisms are matrices with coefficients in
+  [23X\mathbb{Q}[123X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XB := Algebroid( Qq, [ Qq.t^3 - Qq.1 ] );[127X[104X
+    [4X[25Xgap>[125X [27XA := MatrixCategory( Q : overhead := false );[127X[104X
+    [4X[28XCategory of matrices over Q[128X[104X
+  [4X[32X[104X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XB := Algebroid( Qq, [ Qq.t^3 - Qq.1 ] : range_of_HomStructure := A );[127X[104X
     [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations[128X[104X
     [4X[25Xgap>[125X [27XRelationsOfAlgebroid( B );[127X[104X
     [4X[28X[ (1)-[1*(t*t*t) - 1*(1)]->(1) ][128X[104X
@@ -123,16 +131,6 @@
     [4X[28X(1)-[{ 1*(t*t) }]->(1)[128X[104X
   [4X[32X[104X
   
-  [33X[0;0YLet  [23XA[123X  be  the category of matrices as a skeletal model for the category of
-  finite   dimensional   vector   spaces  over  [23X\mathbb{Q}[123X.  Its  objects  are
-  non-negative  integers  and  its morphisms are matrices with coefficients in
-  [23X\mathbb{Q}[123X.[133X
-  
-  [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XA := MatrixCategory( Q );[127X[104X
-    [4X[28XCategory of matrices over Q[128X[104X
-  [4X[32X[104X
-  
   [33X[0;0YConstruct the category [23XH[123X of functors from [23XB[123X to [23XA[123X. An object in this category
   is  a pair consisting of a finite-dimensional vector space, specified by its
   dimension,  together with an endomorphism of this vector space, specified by
@@ -161,7 +159,7 @@
     [4X[25Xgap>[125X [27Xidz := IdentityMorphism( z );[127X[104X
     [4X[28X<(1)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xidz( B.1 );[127X[104X
-    [4X[28X<A zero, identity morphism in Category of matrices over Q>[128X[104X
+    [4X[28X<A morphism in Category of matrices over Q>[128X[104X
     [4X[25Xgap>[125X [27Xidz.1 = idz( B.1 );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XDirectSum( z, z );[127X[104X
@@ -515,6 +513,11 @@
     [4X[28XQ * q[128X[104X
   [4X[32X[104X
   
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XA := MatrixCategory( Q : overhead := false );[127X[104X
+    [4X[28XCategory of matrices over Q[128X[104X
+  [4X[32X[104X
+  
   [33X[0;0YConsider [23X\mathbb{Q}q[123X as an algebroid [23XB[123X with one object [23X1[123X and morphisms given
   by [23X\mathbb{Q}q[123X.[133X
   
@@ -630,14 +633,8 @@
   
   [33X[0;0YLet  [23XA[123X  be  the  category with objects the natural numbers and morphisms the
   matrices  with  coefficients in [23X\mathbb{Q}[123X. We use it as a skeletal model of
-  the category of finite dimension vector spaces.[133X
-  
-  [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XA := MatrixCategory( Q );[127X[104X
-    [4X[28XCategory of matrices over Q[128X[104X
-  [4X[32X[104X
-  
-  [33X[0;0YLet [23XH[123X be the category of functors from [23XB[123X to [23XA[123X.[133X
+  the  category  of  finite  dimension vector spaces. Let [23XH[123X be the category of
+  functors from [23XB[123X to [23XA[123X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XH := FunctorCategory( B, A :[127X[104X
@@ -663,7 +660,7 @@
     [4X[25Xgap>[125X [27Xidz := IdentityMorphism( z );[127X[104X
     [4X[28X<(1)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xidz( B.1 );[127X[104X
-    [4X[28X<A zero, identity morphism in Category of matrices over Q>[128X[104X
+    [4X[28X<A morphism in Category of matrices over Q>[128X[104X
     [4X[25Xgap>[125X [27XDirectSum( z, z );[127X[104X
     [4X[28X<(1)->0; (t)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xz = DirectSum(z,z);[127X[104X
@@ -1516,6 +1513,14 @@
   [1X1.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[101X
   
   [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY[102X [32X global variable[133X
+  
+  [1X1.4-2 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY[101X
+  
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY[102X [32X global variable[133X
+  
+  [1X1.4-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS[101X
+  
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS[102X [32X global variable[133X
   
   
   [1X1.5 [33X[0;0YAttributes[133X[101X

@@ -59,6 +59,8 @@
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X82DAD7BC7B29DB19">1.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X8419DC22823A1085">1.4-2 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7A653D37804B9DE5">1.4-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1.html#X7C701DBF7BAE649A">1.5 <span class="Heading">Attributes</span></a>
 </span>
@@ -117,11 +119,17 @@ Q
 Q * q
 </pre></div>
 
-<p>Out of this path algebra construct the algebroid (actually the algebra) <span class="Math">B</span> that is obtained as the quotient of the path algebra modulo the ideal <span class="Math">(t^3 - 1)</span>.</p>
+<p>Out of this path algebra construct the algebroid (actually the algebra) <span class="Math">B</span> that is obtained as the quotient of the path algebra modulo the ideal <span class="Math">(t^3 - 1)</span>. Let <span class="Math">A</span> be the category of matrices as a skeletal model for the category of finite dimensional vector spaces over <span class="Math">\mathbb{Q}</span>. Its objects are non-negative integers and its morphisms are matrices with coefficients in <span class="Math">\mathbb{Q}</span>.</p>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := Algebroid( Qq, [ Qq.t^3 - Qq.1 ] );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := MatrixCategory( Q : overhead := false );</span>
+Category of matrices over Q
+</pre></div>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := Algebroid( Qq, [ Qq.t^3 - Qq.1 ] : range_of_HomStructure := A );</span>
 Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RelationsOfAlgebroid( B );</span>
 [ (1)-[1*(t*t*t) - 1*(1)]-&gt;(1) ]
@@ -211,14 +219,6 @@ HopfAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations
 (1)-[{ 1*(t*t) }]-&gt;(1)
 </pre></div>
 
-<p>Let <span class="Math">A</span> be the category of matrices as a skeletal model for the category of finite dimensional vector spaces over <span class="Math">\mathbb{Q}</span>. Its objects are non-negative integers and its morphisms are matrices with coefficients in <span class="Math">\mathbb{Q}</span>.</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := MatrixCategory( Q );</span>
-Category of matrices over Q
-</pre></div>
-
 <p>Construct the category <span class="Math">H</span> of functors from <span class="Math">B</span> to <span class="Math">A</span>. An object in this category is a pair consisting of a finite-dimensional vector space, specified by its dimension, together with an endomorphism of this vector space, specified by a square matrix.</p>
 
 
@@ -246,7 +246,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz := IdentityMorphism( z );</span>
 &lt;(1)-&gt;0x0&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz( B.1 );</span>
-&lt;A zero, identity morphism in Category of matrices over Q&gt;
+&lt;A morphism in Category of matrices over Q&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz.1 = idz( B.1 );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DirectSum( z, z );</span>
@@ -614,6 +614,12 @@ Q
 Q * q
 </pre></div>
 
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := MatrixCategory( Q : overhead := false );</span>
+Category of matrices over Q
+</pre></div>
+
 <p>Consider <span class="Math">\mathbb{Q}q</span> as an algebroid <span class="Math">B</span> with one object <span class="Math">1</span> and morphisms given by <span class="Math">\mathbb{Q}q</span>.</p>
 
 
@@ -732,15 +738,7 @@ HopfAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) )
 (1)-[-1*(t)]-&gt;(1)
 </pre></div>
 
-<p>Let <span class="Math">A</span> be the category with objects the natural numbers and morphisms the matrices with coefficients in <span class="Math">\mathbb{Q}</span>. We use it as a skeletal model of the category of finite dimension vector spaces.</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := MatrixCategory( Q );</span>
-Category of matrices over Q
-</pre></div>
-
-<p>Let <span class="Math">H</span> be the category of functors from <span class="Math">B</span> to <span class="Math">A</span>.</p>
+<p>Let <span class="Math">A</span> be the category with objects the natural numbers and morphisms the matrices with coefficients in <span class="Math">\mathbb{Q}</span>. We use it as a skeletal model of the category of finite dimension vector spaces. Let <span class="Math">H</span> be the category of functors from <span class="Math">B</span> to <span class="Math">A</span>.</p>
 
 
 <div class="example"><pre>
@@ -769,7 +767,7 @@ RightQuiver( "q(1)[t:1-&gt;1]" ) ) ), Category of matrices over Q )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz := IdentityMorphism( z );</span>
 &lt;(1)-&gt;0x0&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz( B.1 );</span>
-&lt;A zero, identity morphism in Category of matrices over Q&gt;
+&lt;A morphism in Category of matrices over Q&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DirectSum( z, z );</span>
 &lt;(1)-&gt;0; (t)-&gt;0x0&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z = DirectSum(z,z);</span>
@@ -1648,6 +1646,16 @@ given by the above data
 <h5>1.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CAP_INTERNAL_METHOD_NAME_LIST_FOR_FUNCTOR_CATEGORY</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
+<p><a id="X8419DC22823A1085" name="X8419DC22823A1085"></a></p>
+
+<h5>1.4-2 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
+<p><a id="X7A653D37804B9DE5" name="X7A653D37804B9DE5"></a></p>
+
+<h5>1.4-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
 <p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
 
 <h4>1.5 <span class="Heading">Attributes</span></h4>
