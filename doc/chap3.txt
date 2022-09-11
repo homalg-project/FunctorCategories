@@ -77,103 +77,21 @@
     [4X[25Xgap>[125X [27XV := FinQuivers.V;[127X[104X
     [4X[28X<A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( V );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0 }, { } )[128X[104X
     [4X[25Xgap>[125X [27XA := FinQuivers.A;[127X[104X
     [4X[28X<A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( A );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 1 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0, 1 }, { 0 := [ 0, 1 ] } )[128X[104X
     [4X[25Xgap>[125X [27XT := TerminalObject( FinQuivers );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( T );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0 } ⱶ[ 0 ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0 }, { 0 := [ 0, 0 ] } )[128X[104X
     [4X[25Xgap>[125X [27XG := CreateQuiver( 3, [ 0,1, 0,1, 1,2, 2,1, 2,2 ] );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( G );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 1, 2, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 1, 1, 2, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0, 1, 2 },[128X[104X
+    [4X[28X  { 0 := [ 0, 1 ], 1 := [ 0, 1 ], 2 := [ 1, 2 ],[128X[104X
+    [4X[28X    3 := [ 2, 1 ], 4 := [ 2, 2 ] } )[128X[104X
     [4X[25Xgap>[125X [27Xglobal_G := HomStructure( T, G );[127X[104X
     [4X[28X|1|[128X[104X
     [4X[25Xgap>[125X [27XDisplay( global_G );[127X[104X
@@ -181,28 +99,7 @@
     [4X[25Xgap>[125X [27Xdiscrete := DirectProduct( G, V );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( discrete );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X∅[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X∅ ⱶ[  ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0, 1, 2 }, { } )[128X[104X
     [4X[25Xgap>[125X [27Xglobal_discrete := HomStructure( T, discrete );[127X[104X
     [4X[28X|0|[128X[104X
     [4X[25Xgap>[125X [27XDisplay( global_discrete );[127X[104X
@@ -210,28 +107,9 @@
     [4X[25Xgap>[125X [27Xcomplete := Exponential( V, G );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( complete );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 8 } ⱶ[ 0, 1, 2, 0, 1, 2, 0, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 8 } ⱶ[ 0, 0, 0, 1, 1, 1, 2, 2, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0, 1, 2 },[128X[104X
+    [4X[28X  { 0 := [ 0, 0 ], 1 := [ 1, 0 ], 2 := [ 2, 0 ], 3 := [ 0, 1 ], 4 := [ 1, 1 ],[128X[104X
+    [4X[28X    5 := [ 2, 1 ], 6 := [ 0, 2 ], 7 := [ 1, 2 ], 8 := [ 2, 2 ] } )[128X[104X
     [4X[25Xgap>[125X [27Xglobal_complete := HomStructure( T, complete );[127X[104X
     [4X[28X|3|[128X[104X
     [4X[25Xgap>[125X [27XDisplay( global_complete );[127X[104X
@@ -239,28 +117,9 @@
     [4X[25Xgap>[125X [27XGA := DirectProduct( G, A );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( GA );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0,..., 5 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 1, 2, 2 ]→ { 0,..., 5 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 4, 4, 5, 4, 5 ]→ { 0,..., 5 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0,..., 5 },[128X[104X
+    [4X[28X  { 0 := [ 0, 4 ], 1 := [ 0, 4 ], 2 := [ 1, 5 ],[128X[104X
+    [4X[28X    3 := [ 2, 4 ], 4 := [ 2, 5 ] } )[128X[104X
     [4X[25Xgap>[125X [27XhomAG := HomStructure( A, G );[127X[104X
     [4X[28X|5|[128X[104X
     [4X[25Xgap>[125X [27XDisplay( homAG );[127X[104X
@@ -268,36 +127,18 @@
     [4X[25Xgap>[125X [27Xarrows := Exponential( A, G );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( arrows );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 44 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 44 } ⱶ[ 0, 0, 0, 3, 3, 3, 6, 6, 6,[128X[104X
-    [4X[28X                 0, 0, 0, 3, 3, 3, 6, 6, 6,[128X[104X
-    [4X[28X                 2, 2, 2, 5, 5, 5, 8, 8, 8,[128X[104X
-    [4X[28X                 1, 1, 1, 4, 4, 4, 7, 7, 7,[128X[104X
-    [4X[28X                 2, 2, 2, 5, 5, 5, 8, 8, 8 ]→ { 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 44 } ⱶ[ 3, 4, 5, 3, 4, 5, 3, 4, 5,[128X[104X
-    [4X[28X                 3, 4, 5, 3, 4, 5, 3, 4, 5,[128X[104X
-    [4X[28X                 3, 4, 5, 3, 4, 5, 3, 4, 5,[128X[104X
-    [4X[28X                 6, 7, 8, 6, 7, 8, 6, 7, 8,[128X[104X
-    [4X[28X                 6, 7, 8, 6, 7, 8, 6, 7, 8 ]→ { 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0,..., 8 },[128X[104X
+    [4X[28X  { 0 := [ 0, 3 ], 1 := [ 0, 4 ], 2 := [ 0, 5 ], 3 := [ 3, 3 ], 4 := [ 3, 4 ],[128X[104X
+    [4X[28X    5 := [ 3, 5 ], 6 := [ 6, 3 ], 7 := [ 6, 4 ], 8 := [ 6, 5 ], 9 := [ 0, 3 ],[128X[104X
+    [4X[28X    10 := [ 0, 4 ], 11 := [ 0, 5 ], 12 := [ 3, 3 ], 13 := [ 3, 4 ],[128X[104X
+    [4X[28X    14 := [ 3, 5 ], 15 := [ 6, 3 ], 16 := [ 6, 4 ], 17 := [ 6, 5 ],[128X[104X
+    [4X[28X    18 := [ 2, 3 ], 19 := [ 2, 4 ], 20 := [ 2, 5 ], 21 := [ 5, 3 ],[128X[104X
+    [4X[28X    22 := [ 5, 4 ], 23 := [ 5, 5 ], 24 := [ 8, 3 ], 25 := [ 8, 4 ],[128X[104X
+    [4X[28X    26 := [ 8, 5 ], 27 := [ 1, 6 ], 28 := [ 1, 7 ], 29 := [ 1, 8 ],[128X[104X
+    [4X[28X    30 := [ 4, 6 ], 31 := [ 4, 7 ], 32 := [ 4, 8 ], 33 := [ 7, 6 ],[128X[104X
+    [4X[28X    34 := [ 7, 7 ], 35 := [ 7, 8 ], 36 := [ 2, 6 ], 37 := [ 2, 7 ],[128X[104X
+    [4X[28X    38 := [ 2, 8 ], 39 := [ 5, 6 ], 40 := [ 5, 7 ], 41 := [ 5, 8 ],[128X[104X
+    [4X[28X    42 := [ 8, 6 ], 43 := [ 8, 7 ], 44 := [ 8, 8 ] } )[128X[104X
     [4X[25Xgap>[125X [27Xglobal_arrows := HomStructure( T, arrows );[127X[104X
     [4X[28X|5|[128X[104X
     [4X[25Xgap>[125X [27XDisplay( global_arrows );[127X[104X
@@ -310,14 +151,6 @@
     [4X[28X[128X[104X
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X∅ ⱶ[  ]→ { 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
     [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
@@ -332,41 +165,14 @@
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X∅ ⱶ[  ]→ ∅[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
     [4X[25Xgap>[125X [27XIsEpimorphism( prj_discrete );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XDisplay( Exponential( T, G ) );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 2, 1, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 1, 1, 1, 2, 2 ]→ { 0, 1, 2 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0, 1, 2 },[128X[104X
+    [4X[28X  { 0 := [ 0, 1 ], 1 := [ 0, 1 ], 2 := [ 2, 1 ],[128X[104X
+    [4X[28X    3 := [ 1, 2 ], 4 := [ 2, 2 ] } )[128X[104X
     [4X[25Xgap>[125X [27Xt := UniversalMorphismIntoTerminalObject( V );[127X[104X
     [4X[28X<A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( t );[127X[104X
@@ -375,14 +181,6 @@
     [4X[28X[128X[104X
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
     [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
@@ -394,14 +192,6 @@
     [4X[28X[128X[104X
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X{ 0,..., 4 } ⱶ[ 3, 3, 5, 7, 8 ]→ { 0,..., 8 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
     [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
@@ -416,14 +206,6 @@
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X{ 0,..., 8 } ⱶ[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]→ { 0,..., 8 }[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
     [4X[25Xgap>[125X [27XIsEpimorphism( emb_complete );[127X[104X
@@ -437,14 +219,6 @@
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
     [4X[25Xgap>[125X [27Xt := FinQuivers.t;[127X[104X
@@ -456,41 +230,16 @@
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X∅ ⱶ[  ]→ { 0 }[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA morphism in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XA morphism in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
     [4X[28XA morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
     [4X[25Xgap>[125X [27Xomega := SubobjectClassifier( FinQuivers );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( omega );[127X[104X
-    [4X[28XImage of <(V)>:[128X[104X
-    [4X[28X{ 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of <(A)>:[128X[104X
-    [4X[28X{ 0,..., 4 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(s)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 1, 0, 1, 1 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XImage of (A)-[(t)]->(V):[128X[104X
-    [4X[28X{ 0,..., 4 } ⱶ[ 0, 0, 1, 1, 1 ]→ { 0, 1 }[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in PreSheaves( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ), SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in FiniteCocompletion( FreeCategory([128X[104X
-    [4X[28XRightQuiver( "q(V,A)[s:V->A,t:V->A]" ) ) )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
-    [4X[28X[128X[104X
-    [4X[28XAn object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )[128X[104X
-    [4X[28Xgiven by the above data[128X[104X
+    [4X[28X( { 0, 1 },[128X[104X
+    [4X[28X  { 0 := [ 0, 0 ], 1 := [ 1, 0 ], 2 := [ 0, 1 ],[128X[104X
+    [4X[28X    3 := [ 1, 1 ], 4 := [ 1, 1 ] } )[128X[104X
+    [4X[25Xgap>[125X [27XHomStructure( omega, omega );[127X[104X
+    [4X[28X|39|[128X[104X
   [4X[32X[104X
   
   
