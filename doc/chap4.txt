@@ -34,7 +34,7 @@
     [4X[28Xwhich constructively[128X[104X
     [4X[28X* IsEquippedWithHomomorphismStructure[128X[104X
     [4X[28X* IsLinearCategoryOverCommutativeRing[128X[104X
-    [4X[28X* IsCodistributiveCocartesianCategory[128X[104X
+    [4X[28X* IsCodistributiveCategory[128X[104X
     [4X[28X* IsBicartesianClosedCategory[128X[104X
     [4X[28X* IsBicartesianCoclosedCategory[128X[104X
     [4X[28X* IsAbelianCategoryWithEnoughInjectives[128X[104X
