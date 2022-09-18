@@ -1448,23 +1448,17 @@
   [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
   Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
   
-  [1X1.2-5 ValuesOnAllObjects[101X
+  [1X1.2-5 ValuesOfFunctor[101X
   
-  [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3XF[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
+  [33X[1;0Y[29X[2XValuesOfFunctor[102X( [3XF[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya pair of lists[133X
   
-  [33X[0;0YReturns the values of the functor [3XF[103X in a functor category [3XHom[103X on all objects
-  of the source category of [3XHom[103X.[133X
+  [33X[0;0YThe  input  is  functor  [3XF[103X  in a functor category [3XHom[103X. The output is pair of
+  lists.  The  first  is the list of values of the functor [3XF[103X on all objects of
+  the  source category of [3XHom[103X. The second is the list of values of the functor
+  [3XF[103X on all *generating* morphisms of the source category of [3XHom[103X.[133X
   
-  [1X1.2-6 ValuesOnAllGeneratingMorphisms[101X
-  
-  [33X[1;0Y[29X[2XValuesOnAllGeneratingMorphisms[102X( [3XF[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturns  the  values  of  the  functor  [3XF[103X  in  a functor category [3XHom[103X on all
-  morphisms of the source category.[133X
-  
-  [1X1.2-7 ValuesOnAllObjects[101X
+  [1X1.2-6 ValuesOnAllObjects[101X
   
   [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xeta[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list[133X

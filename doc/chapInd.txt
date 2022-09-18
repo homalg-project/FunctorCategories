@@ -75,9 +75,8 @@
       for IsCategoryOfQuivers 3.2-1 
       for IsFiniteCocompletion 2.2-1 
       for IsFiniteCompletion 4.2-1 
-  [2XValuesOnAllGeneratingMorphisms[102X, for IsObjectInFunctorCategory 1.2-6 
-  [2XValuesOnAllObjects[102X, for IsMorphismInFunctorCategory 1.2-7 
-      for IsObjectInFunctorCategory 1.2-5 
+  [2XValuesOfFunctor[102X, for IsObjectInFunctorCategory 1.2-5 
+  [2XValuesOnAllObjects[102X, for IsMorphismInFunctorCategory 1.2-6 
   [2XWeakDirectSumDecomposition[102X, for IsObjectInFunctorCategory 1.2-2 
   [2XYonedaComposition[102X, for IsCapCategory 1.5-14 
   [2XYonedaEmbedding[102X, for IsCapCategory 1.5-11 
