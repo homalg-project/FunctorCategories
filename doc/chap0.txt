@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.09-19
+                                   2022.09-20
   
   
                                19 September 2022
@@ -68,20 +68,22 @@
       1.4-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS
     1.5 [33X[0;0YAttributes[133X
       1.5-1 Source
-      1.5-2 Range
-      1.5-3 OppositeOfSource
-      1.5-4 UnderlyingCapTwoCategoryCell
-      1.5-5 IndecProjectiveObjects
-      1.5-6 IndecInjectiveObjects
-      1.5-7 SimpleObjects
-      1.5-8 IsomorphismOntoCategoryOfQuiverRepresentations
-      1.5-9 IsomorphismFromCategoryOfQuiverRepresentations
-      1.5-10 NerveTruncatedInDegree2
-      1.5-11 YonedaEmbedding
-      1.5-12 YonedaFibration
-      1.5-13 YonedaProjection
-      1.5-14 YonedaComposition
-      1.5-15 SievesOfPathsToTruth
+      1.5-2 Source
+      1.5-3 Range
+      1.5-4 Range
+      1.5-5 OppositeOfSource
+      1.5-6 UnderlyingCapTwoCategoryCell
+      1.5-7 IndecProjectiveObjects
+      1.5-8 IndecInjectiveObjects
+      1.5-9 SimpleObjects
+      1.5-10 IsomorphismOntoCategoryOfQuiverRepresentations
+      1.5-11 IsomorphismFromCategoryOfQuiverRepresentations
+      1.5-12 NerveTruncatedInDegree2
+      1.5-13 YonedaEmbedding
+      1.5-14 YonedaFibration
+      1.5-15 YonedaProjection
+      1.5-16 YonedaComposition
+      1.5-17 SievesOfPathsToTruth
     1.6 [33X[0;0YConstructors[133X
       1.6-1 PreSheaves
       1.6-2 CategoryOfInternalCategories
@@ -151,6 +153,8 @@
   6 [33X[0;0YTools[133X
     6.1 [33X[0;0YTools for quivers[133X
       6.1-1 DefiningPairOfAQuiver
+  7 [33X[0;0YPrecompilation[133X
+    7.1 [33X[0;0YPrecompiling the category of finite quivers[133X
   
   
   [32X
