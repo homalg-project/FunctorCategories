@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.09-20
+                                   2022.09-21
   
   
-                               19 September 2022
+                               20 September 2022
   
   
                                 Mohamed Barakat
@@ -150,11 +150,8 @@
       5.5-2 IsCellInAbelianClosure
       5.5-3 IsObjectInAbelianClosure
       5.5-4 IsMorphismInAbelianClosure
-  6 [33X[0;0YTools[133X
-    6.1 [33X[0;0YTools for quivers[133X
-      6.1-1 DefiningPairOfAQuiver
-  7 [33X[0;0YPrecompilation[133X
-    7.1 [33X[0;0YPrecompiling the category of finite quivers[133X
+  6 [33X[0;0YPrecompilation[133X
+    6.1 [33X[0;0YPrecompiling the category of finite quivers[133X
   
   
   [32X
