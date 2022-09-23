@@ -10,7 +10,7 @@ SetPackageInfo( rec(
 
 PackageName := "FunctorCategories",
 Subtitle := "Categories of functors",
-Version := "2022.09-28",
+Version := "2022.09-29",
 
 Date := "23/09/2022",
 Date := "23/09/2022",
