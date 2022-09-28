@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.09-35
+                                   2022.09-36
   
   
-                               26 September 2022
+                               28 September 2022
   
   
                                 Mohamed Barakat
@@ -84,6 +84,7 @@
       1.5-15 YonedaProjection
       1.5-16 YonedaComposition
       1.5-17 SievesOfPathsToTruth
+      1.5-18 RadicalFunctor
     1.6 [33X[0;0YConstructors[133X
       1.6-1 PreSheaves
       1.6-2 CategoryOfInternalCategories

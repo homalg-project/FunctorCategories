@@ -1793,6 +1793,15 @@
   C[123X the element [23Xx \in P(c)[123X to its [21Xpaths to truth[121X [23Xf: a \to c[123X translating [23Xx[123X into
   [23Xf(x) \in Q(a) \subseteq P(a)[123X.[133X
   
+  [1X1.5-18 RadicalFunctor[101X
+  
+  [33X[1;0Y[29X[2XRadicalFunctor[102X( [3XH[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YThe  input  is a Hom-category [3XH[103X[10X:=Hom(B,C)[110X, where [10XB[110X is a f.p. algebroid and [10XC[110X
+  is  a  matrix  category  over some homalg field [10XK[110X. The output is the radical
+  endofunctor on [3XH[103X.[133X
+  
   
   [1X1.6 [33X[0;0YConstructors[133X[101X
   

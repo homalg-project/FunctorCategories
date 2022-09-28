@@ -84,6 +84,7 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7B5163DA7DE45534">1.5-15 YonedaProjection</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X7A16E3987B0DFFA3">1.5-16 YonedaComposition</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X82711C717CCF1E46">1.5-17 SievesOfPathsToTruth</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1_mj.html#X85C0BF8385F4D979">1.5-18 RadicalFunctor</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1_mj.html#X86EC0F0A78ECBC10">1.6 <span class="Heading">Constructors</span></a>
 </span>
@@ -1924,6 +1925,15 @@ SkeletalFinSets ) given by the above data
 <p>Returns: a monomorphisms in a Hom-category of functors</p>
 
 <p>The input is a monomorphism <var class="Arg">iota</var>:<span class="SimpleMath">\(Q \to P\)</span> in the category of presheaves with values in <code class="code">RangeCategoryOfHomomorphismStructure</code>(<span class="SimpleMath">\(C\)</span>) on the finitely presented category <span class="SimpleMath">\(C:=\)</span><code class="code">OppositeFpCategory</code>(<code class="code">Source</code>(<span class="SimpleMath">\(P\)</span>)) with finite <span class="SimpleMath">\(\mathrm{Hom}\)</span>-sets. The output is the morphism from <span class="SimpleMath">\(P\)</span> to the <code class="code">SieveFunctor</code>(<span class="SimpleMath">\(C\)</span>) mapping for each <span class="SimpleMath">\(c \in C\)</span> the element <span class="SimpleMath">\(x \in P(c)\)</span> to its "paths to truth" <span class="SimpleMath">\(f: a \to c\)</span> translating <span class="SimpleMath">\(x\)</span> into <span class="SimpleMath">\(f(x) \in Q(a) \subseteq P(a)\)</span>.</p>
+
+<p><a id="X85C0BF8385F4D979" name="X85C0BF8385F4D979"></a></p>
+
+<h5>1.5-18 RadicalFunctor</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RadicalFunctor</code>( <var class="Arg">H</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
+
+<p>The input is a Hom-category <var class="Arg">H</var><code class="code">:=Hom(B,C)</code>, where <code class="code">B</code> is a f.p. algebroid and <code class="code">C</code> is a matrix category over some homalg field <code class="code">K</code>. The output is the radical endofunctor on <var class="Arg">H</var>.</p>
 
 <p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 
