@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.09-38
+                                   2022.09-39
   
   
-                               30 September 2022
+                                 1 October 2022
   
   
                                 Mohamed Barakat
@@ -90,7 +90,7 @@
       1.6-2 CategoryOfInternalCategories
       1.6-3 AsObjectInFunctorCategory
       1.6-4 AsMorphismInFunctorCategoryByValues
-  2 [33X[0;0YFinite cocompletion of a finitely presented category[133X
+  2 [33X[0;0YFinite cocompletion of a finitely presented (linear) category[133X
     2.1 [33X[0;0YConstructors[133X
     2.2 [33X[0;0YAttributes[133X
       2.2-1 UnderlyingCategory
@@ -125,7 +125,7 @@
       3.6-2 IsCellInCategoryOfQuivers
       3.6-3 IsObjectInCategoryOfQuivers
       3.6-4 IsMorphismInCategoryOfQuivers
-  4 [33X[0;0YFinite completion of a finitely presented category[133X
+  4 [33X[0;0YFinite completion of a finitely presented (linear) category[133X
     4.1 [33X[0;0YConstructors[133X
     4.2 [33X[0;0YAttributes[133X
       4.2-1 UnderlyingCategory
@@ -138,7 +138,7 @@
       4.6-2 IsCellInFiniteCompletion
       4.6-3 IsObjectInFiniteCompletion
       4.6-4 IsMorphismInFiniteCompletion
-  5 [33X[0;0YFree Abelian category of a finitely presented category[133X
+  5 [33X[0;0YFree Abelian category of a finitely presented linear category[133X
     5.1 [33X[0;0YConstructors[133X
       5.1-1 AbelianClosure
     5.2 [33X[0;0YAttributes[133X
