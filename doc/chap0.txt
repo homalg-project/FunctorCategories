@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.09-39
+                                   2022.10-01
   
   
-                                 1 October 2022
+                                 3 October 2022
   
   
                                 Mohamed Barakat
@@ -68,8 +68,8 @@
       1.4-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS
     1.5 [33X[0;0YAttributes[133X
       1.5-1 Source
-      1.5-2 Source
-      1.5-3 Range
+      1.5-2 Range
+      1.5-3 Source
       1.5-4 Range
       1.5-5 OppositeOfSource
       1.5-6 UnderlyingCapTwoCategoryCell

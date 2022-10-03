@@ -62,13 +62,13 @@
       for IsCapCategory, IsHomalgRing 1.6-1 
   [2XQuiverOfCategoryOfQuivers[102X 3.4-1 
   [2XRadicalFunctor[102X, for IsFunctorCategory 1.5-18 
-  [2XRange[102X, for IsFunctorCategory 1.5-3 
+  [2XRange[102X, for IsFunctorCategory 1.5-2 
       for IsObjectInFunctorCategory 1.5-4 
   [2XSievesOfPathsToTruth[102X, for IsFunctorCategory, IsMorphismInFunctorCategory 1.5-17 
       for IsMorphismInFunctorCategory 1.5-17 
   [2XSimpleObjects[102X, for IsFunctorCategory 1.5-9 
   [2XSource[102X, for IsFunctorCategory 1.5-1 
-      for IsObjectInFunctorCategory 1.5-2 
+      for IsObjectInFunctorCategory 1.5-3 
   [2XSubobject[102X, for IsObjectInCategoryOfQuivers, IsList 3.1-5 
       for IsObjectInCategoryOfQuivers, IsList, IsList 3.1-4 
   [2XSvgString[102X, for IsCellInCategoryOfQuivers 3.2-4 
