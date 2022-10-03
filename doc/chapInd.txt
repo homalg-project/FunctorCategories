@@ -4,7 +4,9 @@
   
   [2XAbelianClosure[102X, for IsAlgebroid 5.1-1 
   [2XApplyMorphismInFunctorCategoryToObject[102X, for IsFunctorCategory, IsMorphismInFunctorCategory, IsCapCategoryObject 1.2-4 
+  [2XApplyMorphismInPreSheafCategoryToObject[102X, for IsPreSheafCategory, IsMorphismInPreSheafCategory, IsCapCategoryObject 6.2-7 
   [2XApplyObjectInFunctorCategoryToObject[102X, for IsFunctorCategory, IsObjectInFunctorCategory, IsCapCategoryObject 1.2-3 
+  [2XApplyObjectInPreSheafCategoryToObject[102X, for IsPreSheafCategory, IsObjectInPreSheafCategory, IsCapCategoryObject 6.2-5 
   [2XArrows[102X, for IsObjectInCategoryOfQuivers 3.2-3 
   [2XAsMorphismInFunctorCategory[102X, for IsCapNaturalTransformation 1.6-4 
       for IsObjectInFunctorCategory, IsFunction, IsObjectInFunctorCategory 1.6-4 
@@ -19,6 +21,13 @@
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_FUNCTOR_CATEGORY_WITH_DUALS[102X 1.4-3 
   [2XCategoryOfInternalCategories[102X, for IsCapCategory 1.6-2 
   [2XCategoryOfQuiversEnrichedOver[102X, for IsCapCategory 5.1-1 
+  [2XCreatePreSheaf[102X, for IsCapCategory, IsRecord, IsRecord 6.3-1 
+      for IsCapFunctor 6.3-1 
+  [2XCreatePreSheafMorphism[102X, for IsCapNaturalTransformation 6.3-2 
+      for IsObjectInPreSheafCategory, IsList, IsObjectInPreSheafCategory 6.3-2 
+      for IsObjectInPreSheafCategory, IsRecord, IsObjectInPreSheafCategory 6.3-2 
+  [2XCreatePreSheafMorphismByFunction[102X, for IsObjectInPreSheafCategory, IsFunction, IsObjectInPreSheafCategory 6.3-2 
+  [2XCreatePreSheafMorphismByValues[102X, for IsPreSheafCategory, IsObjectInPreSheafCategory, IsList, IsObjectInPreSheafCategory 6.3-1 
   [2XCreateQuiver[102X, for IsCategoryOfQuivers, IsInt, IsList 3.1-1 
       for IsInt, IsList 3.1-2 
   [2XCreateQuiverMorphism[102X, for IsObjectInCategoryOfQuivers, IsList, IsList, IsObjectInCategoryOfQuivers 3.1-3 
@@ -40,6 +49,7 @@
   [2XIsCellInFiniteCocompletion[102X, for IsCapCategoryCell 2.5-2 
   [2XIsCellInFiniteCompletion[102X, for IsCapCategoryCell 4.6-2 
   [2XIsCellInFunctorCategory[102X, for IsCapCategoryCell andIsAttributeStoringRep 1.3-2 
+  [2XIsCellInPreSheafCategory[102X, for IsCapCategoryCell 6.1-2 
   [2XIsFiniteCocompletion[102X, for IsCapCategory 2.5-1 
   [2XIsFiniteCompletion[102X, for IsCapCategory 4.6-1 
   [2XIsFunctorCategory[102X, for IsCapCategory andIsAttributeStoringRep 1.3-1 
@@ -48,46 +58,56 @@
   [2XIsMorphismInFiniteCocompletion[102X, for IsCellInFiniteCocompletion andIsCapCategoryMorphism 2.5-4 
   [2XIsMorphismInFiniteCompletion[102X, for IsCellInFiniteCompletion andIsCapCategoryMorphism 4.6-4 
   [2XIsMorphismInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryMorphism 1.3-4 
+  [2XIsMorphismInPreSheafCategory[102X, for IsCellInPreSheafCategory andIsCapCategoryMorphism 6.1-4 
   [2XIsObjectInAbelianClosure[102X, for IsCellInAbelianClosure andIsCapCategoryObject 5.5-3 
   [2XIsObjectInCategoryOfQuivers[102X, for IsCellInCategoryOfQuivers andIsCapCategoryObject 3.6-3 
   [2XIsObjectInFiniteCocompletion[102X, for IsCellInFiniteCocompletion andIsCapCategoryObject 2.5-3 
   [2XIsObjectInFiniteCompletion[102X, for IsCellInFiniteCompletion andIsCapCategoryObject 4.6-3 
   [2XIsObjectInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryObject 1.3-3 
+  [2XIsObjectInPreSheafCategory[102X, for IsCellInPreSheafCategory andIsCapCategoryObject 6.1-3 
   [2XIsomorphismFromCategoryOfQuiverRepresentations[102X, for IsFunctorCategory 1.5-11 
   [2XIsomorphismOntoCategoryOfQuiverRepresentations[102X, for IsFunctorCategory 1.5-10 
-  [2XNerveTruncatedInDegree2[102X, for IsCapCategory 1.5-12 
+  [2XIsPreSheafCategory[102X, for IsCapCategory 6.1-1 
+  [2XNerveTruncatedInDegree2[102X, for IsCapCategory 6.2-9 
   [2XOppositeOfSource[102X, for IsFunctorCategory 1.5-5 
+  [2XPreSheafCategory[102X, for IsCapCategory 6.3-3 
   [2XPreSheaves[102X, for IsCapCategory 1.6-1 
       for IsCapCategory, IsCapCategory 1.6-1 
       for IsCapCategory, IsHomalgRing 1.6-1 
   [2XQuiverOfCategoryOfQuivers[102X 3.4-1 
-  [2XRadicalFunctor[102X, for IsFunctorCategory 1.5-18 
+  [2XRadicalFunctor[102X, for IsFunctorCategory 1.5-17 
   [2XRange[102X, for IsFunctorCategory 1.5-2 
       for IsObjectInFunctorCategory 1.5-4 
-  [2XSievesOfPathsToTruth[102X, for IsFunctorCategory, IsMorphismInFunctorCategory 1.5-17 
-      for IsMorphismInFunctorCategory 1.5-17 
+      for IsObjectInPreSheafCategory 6.2-4 
+      for IsPreSheafCategory 6.2-2 
+  [2XSievesOfPathsToTruth[102X, for IsFunctorCategory, IsMorphismInFunctorCategory 1.5-16 
+      for IsMorphismInFunctorCategory 1.5-16 
   [2XSimpleObjects[102X, for IsFunctorCategory 1.5-9 
   [2XSource[102X, for IsFunctorCategory 1.5-1 
       for IsObjectInFunctorCategory 1.5-3 
+      for IsObjectInPreSheafCategory 6.2-3 
+      for IsPreSheafCategory 6.2-1 
   [2XSubobject[102X, for IsObjectInCategoryOfQuivers, IsList 3.1-5 
       for IsObjectInCategoryOfQuivers, IsList, IsList 3.1-4 
   [2XSvgString[102X, for IsCellInCategoryOfQuivers 3.2-4 
   [2XUnderlyingCapTwoCategoryCell[102X, for IsCellInFunctorCategory 1.5-6 
+      for IsCellInPreSheafCategory 6.2-6 
   [2XUnderlyingCategory[102X, for IsAbelianClosure 5.2-1 
       for IsCategoryOfQuivers 3.2-1 
       for IsFiniteCocompletion 2.2-1 
       for IsFiniteCompletion 4.2-1 
   [2XValuesOfFunctor[102X, for IsObjectInFunctorCategory 1.2-5 
   [2XValuesOnAllObjects[102X, for IsMorphismInFunctorCategory 1.2-6 
+      for IsMorphismInPreSheafCategory 6.2-8 
   [2XWeakDirectSumDecomposition[102X, for IsObjectInFunctorCategory 1.2-2 
-  [2XYonedaComposition[102X, for IsCapCategory 1.5-16 
-  [2XYonedaEmbedding[102X, for IsCapCategory 1.5-13 
+  [2XYonedaComposition[102X, for IsCapCategory 1.5-15 
+  [2XYonedaEmbedding[102X, for IsCapCategory 1.5-12 
   [2XYonedaEmbeddingOfUnderlyingCategory[102X, for IsAbelianClosure 5.2-2 
       for IsCategoryOfQuivers 3.2-2 
       for IsFiniteCocompletion 2.2-2 
       for IsFiniteCompletion 4.2-2 
-  [2XYonedaFibration[102X, for IsCapCategory 1.5-14 
-  [2XYonedaProjection[102X, for IsCapCategory 1.5-15 
+  [2XYonedaFibration[102X, for IsCapCategory 1.5-13 
+  [2XYonedaProjection[102X, for IsCapCategory 1.5-14 
   
   
   -------------------------------------------------------
