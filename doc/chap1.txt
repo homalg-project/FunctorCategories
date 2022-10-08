@@ -17,30 +17,23 @@
     [4X[28Xq(1)[t:1->1][128X[104X
   [4X[32X[104X
   
-  [33X[0;0YConstruct the path algebra [23X\mathbb{Q}q[123X of this quiver over [23X\mathbb{Q}[123X. It is
-  isomorphic to the polynomial algebra [23X\mathbb{Q}[t][123X.[133X
+  [33X[0;0YConstruct  the  free  [23X\mathbb{Q}[123X-algebra  [23XA[123X  of  [23Xq[123X.  It is isomorphic to the
+  polynomial algebra [23X\mathbb{Q}[t][123X.[133X
   
   [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XF := FreeCategory( q );[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(1)[t:1->1]" ) )[128X[104X
     [4X[25Xgap>[125X [27XQ := HomalgFieldOfRationals( );[127X[104X
     [4X[28XQ[128X[104X
-    [4X[25Xgap>[125X [27XQq := PathAlgebra( Q, q );[127X[104X
-    [4X[28XQ * q[128X[104X
+    [4X[25Xgap>[125X [27XQF := Q[F];[127X[104X
+    [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) )[128X[104X
   [4X[32X[104X
   
-  [33X[0;0YOut  of  this  path algebra construct the algebroid (actually the algebra) [23XB[123X
-  that is obtained as the quotient of the path algebra modulo the ideal [23X(t^3 -
-  1)[123X.  Let  [23XA[123X be the category of matrices as a skeletal model for the category
-  of  finite  dimensional  vector  spaces  over  [23X\mathbb{Q}[123X.  Its  objects are
-  non-negative  integers  and  its morphisms are matrices with coefficients in
-  [23X\mathbb{Q}[123X.[133X
+  [33X[0;0YOut  of  this  path  algebra construct the algebra [23XB[123X that is obtained as the
+  quotient modulo the ideal [23X\langle t^3 - 1 \rangle[123X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XA := MatrixCategory( Q : overhead := false );[127X[104X
-    [4X[28XCategory of matrices over Q[128X[104X
-  [4X[32X[104X
-  
-  [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XB := Algebroid( Qq, [ Qq.t^3 - Qq.1 ] : range_of_HomStructure := A );[127X[104X
+    [4X[25Xgap>[125X [27XB := QF / [ QF.t^3 - IdentityMorphism( QF.1 ) ];[127X[104X
     [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations[128X[104X
     [4X[25Xgap>[125X [27XRelationsOfAlgebroid( B );[127X[104X
     [4X[28X[ (1)-[1*(t*t*t) - 1*(1)]->(1) ][128X[104X
@@ -131,6 +124,16 @@
     [4X[28X(1)-[{ 1*(t*t) }]->(1)[128X[104X
   [4X[32X[104X
   
+  [33X[0;0YLet  [23XA[123X  be  the range category of the homomorphism structure of [23XB[123X. It is the
+  matrix  category  over  [23X\mathbb{Q}[123X.  Its objects are natural numbers and its
+  morphisms  the  matrices  with  coefficients  in  [23X\mathbb{Q}[123X. We use it as a
+  skeletal model of the category of finite dimension vector spaces.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XA := RangeCategoryOfHomomorphismStructure( B );[127X[104X
+    [4X[28XCategory of matrices over Q[128X[104X
+  [4X[32X[104X
+  
   [33X[0;0YConstruct the category [23XH[123X of functors from [23XB[123X to [23XA[123X. An object in this category
   is  a pair consisting of a finite-dimensional vector space, specified by its
   dimension,  together with an endomorphism of this vector space, specified by
@@ -159,7 +162,7 @@
     [4X[25Xgap>[125X [27Xidz := IdentityMorphism( z );[127X[104X
     [4X[28X<(1)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xidz( B.1 );[127X[104X
-    [4X[28X<A morphism in Category of matrices over Q>[128X[104X
+    [4X[28X<A zero, identity morphism in Category of matrices over Q>[128X[104X
     [4X[25Xgap>[125X [27Xidz.1 = idz( B.1 );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XDirectSum( z, z );[127X[104X
@@ -504,25 +507,15 @@
     [4X[28Xq(1)[t:1->1][128X[104X
   [4X[32X[104X
   
-  [33X[0;0YConstruct the path algebra [23X\mathbb{Q}q[123X of [23Xq[123X.[133X
+  [33X[0;0YConstruct  the  free  [23X\mathbb{Q}[123X-algebra  [23XB[123X  of  [23Xq[123X.  It is isomorphic to the
+  polynomial algebra [23X\mathbb{Q}[t][123X.[133X
   
   [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XF := FreeCategory( q );[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(1)[t:1->1]" ) )[128X[104X
     [4X[25Xgap>[125X [27XQ := HomalgFieldOfRationals( );[127X[104X
     [4X[28XQ[128X[104X
-    [4X[25Xgap>[125X [27XQq := PathAlgebra( Q, q );[127X[104X
-    [4X[28XQ * q[128X[104X
-  [4X[32X[104X
-  
-  [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XA := MatrixCategory( Q : overhead := false );[127X[104X
-    [4X[28XCategory of matrices over Q[128X[104X
-  [4X[32X[104X
-  
-  [33X[0;0YConsider [23X\mathbb{Q}q[123X as an algebroid [23XB[123X with one object [23X1[123X and morphisms given
-  by [23X\mathbb{Q}q[123X.[133X
-  
-  [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XB := Algebroid( Qq );[127X[104X
+    [4X[25Xgap>[125X [27XB := Q[F];[127X[104X
     [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) )[128X[104X
   [4X[32X[104X
   
@@ -633,8 +626,14 @@
   
   [33X[0;0YLet  [23XA[123X  be  the  category with objects the natural numbers and morphisms the
   matrices  with  coefficients in [23X\mathbb{Q}[123X. We use it as a skeletal model of
-  the  category  of  finite  dimension vector spaces. Let [23XH[123X be the category of
-  functors from [23XB[123X to [23XA[123X.[133X
+  the category of finite dimension vector spaces.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XA := MatrixCategory( Q );[127X[104X
+    [4X[28XCategory of matrices over Q[128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YLet [23XH[123X be the category of functors from [23XB[123X to [23XA[123X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XH := FunctorCategory( B, A :[127X[104X
@@ -660,7 +659,7 @@
     [4X[25Xgap>[125X [27Xidz := IdentityMorphism( z );[127X[104X
     [4X[28X<(1)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xidz( B.1 );[127X[104X
-    [4X[28X<A morphism in Category of matrices over Q>[128X[104X
+    [4X[28X<A zero, identity morphism in Category of matrices over Q>[128X[104X
     [4X[25Xgap>[125X [27XDirectSum( z, z );[127X[104X
     [4X[28X<(1)->0; (t)->0x0>[128X[104X
     [4X[25Xgap>[125X [27Xz = DirectSum(z,z);[127X[104X

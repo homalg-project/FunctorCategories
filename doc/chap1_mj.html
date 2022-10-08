@@ -112,27 +112,23 @@
 q(1)[t:1-&gt;1]
 </pre></div>
 
-<p>Construct the path algebra <span class="SimpleMath">\(\mathbb{Q}q\)</span> of this quiver over <span class="SimpleMath">\(\mathbb{Q}\)</span>. It is isomorphic to the polynomial algebra <span class="SimpleMath">\(\mathbb{Q}[t]\)</span>.</p>
+<p>Construct the free <span class="SimpleMath">\(\mathbb{Q}\)</span>-algebra <span class="SimpleMath">\(A\)</span> of <span class="SimpleMath">\(q\)</span>. It is isomorphic to the polynomial algebra <span class="SimpleMath">\(\mathbb{Q}[t]\)</span>.</p>
 
 
 <div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := FreeCategory( q );</span>
+FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Q := HomalgFieldOfRationals( );</span>
 Q
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Qq := PathAlgebra( Q, q );</span>
-Q * q
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QF := Q[F];</span>
+Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) )
 </pre></div>
 
-<p>Out of this path algebra construct the algebroid (actually the algebra) <span class="SimpleMath">\(B\)</span> that is obtained as the quotient of the path algebra modulo the ideal <span class="SimpleMath">\((t^3 - 1)\)</span>. Let <span class="SimpleMath">\(A\)</span> be the category of matrices as a skeletal model for the category of finite dimensional vector spaces over <span class="SimpleMath">\(\mathbb{Q}\)</span>. Its objects are non-negative integers and its morphisms are matrices with coefficients in <span class="SimpleMath">\(\mathbb{Q}\)</span>.</p>
+<p>Out of this path algebra construct the algebra <span class="SimpleMath">\(B\)</span> that is obtained as the quotient modulo the ideal <span class="SimpleMath">\(\langle t^3 - 1 \rangle\)</span>.</p>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := MatrixCategory( Q : overhead := false );</span>
-Category of matrices over Q
-</pre></div>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := Algebroid( Qq, [ Qq.t^3 - Qq.1 ] : range_of_HomStructure := A );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := QF / [ QF.t^3 - IdentityMorphism( QF.1 ) ];</span>
 Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RelationsOfAlgebroid( B );</span>
 [ (1)-[1*(t*t*t) - 1*(1)]-&gt;(1) ]
@@ -222,6 +218,14 @@ HopfAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations
 (1)-[{ 1*(t*t) }]-&gt;(1)
 </pre></div>
 
+<p>Let <span class="SimpleMath">\(A\)</span> be the range category of the homomorphism structure of <span class="SimpleMath">\(B\)</span>. It is the matrix category over <span class="SimpleMath">\(\mathbb{Q}\)</span>. Its objects are natural numbers and its morphisms the matrices with coefficients in <span class="SimpleMath">\(\mathbb{Q}\)</span>. We use it as a skeletal model of the category of finite dimension vector spaces.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := RangeCategoryOfHomomorphismStructure( B );</span>
+Category of matrices over Q
+</pre></div>
+
 <p>Construct the category <span class="SimpleMath">\(H\)</span> of functors from <span class="SimpleMath">\(B\)</span> to <span class="SimpleMath">\(A\)</span>. An object in this category is a pair consisting of a finite-dimensional vector space, specified by its dimension, together with an endomorphism of this vector space, specified by a square matrix.</p>
 
 
@@ -249,7 +253,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz := IdentityMorphism( z );</span>
 &lt;(1)-&gt;0x0&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz( B.1 );</span>
-&lt;A morphism in Category of matrices over Q&gt;
+&lt;A zero, identity morphism in Category of matrices over Q&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz.1 = idz( B.1 );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DirectSum( z, z );</span>
@@ -607,27 +611,15 @@ true
 q(1)[t:1-&gt;1]
 </pre></div>
 
-<p>Construct the path algebra <span class="SimpleMath">\(\mathbb{Q}q\)</span> of <span class="SimpleMath">\(q\)</span>.</p>
+<p>Construct the free <span class="SimpleMath">\(\mathbb{Q}\)</span>-algebra <span class="SimpleMath">\(B\)</span> of <span class="SimpleMath">\(q\)</span>. It is isomorphic to the polynomial algebra <span class="SimpleMath">\(\mathbb{Q}[t]\)</span>.</p>
 
 
 <div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := FreeCategory( q );</span>
+FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Q := HomalgFieldOfRationals( );</span>
 Q
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Qq := PathAlgebra( Q, q );</span>
-Q * q
-</pre></div>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := MatrixCategory( Q : overhead := false );</span>
-Category of matrices over Q
-</pre></div>
-
-<p>Consider <span class="SimpleMath">\(\mathbb{Q}q\)</span> as an algebroid <span class="SimpleMath">\(B\)</span> with one object <span class="SimpleMath">\(1\)</span> and morphisms given by <span class="SimpleMath">\(\mathbb{Q}q\)</span>.</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := Algebroid( Qq );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := Q[F];</span>
 Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) )
 </pre></div>
 
@@ -741,7 +733,15 @@ HopfAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) )
 (1)-[-1*(t)]-&gt;(1)
 </pre></div>
 
-<p>Let <span class="SimpleMath">\(A\)</span> be the category with objects the natural numbers and morphisms the matrices with coefficients in <span class="SimpleMath">\(\mathbb{Q}\)</span>. We use it as a skeletal model of the category of finite dimension vector spaces. Let <span class="SimpleMath">\(H\)</span> be the category of functors from <span class="SimpleMath">\(B\)</span> to <span class="SimpleMath">\(A\)</span>.</p>
+<p>Let <span class="SimpleMath">\(A\)</span> be the category with objects the natural numbers and morphisms the matrices with coefficients in <span class="SimpleMath">\(\mathbb{Q}\)</span>. We use it as a skeletal model of the category of finite dimension vector spaces.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := MatrixCategory( Q );</span>
+Category of matrices over Q
+</pre></div>
+
+<p>Let <span class="SimpleMath">\(H\)</span> be the category of functors from <span class="SimpleMath">\(B\)</span> to <span class="SimpleMath">\(A\)</span>.</p>
 
 
 <div class="example"><pre>
@@ -770,7 +770,7 @@ RightQuiver( "q(1)[t:1-&gt;1]" ) ) ), Category of matrices over Q )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz := IdentityMorphism( z );</span>
 &lt;(1)-&gt;0x0&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">idz( B.1 );</span>
-&lt;A morphism in Category of matrices over Q&gt;
+&lt;A zero, identity morphism in Category of matrices over Q&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DirectSum( z, z );</span>
 &lt;(1)-&gt;0; (t)-&gt;0x0&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z = DirectSum(z,z);</span>
