@@ -78,13 +78,13 @@
   
   [33X[0;0YThe target of the presheaf [3XF[103X.[133X
   
-  [1X2.2-5 ApplyObjectInPreSheafCategoryToObject[101X
+  [1X2.2-5 ValuesOnAllObjects[101X
   
-  [33X[1;0Y[29X[2XApplyObjectInPreSheafCategoryToObject[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
+  [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xeta[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya list[133X
   
-  [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding Hom-category) to the
-  cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
+  [33X[0;0YReturns the values of the presheaf morphism [3Xeta[103X on all objects of the source
+  category of presheaf category [3XPSh[103X.[133X
   
   [33X[0;0YThe 2-cell underlying the functor object [3XF_or_eta[103X.[133X
   
@@ -93,25 +93,10 @@
   [33X[1;0Y[29X[2XUnderlyingCapTwoCategoryCell[102X( [3XF_or_eta[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor or natural transformation[133X
   
-  [1X2.2-7 ApplyMorphismInPreSheafCategoryToObject[101X
-  
-  [33X[1;0Y[29X[2XApplyMorphismInPreSheafCategoryToObject[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
-  
-  [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
-  Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
-  
-  [1X2.2-8 ValuesOnAllObjects[101X
-  
-  [33X[1;0Y[29X[2XValuesOnAllObjects[102X( [3Xeta[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list[133X
-  
-  [33X[0;0YReturns the values of the presheaf morphism [3Xeta[103X on all objects of the source
-  category of presheaf category [3XPSh[103X.[133X
-  
-  [1X2.2-9 NerveTruncatedInDegree2[101X
+  [1X2.2-7 NerveTruncatedInDegree2[101X
   
   [33X[1;0Y[29X[2XNerveTruncatedInDegree2[102X( [3XB[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  [6XReturns:[106X  [33X[0;10Ya presheaf[133X
   
   [33X[0;0YThe  input  is  a  category  [3XB[103X  with  finitely  many objects equipped with a
   homomorphism   structure  with  values  in  a  finite  complete  and  finite
@@ -173,6 +158,19 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
+  [1X2.2-8 SievesOfPathsToTruth[101X
+  
+  [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3Xiota[103X ) [32X attribute[133X
+  [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3XHom[103X, [3Xiota[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya monomorphisms in a Hom-category of functors[133X
+  
+  [33X[0;0YThe  input is a monomorphism [3Xiota[103X:[23XQ \to P[123X in the category of presheaves with
+  values  in [10XRangeCategoryOfHomomorphismStructure[110X([23XC[123X) on the finitely presented
+  category  [23XC:=[123X([10XSource[110X([23XP[123X))  with  finite  [23X\mathrm{Hom}[123X-sets. The output is the
+  morphism  from [23XP[123X to the [10XSieveFunctor[110X([23XC[123X) mapping for each [23Xc \in C[123X the element
+  [23Xx \in P(c)[123X to its [21Xpaths to truth[121X [23Xf: a \to c[123X translating [23Xx[123X into [23Xf(x) \in Q(a)
+  \subseteq P(a)[123X.[133X
+  
   
   [1X2.3 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
   
@@ -203,4 +201,37 @@
   [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   [33X[0;0YThe [5XGAP[105X category of morphisms in a presheaf category.[133X
+  
+  
+  [1X2.4 [33X[0;0YGlobal variables[133X[101X
+  
+  [1X2.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY[101X
+  
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY[102X [32X global variable[133X
+  
+  [1X2.4-2 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY[101X
+  
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY[102X [32X global variable[133X
+  
+  [1X2.4-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY_WITH_DUALS[101X
+  
+  [33X[1;0Y[29X[2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY_WITH_DUALS[102X [32X global variable[133X
+  
+  
+  [1X2.5 [33X[0;0YOperations[133X[101X
+  
+  [1X2.5-1 ApplyObjectInPreSheafCategoryToObject[101X
+  
+  [33X[1;0Y[29X[2XApplyObjectInPreSheafCategoryToObject[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
+  
+  [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding Hom-category) to the
+  cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
+  
+  [1X2.5-2 ApplyMorphismInPreSheafCategoryToObject[101X
+  
+  [33X[1;0Y[29X[2XApplyMorphismInPreSheafCategoryToObject[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
+  
+  [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
+  Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
   
