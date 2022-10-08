@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>GAP (FunctorCategories) - Chapter 6: Category of presheaves of a finitely presented (linear) category</title>
+<title>GAP (FunctorCategories) - Chapter 6: Free Abelian category of a finitely presented linear category</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -20,248 +20,118 @@
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap5.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap7.html">[Next Chapter]</a>&nbsp;  </div>
 
 <p id="mathjaxlink" class="pcenter"><a href="chap6_mj.html">[MathJax on]</a></p>
-<p><a id="X81D4C147794C661B" name="X81D4C147794C661B"></a></p>
-<div class="ChapSects"><a href="chap6.html#X81D4C147794C661B">6 <span class="Heading">Category of presheaves of a finitely presented (linear) category</span></a>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X7D03633A7D98026B">6.1 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
+<p><a id="X84157F0779E7DF03" name="X84157F0779E7DF03"></a></p>
+<div class="ChapSects"><a href="chap6.html#X84157F0779E7DF03">6 <span class="Heading">Free Abelian category of a finitely presented linear category</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X86EC0F0A78ECBC10">6.1 <span class="Heading">Constructors</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X78BA10757D4A2D61">6.1-1 IsPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X87E694A77D44A1F0">6.1-2 IsCellInPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X869BBAB986FFB5D6">6.1-3 IsObjectInPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X8727C26D7CD65307">6.1-4 IsMorphismInPreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X85F4F6A184851A08">6.1-1 AbelianClosure</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X7C701DBF7BAE649A">6.2 <span class="Heading">Attributes</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X7B64D74D8667D4E2">6.2-1 Source</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X838E862B7AC83916">6.2-2 Range</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X87E3230F7D81CE6D">6.2-3 Source</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X82BBFBE97C63B781">6.2-4 Range</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X7DFFAE07828625D2">6.2-5 ApplyObjectInPreSheafCategoryToObject</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X865F04DE869EB218">6.2-6 UnderlyingCapTwoCategoryCell</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X80E2A00879D8E496">6.2-7 ApplyMorphismInPreSheafCategoryToObject</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X853357DD7DA1350B">6.2-8 ValuesOnAllObjects</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X80048E1182551690">6.2-9 NerveTruncatedInDegree2</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X85EF505278CFF5F8">6.2-1 UnderlyingCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X828EBD0E82B68958">6.2-2 YonedaEmbeddingOfUnderlyingCategory</a></span>
 </div></div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X86EC0F0A78ECBC10">6.3 <span class="Heading">Constructors</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X7DE8E16C7C2D387B">6.3 <span class="Heading">Operations</span></a>
+</span>
+</div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X7D9044767BEB1523">6.4 <span class="Heading">Global variables</span></a>
+</span>
+</div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X7D03633A7D98026B">6.5 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X7CEFF80E839359CB">6.3-1 CreatePreSheaf</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X7A7257147C250416">6.3-2 CreatePreSheafMorphism</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X8730664E78AC77BE">6.3-3 PreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X809048F787428952">6.5-1 IsAbelianClosure</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X8266DE2C84896FC8">6.5-2 IsCellInAbelianClosure</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X80040ACD7DB0C6DD">6.5-3 IsObjectInAbelianClosure</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X7C5928647B152795">6.5-4 IsMorphismInAbelianClosure</a></span>
 </div></div>
 </div>
 
-<h3>6 <span class="Heading">Category of presheaves of a finitely presented (linear) category</span></h3>
+<h3>6 <span class="Heading">Free Abelian category of a finitely presented linear category</span></h3>
 
-<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
+<p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 
-<h4>6.1 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
+<h4>6.1 <span class="Heading">Constructors</span></h4>
 
-<p><a id="X78BA10757D4A2D61" name="X78BA10757D4A2D61"></a></p>
+<p><a id="X85F4F6A184851A08" name="X85F4F6A184851A08"></a></p>
 
-<h5>6.1-1 IsPreSheafCategory</h5>
+<h5>6.1-1 AbelianClosure</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsPreSheafCategory</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AbelianClosure</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfQuiversEnrichedOver</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FiniteCocompletion</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FiniteCompletion</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FunctorCategory</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FunctorCategory</code>( <var class="Arg">B</var>, <var class="Arg">k</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Hom</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Hom</code>( <var class="Arg">B</var>, <var class="Arg">k</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> category</p>
 
-<p>The <strong class="pkg">GAP</strong> category of a presheaf category.</p>
-
-<p><a id="X87E694A77D44A1F0" name="X87E694A77D44A1F0"></a></p>
-
-<h5>6.1-2 IsCellInPreSheafCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInPreSheafCategory</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of cells in a presheaf category.</p>
-
-<p><a id="X869BBAB986FFB5D6" name="X869BBAB986FFB5D6"></a></p>
-
-<h5>6.1-3 IsObjectInPreSheafCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInPreSheafCategory</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of objects in a presheaf category.</p>
-
-<p><a id="X8727C26D7CD65307" name="X8727C26D7CD65307"></a></p>
-
-<h5>6.1-4 IsMorphismInPreSheafCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInPreSheafCategory</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of morphisms in a presheaf category.</p>
+<p>Construct an Abelian closure category. Construct the category of quivers. Construct a finite cocompletion category. Construct a finite completion category. Construct the category <code class="code">FunctorCategory(</code> <var class="Arg">B</var>, <var class="Arg">C</var> <code class="code">)</code>= <code class="code">Hom(</code> <var class="Arg">B</var>, <var class="Arg">C</var> <code class="code">)</code> of functors from the small category <var class="Arg">B</var> to the category <var class="Arg">C</var> as objects and their natural transformations as morphisms.</p>
 
 <p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
 
 <h4>6.2 <span class="Heading">Attributes</span></h4>
 
-<p><a id="X7B64D74D8667D4E2" name="X7B64D74D8667D4E2"></a></p>
+<p><a id="X85EF505278CFF5F8" name="X85EF505278CFF5F8"></a></p>
 
-<h5>6.2-1 Source</h5>
+<h5>6.2-1 UnderlyingCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Source</code>( <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p><a id="X838E862B7AC83916" name="X838E862B7AC83916"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCategory</code>( <var class="Arg">finite_cocompletion</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X828EBD0E82B68958" name="X828EBD0E82B68958"></a></p>
 
-<h5>6.2-2 Range</h5>
+<h5>6.2-2 YonedaEmbeddingOfUnderlyingCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Range</code>( <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p><a id="X87E3230F7D81CE6D" name="X87E3230F7D81CE6D"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; YonedaEmbeddingOfUnderlyingCategory</code>( <var class="Arg">finite_cocompletion</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X7DE8E16C7C2D387B" name="X7DE8E16C7C2D387B"></a></p>
 
-<h5>6.2-3 Source</h5>
+<h4>6.3 <span class="Heading">Operations</span></h4>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Source</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+<p><a id="X7D9044767BEB1523" name="X7D9044767BEB1523"></a></p>
 
-<p>The source of the presheaf <var class="Arg">F</var>.</p>
+<h4>6.4 <span class="Heading">Global variables</span></h4>
 
-<p><a id="X82BBFBE97C63B781" name="X82BBFBE97C63B781"></a></p>
+<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
 
-<h5>6.2-4 Range</h5>
+<h4>6.5 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Range</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+<p><a id="X809048F787428952" name="X809048F787428952"></a></p>
 
-<p>The target of the presheaf <var class="Arg">F</var>.</p>
+<h5>6.5-1 IsAbelianClosure</h5>
 
-<p><a id="X7DFFAE07828625D2" name="X7DFFAE07828625D2"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsAbelianClosure</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<h5>6.2-5 ApplyObjectInPreSheafCategoryToObject</h5>
+<p>The <strong class="pkg">GAP</strong> category of an Abelian closure category.</p>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyObjectInPreSheafCategoryToObject</code>( <var class="Arg">F</var>, <var class="Arg">c</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> cell</p>
+<p><a id="X8266DE2C84896FC8" name="X8266DE2C84896FC8"></a></p>
 
-<p>Apply the functor <var class="Arg">F</var> (as an object in the corresponding Hom-category) to the cell <var class="Arg">c</var>. The shorthand is <var class="Arg">F</var>(<var class="Arg">c</var>).</p>
+<h5>6.5-2 IsCellInAbelianClosure</h5>
 
-<p>The 2-cell underlying the functor object <var class="Arg">F_or_eta</var>.</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInAbelianClosure</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p><a id="X865F04DE869EB218" name="X865F04DE869EB218"></a></p>
+<p>The <strong class="pkg">GAP</strong> category of cells in an Abelian closure category.</p>
 
-<h5>6.2-6 UnderlyingCapTwoCategoryCell</h5>
+<p><a id="X80040ACD7DB0C6DD" name="X80040ACD7DB0C6DD"></a></p>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCapTwoCategoryCell</code>( <var class="Arg">F_or_eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> functor or natural transformation</p>
+<h5>6.5-3 IsObjectInAbelianClosure</h5>
 
-<p><a id="X80E2A00879D8E496" name="X80E2A00879D8E496"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInAbelianClosure</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<h5>6.2-7 ApplyMorphismInPreSheafCategoryToObject</h5>
+<p>The <strong class="pkg">GAP</strong> category of objects in an Abelian closure category.</p>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyMorphismInPreSheafCategoryToObject</code>( <var class="Arg">eta</var>, <var class="Arg">o</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Apply the natural transformation <var class="Arg">eta</var> (as an object in the corresponding Hom-category) to the object <var class="Arg">o</var>. The shorthand is <var class="Arg">eta</var>(<var class="Arg">o</var>).</p>
+<p><a id="X7C5928647B152795" name="X7C5928647B152795"></a></p>
 
-<p><a id="X853357DD7DA1350B" name="X853357DD7DA1350B"></a></p>
+<h5>6.5-4 IsMorphismInAbelianClosure</h5>
 
-<h5>6.2-8 ValuesOnAllObjects</h5>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInAbelianClosure</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ValuesOnAllObjects</code>( <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a list</p>
-
-<p>Returns the values of the presheaf morphism <var class="Arg">eta</var> on all objects of the source category of presheaf category <var class="Arg">PSh</var>.</p>
-
-<p><a id="X80048E1182551690" name="X80048E1182551690"></a></p>
-
-<h5>6.2-9 NerveTruncatedInDegree2</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NerveTruncatedInDegree2</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
-
-<p>The input is a category <var class="Arg">B</var> with finitely many objects equipped with a homomorphism structure with values in a finite complete and finite cocomplete category <var class="Arg">H</var>. The output is the nerve of <var class="Arg">B</var> truncated in degree <span class="Math">2</span>, as an object in the category of presheaves on <code class="code">SimplicialCategoryTruncatedInDegree</code>(<span class="Math">2</span>) with values in <var class="Arg">H</var>.</p>
-
-<p>We compute the nerve of the full subcategory of the simplicial category <span class="Math">\Delta</span> on the objects <span class="Math">[0], [1], [2]</span>.</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta2 := SimplicialCategoryTruncatedInDegree( 2 );</span>
-FreeCategory( RightQuiver(
-  "Delta(C0,C1,C2)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1,
-                   is:C2-&gt;C1,it:C2-&gt;C1,
-                   ps:C1-&gt;C2,pt:C1-&gt;C2,mu:C1-&gt;C2]" ) ) / relations
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RelationsOfFpCategory( Delta2 );</span>
-[ [ (s*id), (C0) ], [ (t*id), (C0) ],
-  [ (ps*is), (C1) ], [ (pt*it), (C1) ],
-  [ (is*id), (it*id) ], [ (pt*is), (id*t) ],
-  [ (ps*it), (id*s) ], [ (s*pt), (t*ps) ],
-  [ (s*mu), (s*ps) ], [ (t*mu), (t*pt) ],
-  [ (mu*is), (C1) ], [ (mu*it), (C1) ] ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Size( Delta2 );</span>
-31
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := NerveTruncatedInDegree2( Delta2 );</span>
-&lt;An object in PreSheaves( FreeCategory( RightQuiver(
-  "Delta(C0,C1,C2)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1,
-                   is:C2-&gt;C1,it:C2-&gt;C1,
-                   ps:C1-&gt;C2,pt:C1-&gt;C2,mu:C1-&gt;C2]" ) ) / relations,
- SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( N );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.C0;</span>
-|3|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.C0 );</span>
-{ 0, 1, 2 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.C1;</span>
-|31|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.C1 );</span>
-{ 0,..., 30 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.C2;</span>
-|393|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.C2 );</span>
-{ 0,..., 392 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.id;</span>
-|3| → |31|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.id );</span>
-{ 0, 1, 2 } ⱶ[ 0, 5, 21 ]→ { 0,..., 30 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IntCat := CategoryOfInternalCategories(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                  RangeCategoryOfHomomorphismStructure( Delta2 ) );</span>
-FullSubcategoryByObjectMembershipFunction(
-PreSheaves( FreeCategory( RightQuiver(
-  "Delta(C0,C1,C2)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1,
-                   is:C2-&gt;C1,it:C2-&gt;C1,
-                   ps:C1-&gt;C2,pt:C1-&gt;C2,mu:C1-&gt;C2]" ) ) / relations,
-SkeletalFinSets ), ObjectMembershipFunction )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( N / IntCat );</span>
-true
-</pre></div>
-
-<p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
-
-<h4>6.3 <span class="Heading">Constructors</span></h4>
-
-<p><a id="X7CEFF80E839359CB" name="X7CEFF80E839359CB"></a></p>
-
-<h5>6.3-1 CreatePreSheaf</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreatePreSheaf</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreatePreSheaf</code>( <var class="Arg">B</var>, <var class="Arg">rec_images_of_objects</var>, <var class="Arg">rec_images_of_morphisms</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreatePreSheafMorphismByValues</code>( <var class="Arg">B</var>, <var class="Arg">images_of_objects</var>, <var class="Arg">images_of_morphisms</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a presheaf</p>
-
-<p>Turn the functor <code class="code"><var class="Arg">F</var>:<var class="Arg">B</var>^op</code> <span class="Math">\to</span> <code class="code">C</code> into an object in the category of functors <code class="code"><var class="Arg">PSh</var> := PreSheaves( <var class="Arg">B</var>, C )</code>. An alternative input is the source category <var class="Arg">B</var> and two defining records <var class="Arg">rec_images_of_objects</var> and <var class="Arg">rec_images_of_morphisms</var> of <var class="Arg">F</var>. Another alternative input is the source category <var class="Arg">B</var> and two defining lists <var class="Arg">images_of_objects</var> and <var class="Arg">images_of_morphisms</var> of <var class="Arg">F</var>. The order of their entries must correspond to that of the vertices and arrows of the underlying quiver.</p>
-
-<p>For the convenience of the user the following input is also valid: If <var class="Arg">images_of_objects</var> is a list of nonnegative integers, <var class="Arg">images_of_morphisms</var> is a list of matrices, and <span class="Math">k:=</span> <code class="code">CommutativeRingOfLinearCategory</code>( B ) is a field then the two lists are interpreted as objects and morphisms in <code class="code">MatrixCategory</code>( <span class="Math">k</span> ), respectively.</p>
-
-<p><a id="X7A7257147C250416" name="X7A7257147C250416"></a></p>
-
-<h5>6.3-2 CreatePreSheafMorphism</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreatePreSheafMorphism</code>( <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreatePreSheafMorphism</code>( <var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreatePreSheafMorphism</code>( <var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreatePreSheafMorphismByFunction</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Turn the natrual transformation <var class="Arg">eta</var>:<span class="Math">F \to G</span> into a morphism <code class="code"><var class="Arg">U</var> := AsObjectInFunctorCategory( F )</code> <span class="Math">\to</span> <code class="code"><var class="Arg">V</var> := AsObjectInFunctorCategory( G )</code> in the category of functors <code class="code"><var class="Arg">Hom</var> := Hom( B, C )</code>, where <code class="code">B := Source( F ) = Source( G )</code> and <code class="code">C := Range( F ) = Range( G )</code>.</p>
-
-<p>An alternative input is the triple (<var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var>), where <var class="Arg">e</var> is a defining record of <var class="Arg">eta</var>.</p>
-
-<p>Another alternative input is the triple (<var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var>), where <var class="Arg">e</var> is a defining list of <var class="Arg">eta</var>.</p>
-
-<p><a id="X8730664E78AC77BE" name="X8730664E78AC77BE"></a></p>
-
-<h5>6.3-3 PreSheafCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PreSheafCategory</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
-
-<p>Construct a presheaf category.</p>
+<p>The <strong class="pkg">GAP</strong> category of morphisms in an Abelian closure category.</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap5.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap7.html">[Next Chapter]</a>&nbsp;  </div>

@@ -85,10 +85,9 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap1.html#X86EC0F0A78ECBC10">1.6 <span class="Heading">Constructors</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X86C6EE397F8CFCAA">1.6-1 PreSheaves</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7838509887AE558D">1.6-2 CategoryOfInternalCategories</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X847A54648022F937">1.6-3 AsObjectInFunctorCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7F21687E82C92CEA">1.6-4 AsMorphismInFunctorCategoryByValues</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7838509887AE558D">1.6-1 CategoryOfInternalCategories</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X847A54648022F937">1.6-2 AsObjectInFunctorCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap1.html#X7F21687E82C92CEA">1.6-3 AsMorphismInFunctorCategoryByValues</a></span>
 </div></div>
 </div>
 
@@ -1872,27 +1871,16 @@ SkeletalFinSets ) given by the above data
 
 <h4>1.6 <span class="Heading">Constructors</span></h4>
 
-<p><a id="X86C6EE397F8CFCAA" name="X86C6EE397F8CFCAA"></a></p>
-
-<h5>1.6-1 PreSheaves</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PreSheaves</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PreSheaves</code>( <var class="Arg">B</var>, <var class="Arg">k</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; PreSheaves</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
-
-<p>Construct the category <code class="code">Hom( <var class="Arg">B</var>^op, <var class="Arg">C</var> )</code> of functors from the opposite of the small category <var class="Arg">B</var> to the category <var class="Arg">C</var> as objects and their natural transformations as morphisms.</p>
-
 <p><a id="X7838509887AE558D" name="X7838509887AE558D"></a></p>
 
-<h5>1.6-2 CategoryOfInternalCategories</h5>
+<h5>1.6-1 CategoryOfInternalCategories</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfInternalCategories</code>( <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Construct the category of categories internal to the monoidal or cartesian category <var class="Arg">C</var>. The output the full subcategory of the subcategory of functors from the <code class="code">SimplicialCategoryTruncatedInDegree</code>(2) into <var class="Arg">C</var> for which each such functor is the nerve truncated in degree <span class="Math">2</span> of a category internal to <var class="Arg">C</var>.</p>
 
 <p><a id="X847A54648022F937" name="X847A54648022F937"></a></p>
 
-<h5>1.6-3 AsObjectInFunctorCategory</h5>
+<h5>1.6-2 AsObjectInFunctorCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsObjectInFunctorCategory</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsObjectInFunctorCategory</code>( <var class="Arg">B</var>, <var class="Arg">rec_images_of_objects</var>, <var class="Arg">rec_images_of_morphisms</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
@@ -1905,7 +1893,7 @@ SkeletalFinSets ) given by the above data
 
 <p><a id="X7F21687E82C92CEA" name="X7F21687E82C92CEA"></a></p>
 
-<h5>1.6-4 AsMorphismInFunctorCategoryByValues</h5>
+<h5>1.6-3 AsMorphismInFunctorCategoryByValues</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsMorphismInFunctorCategoryByValues</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var>, <var class="Arg">arg4</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AsMorphismInFunctorCategory</code>( <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
