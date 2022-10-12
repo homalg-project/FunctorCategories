@@ -21,13 +21,14 @@
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY[102X 2.4-1 
   [2XCategoryOfInternalCategories[102X, for IsCapCategory 1.5-1 
   [2XCategoryOfQuiversEnrichedOver[102X, for IsCapCategory 6.1-1 
-  [2XCreatePreSheaf[102X, for IsCapCategory, IsRecord, IsRecord 2.1-2 
+  [2XCreatePreSheaf[102X, for IsCapCategory, IsList, IsList 2.1-2 
+      for IsCapCategory, IsRecord, IsRecord 2.1-2 
       for IsCapFunctor 2.1-2 
   [2XCreatePreSheafMorphism[102X, for IsCapNaturalTransformation 2.1-3 
       for IsObjectInPreSheafCategory, IsList, IsObjectInPreSheafCategory 2.1-3 
       for IsObjectInPreSheafCategory, IsRecord, IsObjectInPreSheafCategory 2.1-3 
   [2XCreatePreSheafMorphismByFunction[102X, for IsObjectInPreSheafCategory, IsFunction, IsObjectInPreSheafCategory 2.1-3 
-  [2XCreatePreSheafMorphismByValues[102X, for IsPreSheafCategory, IsObjectInPreSheafCategory, IsList, IsObjectInPreSheafCategory 2.1-2 
+  [2XCreatePreSheafMorphismByValues[102X, for IsPreSheafCategory, IsObjectInPreSheafCategory, IsList, IsObjectInPreSheafCategory 2.1-3 
   [2XCreateQuiver[102X, for IsCategoryOfQuivers, IsInt, IsList 4.1-1 
       for IsInt, IsList 4.1-2 
   [2XCreateQuiverMorphism[102X, for IsObjectInCategoryOfQuivers, IsList, IsList, IsObjectInCategoryOfQuivers 4.1-3 
