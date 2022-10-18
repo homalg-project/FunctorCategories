@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.10-13
+                                   2022.10-14
   
   
-                                14 October 2022
+                                18 October 2022
   
   
                                 Mohamed Barakat
@@ -72,12 +72,6 @@
       1.4-9 YonedaFibration
       1.4-10 YonedaProjection
       1.4-11 YonedaComposition
-      1.4-12 IndecProjectiveObjects
-      1.4-13 IndecInjectiveObjects
-      1.4-14 SimpleObjects
-      1.4-15 IsomorphismOntoCategoryOfQuiverRepresentations
-      1.4-16 IsomorphismFromCategoryOfQuiverRepresentations
-      1.4-17 RadicalFunctor
     1.5 [33X[0;0YConstructors[133X
       1.5-1 CategoryOfInternalCategories
       1.5-2 AsObjectInFunctorCategory
@@ -108,6 +102,10 @@
     2.5 [33X[0;0YOperations[133X
       2.5-1 ApplyObjectInPreSheafCategoryToObject
       2.5-2 ApplyMorphismInPreSheafCategoryToObject
+    2.6 [33X[0;0YProjective and Injective Resolutions[133X
+      2.6-1 IndecomposableProjectiveObjects
+      2.6-2 IndecomposableInjectiveObjects
+      2.6-3 SimpleObjects
   3 [33X[0;0YFinite cocompletion of a finitely presented (linear) category[133X
     3.1 [33X[0;0YConstructors[133X
     3.2 [33X[0;0YAttributes[133X

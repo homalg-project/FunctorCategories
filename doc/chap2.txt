@@ -237,3 +237,170 @@
   [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
   Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
   
+  
+  [1X2.6 [33X[0;0YProjective and Injective Resolutions[133X[101X
+  
+  [1X2.6-1 IndecomposableProjectiveObjects[101X
+  
+  [33X[1;0Y[29X[2XIndecomposableProjectiveObjects[102X( [3XPSh[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya list of objects[133X
+  
+  [33X[0;0YThe  input  is a category of presheaves [3XPSh[103X of an admissible [23Xk[123X-algebroid for
+  some field [23Xk[123X. The output is the list of indecomposable projective objects in
+  [3XPSh[103X up to isomorphism.[133X
+  
+  [1X2.6-2 IndecomposableInjectiveObjects[101X
+  
+  [33X[1;0Y[29X[2XIndecomposableInjectiveObjects[102X( [3XPSh[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya list of objects[133X
+  
+  [33X[0;0YThe  input  is a category of presheaves [3XPSh[103X of an admissible [23Xk[123X-algebroid for
+  some  field [23Xk[123X. The output is the list of indecomposable injective objects in
+  [3XPSh[103X up to isomorphism.[133X
+  
+  [1X2.6-3 SimpleObjects[101X
+  
+  [33X[1;0Y[29X[2XSimpleObjects[102X( [3XPSh[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya list of objects[133X
+  
+  [33X[0;0YThe  input  is a category of presheaves [3XPSh[103X of an admissible [23Xk[123X-algebroid for
+  some field [23Xk[123X. The output is the list of simple objects in [3XPSh[103X.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27Xq := RightQuiver( "q(4)[x:1->1,a:1->2,b:2->4,c:1->3,d:3->4,y:4->4]" );[127X[104X
+    [4X[28Xq(4)[x:1->1,a:1->2,b:2->4,c:1->3,d:3->4,y:4->4][128X[104X
+    [4X[25Xgap>[125X [27XF := FreeCategory( q );[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(4)[x:1->1,a:1->2,b:2->4,c:1->3,d:3->4,[128X[104X
+    [4X[28Xy:4->4]" ) )[128X[104X
+    [4X[25Xgap>[125X [27Xk := HomalgFieldOfRationals( );[127X[104X
+    [4X[28XQ[128X[104X
+    [4X[25Xgap>[125X [27XkF := k[F];[127X[104X
+    [4X[28XAlgebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1->1,a:1->2,b:2->4,[128X[104X
+    [4X[28Xc:1->3,d:3->4,y:4->4]" ) ) )[128X[104X
+    [4X[25Xgap>[125X [27XA := kF / [ kF.x^3, kF.y^2 ];[127X[104X
+    [4X[28XAlgebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1->1,a:1->2,b:2->4,[128X[104X
+    [4X[28Xc:1->3,d:3->4,y:4->4]" ) ) ) / relations[128X[104X
+    [4X[25Xgap>[125X [27XPSh := PreSheaves( A );[127X[104X
+    [4X[28XPreSheaves( Algebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1->1,[128X[104X
+    [4X[28Xa:1->2,b:2->4,c:1->3,d:3->4,y:4->4]" ) ) ) / relations, Rows( Q ) )[128X[104X
+    [4X[25Xgap>[125X [27XP := PSh.4;[127X[104X
+    [4X[28X<(1)->12, (2)->2, (3)->2, (4)->2; (x)->12x12, (a)->2x12, (b)->2x2,[128X[104X
+    [4X[28X(c)->2x12, (d)->2x2, (y)->2x2>[128X[104X
+    [4X[25Xgap>[125X [27XIsProjective( P );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( P );[127X[104X
+    [4X[28XImage of <(1)>:[128X[104X
+    [4X[28XA row module over Q of rank 12[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of <(2)>:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of <(3)>:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of <(4)>:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (1)-[{ 1*(x) }]->(1):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 12[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 12[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (1)-[{ 1*(a) }]->(2):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 12[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (2)-[{ 1*(b) }]->(4):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  1,  0 ],[128X[104X
+    [4X[28X  [  0,  1 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (1)-[{ 1*(c) }]->(3):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 12[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (3)-[{ 1*(d) }]->(4):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  1,  0 ],[128X[104X
+    [4X[28X  [  0,  1 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (4)-[{ 1*(y) }]->(4):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  0,  1 ],[128X[104X
+    [4X[28X  [  0,  0 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 2[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in PreSheaves( Algebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1->1,[128X[104X
+    [4X[28Xa:1->2,b:2->4,c:1->3,d:3->4,y:4->4]" ) ) ) / relations, Rows( Q ) ) given by[128X[104X
+    [4X[28Xthe above data[128X[104X
+    [4X[25Xgap>[125X [27XIP := InjectiveCochainResolution( P, true );[127X[104X
+    [4X[28X<An object in Cochain complexes( PreSheaves( Algebroid( Q, FreeCategory([128X[104X
+    [4X[28XRightQuiver( "q(4)[x:1->1,a:1->2,b:2->4,c:1->3,d:3->4,y:4->4]" ) ) )[128X[104X
+    [4X[28X/ relations, Rows( Q ) ) ) with active lower bound 0 and active upper[128X[104X
+    [4X[28Xbound 1>[128X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( IP ) and CohomologySupport( IP ) = [ 0 ];[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xphi := QuasiIsomorphismFromProjectiveResolution( IP, true );;[127X[104X
+    [4X[25Xgap>[125X [27XIsWellDefined( phi ) and IsQuasiIsomorphism( phi );[127X[104X
+    [4X[28Xtrue[128X[104X
+  [4X[32X[104X
+  

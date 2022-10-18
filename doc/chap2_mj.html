@@ -65,6 +65,13 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7DFFAE07828625D2">2.5-1 ApplyObjectInPreSheafCategoryToObject</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X80E2A00879D8E496">2.5-2 ApplyMorphismInPreSheafCategoryToObject</a></span>
 </div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2_mj.html#X84AC2DE079240B10">2.6 <span class="Heading">Projective and Injective Resolutions</span></a>
+</span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7A4682E180F0199E">2.6-1 IndecomposableProjectiveObjects</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7D7840CF822EEAC0">2.6-2 IndecomposableInjectiveObjects</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7FC3EAA5875031CA">2.6-3 SimpleObjects</a></span>
+</div></div>
 </div>
 
 <h3>2 <span class="Heading">Category of presheaves of a finitely presented (linear) category</span></h3>
@@ -315,6 +322,176 @@ true
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyMorphismInPreSheafCategoryToObject</code>( <var class="Arg">eta</var>, <var class="Arg">o</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Apply the natural transformation <var class="Arg">eta</var> (as an object in the corresponding Hom-category) to the object <var class="Arg">o</var>. The shorthand is <var class="Arg">eta</var>(<var class="Arg">o</var>).</p>
+
+<p><a id="X84AC2DE079240B10" name="X84AC2DE079240B10"></a></p>
+
+<h4>2.6 <span class="Heading">Projective and Injective Resolutions</span></h4>
+
+<p><a id="X7A4682E180F0199E" name="X7A4682E180F0199E"></a></p>
+
+<h5>2.6-1 IndecomposableProjectiveObjects</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IndecomposableProjectiveObjects</code>( <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a list of objects</p>
+
+<p>The input is a category of presheaves <var class="Arg">PSh</var> of an admissible <span class="SimpleMath">\(k\)</span>-algebroid for some field <span class="SimpleMath">\(k\)</span>. The output is the list of indecomposable projective objects in <var class="Arg">PSh</var> up to isomorphism.</p>
+
+<p><a id="X7D7840CF822EEAC0" name="X7D7840CF822EEAC0"></a></p>
+
+<h5>2.6-2 IndecomposableInjectiveObjects</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IndecomposableInjectiveObjects</code>( <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a list of objects</p>
+
+<p>The input is a category of presheaves <var class="Arg">PSh</var> of an admissible <span class="SimpleMath">\(k\)</span>-algebroid for some field <span class="SimpleMath">\(k\)</span>. The output is the list of indecomposable injective objects in <var class="Arg">PSh</var> up to isomorphism.</p>
+
+<p><a id="X7FC3EAA5875031CA" name="X7FC3EAA5875031CA"></a></p>
+
+<h5>2.6-3 SimpleObjects</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SimpleObjects</code>( <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a list of objects</p>
+
+<p>The input is a category of presheaves <var class="Arg">PSh</var> of an admissible <span class="SimpleMath">\(k\)</span>-algebroid for some field <span class="SimpleMath">\(k\)</span>. The output is the list of simple objects in <var class="Arg">PSh</var>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">q := RightQuiver( "q(4)[x:1-&gt;1,a:1-&gt;2,b:2-&gt;4,c:1-&gt;3,d:3-&gt;4,y:4-&gt;4]" );</span>
+q(4)[x:1-&gt;1,a:1-&gt;2,b:2-&gt;4,c:1-&gt;3,d:3-&gt;4,y:4-&gt;4]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := FreeCategory( q );</span>
+FreeCategory( RightQuiver( "q(4)[x:1-&gt;1,a:1-&gt;2,b:2-&gt;4,c:1-&gt;3,d:3-&gt;4,
+y:4-&gt;4]" ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k := HomalgFieldOfRationals( );</span>
+Q
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">kF := k[F];</span>
+Algebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1-&gt;1,a:1-&gt;2,b:2-&gt;4,
+c:1-&gt;3,d:3-&gt;4,y:4-&gt;4]" ) ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := kF / [ kF.x^3, kF.y^2 ];</span>
+Algebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1-&gt;1,a:1-&gt;2,b:2-&gt;4,
+c:1-&gt;3,d:3-&gt;4,y:4-&gt;4]" ) ) ) / relations
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PSh := PreSheaves( A );</span>
+PreSheaves( Algebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1-&gt;1,
+a:1-&gt;2,b:2-&gt;4,c:1-&gt;3,d:3-&gt;4,y:4-&gt;4]" ) ) ) / relations, Rows( Q ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P := PSh.4;</span>
+&lt;(1)-&gt;12, (2)-&gt;2, (3)-&gt;2, (4)-&gt;2; (x)-&gt;12x12, (a)-&gt;2x12, (b)-&gt;2x2,
+(c)-&gt;2x12, (d)-&gt;2x2, (y)-&gt;2x2&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsProjective( P );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( P );</span>
+Image of &lt;(1)&gt;:
+A row module over Q of rank 12
+
+Image of &lt;(2)&gt;:
+A row module over Q of rank 2
+
+Image of &lt;(3)&gt;:
+A row module over Q of rank 2
+
+Image of &lt;(4)&gt;:
+A row module over Q of rank 2
+
+Image of (1)-[{ 1*(x) }]-&gt;(1):
+Source:
+A row module over Q of rank 12
+
+Matrix:
+[ [  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ] ]
+
+Range:
+A row module over Q of rank 12
+
+A morphism in Rows( Q )
+
+Image of (1)-[{ 1*(a) }]-&gt;(2):
+Source:
+A row module over Q of rank 2
+
+Matrix:
+[ [  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0 ] ]
+
+Range:
+A row module over Q of rank 12
+
+A morphism in Rows( Q )
+
+Image of (2)-[{ 1*(b) }]-&gt;(4):
+Source:
+A row module over Q of rank 2
+
+Matrix:
+[ [  1,  0 ],
+  [  0,  1 ] ]
+
+Range:
+A row module over Q of rank 2
+
+A morphism in Rows( Q )
+
+Image of (1)-[{ 1*(c) }]-&gt;(3):
+Source:
+A row module over Q of rank 2
+
+Matrix:
+[ [  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0 ] ]
+
+Range:
+A row module over Q of rank 12
+
+A morphism in Rows( Q )
+
+Image of (3)-[{ 1*(d) }]-&gt;(4):
+Source:
+A row module over Q of rank 2
+
+Matrix:
+[ [  1,  0 ],
+  [  0,  1 ] ]
+
+Range:
+A row module over Q of rank 2
+
+A morphism in Rows( Q )
+
+Image of (4)-[{ 1*(y) }]-&gt;(4):
+Source:
+A row module over Q of rank 2
+
+Matrix:
+[ [  0,  1 ],
+  [  0,  0 ] ]
+
+Range:
+A row module over Q of rank 2
+
+A morphism in Rows( Q )
+
+An object in PreSheaves( Algebroid( Q, FreeCategory( RightQuiver( "q(4)[x:1-&gt;1,
+a:1-&gt;2,b:2-&gt;4,c:1-&gt;3,d:3-&gt;4,y:4-&gt;4]" ) ) ) / relations, Rows( Q ) ) given by
+the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IP := InjectiveCochainResolution( P, true );</span>
+&lt;An object in Cochain complexes( PreSheaves( Algebroid( Q, FreeCategory(
+RightQuiver( "q(4)[x:1-&gt;1,a:1-&gt;2,b:2-&gt;4,c:1-&gt;3,d:3-&gt;4,y:4-&gt;4]" ) ) )
+/ relations, Rows( Q ) ) ) with active lower bound 0 and active upper
+bound 1&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( IP ) and CohomologySupport( IP ) = [ 0 ];</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">phi := QuasiIsomorphismFromProjectiveResolution( IP, true );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( phi ) and IsQuasiIsomorphism( phi );</span>
+true
+</pre></div>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap3_mj.html">[Next Chapter]</a>&nbsp;  </div>
