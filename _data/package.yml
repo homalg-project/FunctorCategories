@@ -1,5 +1,5 @@
 name: FunctorCategories
-version: "2022.10-19"
+version: "2022.10-20"
 license: "GPL-2.0-or-later"
 date: 2022-10-20
 description: |
@@ -66,11 +66,11 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.10-19/FunctorCategories-2022.10-19.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.10-20/FunctorCategories-2022.10-20.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.10-19/FunctorCategories-2022.10-19.zip
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.10-20/FunctorCategories-2022.10-20.zip
 
-pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.10-19/FunctorCategories-2022.10-19.pdf
+pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.10-20/FunctorCategories-2022.10-20.pdf
 
 abstract: |
 
@@ -83,7 +83,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS22</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2022.10-19</i>
+             Version 2022.10-20</i>
      (<span class='BibYear'>2022</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/FunctorCategories">https://homalg-project.github.io/pkg/FunctorCategories</a></span>.
@@ -91,10 +91,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2022.10-19,
+    @misc{ FunctorCategories2022.10-20,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{FunctorCategories}, Categories of functors, {V}ersion
-                          2022.10-19},
+                          2022.10-20},
       month =            {Oct},
       year =             {2022},
       note =             {GAP package},
