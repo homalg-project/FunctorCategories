@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.10-22
+                                   2022.10-23
   
   
-                                21 October 2022
+                                22 October 2022
   
   
                                 Mohamed Barakat
@@ -42,40 +42,41 @@
   
   [1XContents (FunctorCategories)[101X
   
-  1 [33X[0;0YCategories of functors[133X
-    1.1 [33X[0;0YIntroduction and examples[133X
-      1.1-1 [33X[0;0YRepresentations of the cyclic groups of order 3 as a category of
+  1 [33X[0;0YCategory of functors of a finitely presented (linear) category[133X
+    1.1 [33X[0;0YConstructors[133X
+      1.1-1 FunctorCategory
+      1.1-2 CategoryOfInternalCategories
+      1.1-3 AsObjectInFunctorCategory
+      1.1-4 AsMorphismInFunctorCategoryByValues
+    1.2 [33X[0;0YAttributes[133X
+      1.2-1 Source
+      1.2-2 Range
+      1.2-3 Source
+      1.2-4 Range
+      1.2-5 OppositeOfSource
+      1.2-6 ValuesOfFunctor
+      1.2-7 ValuesOnAllObjects
+      1.2-8 UnderlyingCapTwoCategoryCell
+      1.2-9 YonedaEmbedding
+      1.2-10 YonedaEmbeddingOfOppositeOfSourceCategory
+      1.2-11 YonedaFibration
+      1.2-12 YonedaProjection
+      1.2-13 YonedaComposition
+    1.3 [33X[0;0YOperations[133X
+      1.3-1 DecomposeOnceByRandomEndomorphism
+      1.3-2 WeakDirectSumDecomposition
+      1.3-3 ApplyObjectInFunctorCategoryToObject
+      1.3-4 ApplyMorphismInFunctorCategoryToObject
+    1.4 [33X[0;0Y[5XGAP[105X Categories[133X
+      1.4-1 IsFunctorCategory
+      1.4-2 IsCellInFunctorCategory
+      1.4-3 IsObjectInFunctorCategory
+      1.4-4 IsMorphismInFunctorCategory
+    1.5 [33X[0;0YExamples[133X
+      1.5-1 [33X[0;0YRepresentations of the cyclic groups of order 3 as a category of
       functors[133X
-      1.1-2 [33X[0;0YDifferential modules as a category of functors[133X
-      1.1-3 [33X[0;0YThe category of equivariant maps as a category of functors[133X
-      1.1-4 [33X[0;0YProof of the snake lemma in a free Abelian category[133X
-      1.1-5 [33X[0;0YThe subobject classifier[133X
-    1.2 [33X[0;0YOperations[133X
-      1.2-1 DecomposeOnceByRandomEndomorphism
-      1.2-2 WeakDirectSumDecomposition
-      1.2-3 ApplyObjectInFunctorCategoryToObject
-      1.2-4 ApplyMorphismInFunctorCategoryToObject
-    1.3 [33X[0;0Y[5XGAP[105X Categories[133X
-      1.3-1 IsFunctorCategory
-      1.3-2 IsCellInFunctorCategory
-      1.3-3 IsObjectInFunctorCategory
-      1.3-4 IsMorphismInFunctorCategory
-    1.4 [33X[0;0YAttributes[133X
-      1.4-1 Source
-      1.4-2 Range
-      1.4-3 Source
-      1.4-4 Range
-      1.4-5 OppositeOfSource
-      1.4-6 ValuesOfFunctor
-      1.4-7 ValuesOnAllObjects
-      1.4-8 UnderlyingCapTwoCategoryCell
-      1.4-9 YonedaFibration
-      1.4-10 YonedaProjection
-      1.4-11 YonedaComposition
-    1.5 [33X[0;0YConstructors[133X
-      1.5-1 CategoryOfInternalCategories
-      1.5-2 AsObjectInFunctorCategory
-      1.5-3 AsMorphismInFunctorCategoryByValues
+      1.5-2 [33X[0;0YDifferential modules as a category of functors[133X
+      1.5-3 [33X[0;0YThe category of equivariant maps as a category of functors[133X
   2 [33X[0;0YCategory of presheaves of a finitely presented (linear) category[133X
     2.1 [33X[0;0YConstructors[133X
       2.1-1 PreSheaves
@@ -88,26 +89,30 @@
       2.2-4 Range
       2.2-5 ValuesOnAllObjects
       2.2-6 UnderlyingCapTwoCategoryCell
-      2.2-7 NerveTruncatedInDegree2
-      2.2-8 SievesOfPathsToTruth
-    2.3 [33X[0;0Y[5XGAP[105X Categories[133X
-      2.3-1 IsPreSheafCategory
-      2.3-2 IsCellInPreSheafCategory
-      2.3-3 IsObjectInPreSheafCategory
-      2.3-4 IsMorphismInPreSheafCategory
-    2.4 [33X[0;0YGlobal variables[133X
-      2.4-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY
-      2.4-2 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY
-      2.4-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY_WITH_DUALS
-    2.5 [33X[0;0YOperations[133X
-      2.5-1 ApplyObjectInPreSheafCategoryToObject
-      2.5-2 ApplyMorphismInPreSheafCategoryToObject
-    2.6 [33X[0;0YProjective and Injective Resolutions[133X
-      2.6-1 IndecomposableProjectiveObjects
-      2.6-2 IndecomposableInjectiveObjects
-      2.6-3 SimpleObjects
+      2.2-7 YonedaEmbeddingInPreSheafCategory
+      2.2-8 YonedaEmbeddingOfSourceCategory
+      2.2-9 IndecomposableProjectiveObjects
+      2.2-10 IndecomposableInjectiveObjects
+      2.2-11 SimpleObjects
+      2.2-12 NerveTruncatedInDegree2
+      2.2-13 SievesOfPathsToTruth
+    2.3 [33X[0;0YOperations[133X
+      2.3-1 ApplyObjectInPreSheafCategoryToObject
+      2.3-2 ApplyMorphismInPreSheafCategoryToObject
+    2.4 [33X[0;0Y[5XGAP[105X Categories[133X
+      2.4-1 IsPreSheafCategory
+      2.4-2 IsCellInPreSheafCategory
+      2.4-3 IsObjectInPreSheafCategory
+      2.4-4 IsMorphismInPreSheafCategory
+    2.5 [33X[0;0YGlobal variables[133X
+      2.5-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY
+      2.5-2 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY
+      2.5-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY_WITH_DUALS
+    2.6 [33X[0;0YExamples[133X
+      2.6-1 [33X[0;0YThe subobject classifier[133X
   3 [33X[0;0YFinite cocompletion of a finitely presented (linear) category[133X
     3.1 [33X[0;0YConstructors[133X
+      3.1-1 FiniteCocompletion
     3.2 [33X[0;0YAttributes[133X
       3.2-1 UnderlyingCategory
       3.2-2 YonedaEmbeddingOfUnderlyingCategory
@@ -116,13 +121,14 @@
       3.3-2 IsCellInFiniteCocompletion
       3.3-3 IsObjectInFiniteCocompletion
       3.3-4 IsMorphismInFiniteCocompletion
-  4 [33X[0;0YThe category of finite quivers[133X
+  4 [33X[0;0YThe elementary topos of finite quivers[133X
     4.1 [33X[0;0YConstructors[133X
-      4.1-1 CreateQuiver
+      4.1-1 CategoryOfQuiversEnrichedOver
       4.1-2 CreateQuiver
-      4.1-3 CreateQuiverMorphism
-      4.1-4 Subobject
+      4.1-3 CreateQuiver
+      4.1-4 CreateQuiverMorphism
       4.1-5 Subobject
+      4.1-6 Subobject
     4.2 [33X[0;0YAttributes[133X
       4.2-1 UnderlyingCategory
       4.2-2 YonedaEmbeddingOfUnderlyingCategory
@@ -133,12 +139,14 @@
     4.4 [33X[0;0YGlobal variables[133X
       4.4-1 QuiverOfCategoryOfQuivers
       4.4-2 FinQuivers
-    4.5 [33X[0;0YExample[133X
-    4.6 [33X[0;0Y[5XGAP[105X Categories[133X
-      4.6-1 IsCategoryOfQuivers
-      4.6-2 IsCellInCategoryOfQuivers
-      4.6-3 IsObjectInCategoryOfQuivers
-      4.6-4 IsMorphismInCategoryOfQuivers
+    4.5 [33X[0;0Y[5XGAP[105X Categories[133X
+      4.5-1 IsCategoryOfQuivers
+      4.5-2 IsCellInCategoryOfQuivers
+      4.5-3 IsObjectInCategoryOfQuivers
+      4.5-4 IsMorphismInCategoryOfQuivers
+    4.6 [33X[0;0YExample[133X
+      4.6-1 [33X[0;0YTopos operations[133X
+      4.6-2 [33X[0;0YDouble-pushout rewriting[133X
   5 [33X[0;0YCategory of copresheaves of a finitely presented (linear) category[133X
     5.1 [33X[0;0YConstructors[133X
       5.1-1 CoPreSheaves
@@ -153,25 +161,30 @@
       5.2-6 ValuesOfCoPreSheaf
       5.2-7 ValuesOnAllObjects
       5.2-8 UnderlyingCapTwoCategoryCell
-    5.3 [33X[0;0Y[5XGAP[105X Categories[133X
-      5.3-1 IsCoPreSheafCategory
-      5.3-2 IsCellInCoPreSheafCategory
-      5.3-3 IsObjectInCoPreSheafCategory
-      5.3-4 IsMorphismInCoPreSheafCategory
-    5.4 [33X[0;0YOperations[133X
-      5.4-1 ApplyObjectInCoPreSheafCategoryToObject
-      5.4-2 ApplyMorphismInCoPreSheafCategoryToObject
+      5.2-9 CoYonedaEmbedding
+      5.2-10 CoYonedaEmbeddingOfSourceCategory
+    5.3 [33X[0;0YOperations[133X
+      5.3-1 ApplyObjectInCoPreSheafCategoryToObject
+      5.3-2 ApplyMorphismInCoPreSheafCategoryToObject
+    5.4 [33X[0;0Y[5XGAP[105X Categories[133X
+      5.4-1 IsCoPreSheafCategory
+      5.4-2 IsCellInCoPreSheafCategory
+      5.4-3 IsObjectInCoPreSheafCategory
+      5.4-4 IsMorphismInCoPreSheafCategory
   6 [33X[0;0YFinite completion of a finitely presented (linear) category[133X
     6.1 [33X[0;0YConstructors[133X
+      6.1-1 FiniteCompletion
     6.2 [33X[0;0YAttributes[133X
       6.2-1 UnderlyingCategory
       6.2-2 YonedaEmbeddingOfUnderlyingCategory
-    6.3 [33X[0;0YExamples[133X
-    6.4 [33X[0;0Y[5XGAP[105X Categories[133X
-      6.4-1 IsFiniteCompletion
-      6.4-2 IsCellInFiniteCompletion
-      6.4-3 IsObjectInFiniteCompletion
-      6.4-4 IsMorphismInFiniteCompletion
+    6.3 [33X[0;0Y[5XGAP[105X Categories[133X
+      6.3-1 IsFiniteCompletion
+      6.3-2 IsCellInFiniteCompletion
+      6.3-3 IsObjectInFiniteCompletion
+      6.3-4 IsMorphismInFiniteCompletion
+    6.4 [33X[0;0YExamples[133X
+      6.4-1 [33X[0;0YThe terminal category as a finite completion of the initial
+      category[133X
   7 [33X[0;0YFree Abelian category of a finitely presented linear category[133X
     7.1 [33X[0;0YConstructors[133X
       7.1-1 AbelianClosure
@@ -183,6 +196,8 @@
       7.3-2 IsCellInAbelianClosure
       7.3-3 IsObjectInAbelianClosure
       7.3-4 IsMorphismInAbelianClosure
+    7.4 [33X[0;0YExamples[133X
+      7.4-1 [33X[0;0YProof of the snake lemma in a free Abelian category[133X
   8 [33X[0;0YPrecompilation[133X
     8.1 [33X[0;0YPrecompiling the category of finite quivers[133X
   

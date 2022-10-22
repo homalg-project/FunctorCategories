@@ -27,23 +27,28 @@
 <div class="ChapSects"><a href="chap6_mj.html#X8276E6B57E0716F7">6 <span class="Heading">Finite completion of a finitely presented (linear) category</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6_mj.html#X86EC0F0A78ECBC10">6.1 <span class="Heading">Constructors</span></a>
 </span>
-</div>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X78829EC678F32937">6.1-1 FiniteCompletion</a></span>
+</div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6_mj.html#X7C701DBF7BAE649A">6.2 <span class="Heading">Attributes</span></a>
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X841537FA840FE411">6.2-1 UnderlyingCategory</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8187C3DA8036AFEE">6.2-2 YonedaEmbeddingOfUnderlyingCategory</a></span>
 </div></div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6_mj.html#X7A489A5D79DA9E5C">6.3 <span class="Heading">Examples</span></a>
-</span>
-</div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6_mj.html#X7D03633A7D98026B">6.4 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6_mj.html#X7D03633A7D98026B">6.3 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8708E8FD80B3233B">6.4-1 IsFiniteCompletion</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X82BD845E8463A445">6.4-2 IsCellInFiniteCompletion</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7D7099DC7BFD5F27">6.4-3 IsObjectInFiniteCompletion</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7E4898968223A95B">6.4-4 IsMorphismInFiniteCompletion</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8708E8FD80B3233B">6.3-1 IsFiniteCompletion</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X82BD845E8463A445">6.3-2 IsCellInFiniteCompletion</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7D7099DC7BFD5F27">6.3-3 IsObjectInFiniteCompletion</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7E4898968223A95B">6.3-4 IsMorphismInFiniteCompletion</a></span>
+</div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6_mj.html#X7A489A5D79DA9E5C">6.4 <span class="Heading">Examples</span></a>
+</span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8061C730872FA1B0">6.4-1 <span class="Heading">The terminal category as a finite completion of the initial category</span></a>
+</span>
 </div></div>
 </div>
 
@@ -52,6 +57,16 @@
 <p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 
 <h4>6.1 <span class="Heading">Constructors</span></h4>
+
+<p><a id="X78829EC678F32937" name="X78829EC678F32937"></a></p>
+
+<h5>6.1-1 FiniteCompletion</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FiniteCompletion</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FiniteCompletion</code>( <var class="Arg">B</var>, <var class="Arg">H</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+
+<p>Construct a finite completion category.</p>
 
 <p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
 
@@ -67,9 +82,55 @@
 <h5>6.2-2 YonedaEmbeddingOfUnderlyingCategory</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; YonedaEmbeddingOfUnderlyingCategory</code>( <var class="Arg">finite_completion</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
+
+<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
+
+<h4>6.3 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
+
+<p><a id="X8708E8FD80B3233B" name="X8708E8FD80B3233B"></a></p>
+
+<h5>6.3-1 IsFiniteCompletion</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsFiniteCompletion</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of a finite completion category.</p>
+
+<p><a id="X82BD845E8463A445" name="X82BD845E8463A445"></a></p>
+
+<h5>6.3-2 IsCellInFiniteCompletion</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInFiniteCompletion</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of cells in a finite completion category.</p>
+
+<p><a id="X7D7099DC7BFD5F27" name="X7D7099DC7BFD5F27"></a></p>
+
+<h5>6.3-3 IsObjectInFiniteCompletion</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInFiniteCompletion</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of objects in a finite completion category.</p>
+
+<p><a id="X7E4898968223A95B" name="X7E4898968223A95B"></a></p>
+
+<h5>6.3-4 IsMorphismInFiniteCompletion</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInFiniteCompletion</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of morphisms in a finite completion category.</p>
+
 <p><a id="X7A489A5D79DA9E5C" name="X7A489A5D79DA9E5C"></a></p>
 
-<h4>6.3 <span class="Heading">Examples</span></h4>
+<h4>6.4 <span class="Heading">Examples</span></h4>
+
+<p><a id="X8061C730872FA1B0" name="X8061C730872FA1B0"></a></p>
+
+<h5>6.4-1 <span class="Heading">The terminal category as a finite completion of the initial category</span></h5>
 
 
 <div class="example"><pre>
@@ -143,46 +204,6 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsCongruentForMorphisms( id_z, fn_z );</span>
 true
 </pre></div>
-
-<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
-
-<h4>6.4 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
-
-<p><a id="X8708E8FD80B3233B" name="X8708E8FD80B3233B"></a></p>
-
-<h5>6.4-1 IsFiniteCompletion</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsFiniteCompletion</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of a finite completion category.</p>
-
-<p><a id="X82BD845E8463A445" name="X82BD845E8463A445"></a></p>
-
-<h5>6.4-2 IsCellInFiniteCompletion</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInFiniteCompletion</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of cells in a finite completion category.</p>
-
-<p><a id="X7D7099DC7BFD5F27" name="X7D7099DC7BFD5F27"></a></p>
-
-<h5>6.4-3 IsObjectInFiniteCompletion</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInFiniteCompletion</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of objects in a finite completion category.</p>
-
-<p><a id="X7E4898968223A95B" name="X7E4898968223A95B"></a></p>
-
-<h5>6.4-4 IsMorphismInFiniteCompletion</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInFiniteCompletion</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of morphisms in a finite completion category.</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap5_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap7_mj.html">[Next Chapter]</a>&nbsp;  </div>

@@ -40,20 +40,22 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X7900AA8E7811E71D">5.2-6 ValuesOfCoPreSheaf</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X80DE332181751B34">5.2-7 ValuesOnAllObjects</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X79010C787816D714">5.2-8 UnderlyingCapTwoCategoryCell</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X84703D9B7951CC4D">5.2-9 CoYonedaEmbedding</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X7C8CED1E7A18FB19">5.2-10 CoYonedaEmbeddingOfSourceCategory</a></span>
 </div></div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap5.html#X7D03633A7D98026B">5.3 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap5.html#X7DE8E16C7C2D387B">5.3 <span class="Heading">Operations</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X84ABD3D48297B7CE">5.3-1 IsCoPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X8703868580A3FA88">5.3-2 IsCellInCoPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X7C7AFA8B81E59606">5.3-3 IsObjectInCoPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X8192BB517A3F6AA6">5.3-4 IsMorphismInCoPreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X82D9ACBF841454BE">5.3-1 ApplyObjectInCoPreSheafCategoryToObject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X81FA3BF77B233806">5.3-2 ApplyMorphismInCoPreSheafCategoryToObject</a></span>
 </div></div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap5.html#X7DE8E16C7C2D387B">5.4 <span class="Heading">Operations</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap5.html#X7D03633A7D98026B">5.4 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X82D9ACBF841454BE">5.4-1 ApplyObjectInCoPreSheafCategoryToObject</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X81FA3BF77B233806">5.4-2 ApplyMorphismInCoPreSheafCategoryToObject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X84ABD3D48297B7CE">5.4-1 IsCoPreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X8703868580A3FA88">5.4-2 IsCellInCoPreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X7C7AFA8B81E59606">5.4-3 IsObjectInCoPreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5.html#X8192BB517A3F6AA6">5.4-4 IsMorphismInCoPreSheafCategory</a></span>
 </div></div>
 </div>
 
@@ -180,53 +182,27 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCapTwoCategoryCell</code>( <var class="Arg">F_or_eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor or natural transformation</p>
 
-<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
+<p><a id="X84703D9B7951CC4D" name="X84703D9B7951CC4D"></a></p>
 
-<h4>5.3 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
+<h5>5.2-9 CoYonedaEmbedding</h5>
 
-<p><a id="X84ABD3D48297B7CE" name="X84ABD3D48297B7CE"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CoYonedaEmbedding</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
-<h5>5.3-1 IsCoPreSheafCategory</h5>
+<p><a id="X7C8CED1E7A18FB19" name="X7C8CED1E7A18FB19"></a></p>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCoPreSheafCategory</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+<h5>5.2-10 CoYonedaEmbeddingOfSourceCategory</h5>
 
-<p>The <strong class="pkg">GAP</strong> category of copresheaf categories.</p>
-
-<p><a id="X8703868580A3FA88" name="X8703868580A3FA88"></a></p>
-
-<h5>5.3-2 IsCellInCoPreSheafCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInCoPreSheafCategory</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of cells in a copresheaf category.</p>
-
-<p><a id="X7C7AFA8B81E59606" name="X7C7AFA8B81E59606"></a></p>
-
-<h5>5.3-3 IsObjectInCoPreSheafCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInCoPreSheafCategory</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of objects in a copresheaf category.</p>
-
-<p><a id="X8192BB517A3F6AA6" name="X8192BB517A3F6AA6"></a></p>
-
-<h5>5.3-4 IsMorphismInCoPreSheafCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInCoPreSheafCategory</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
-
-<p>The <strong class="pkg">GAP</strong> category of morphisms in a copresheaf category.</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CoYonedaEmbeddingOfSourceCategory</code>( <var class="Arg">coPSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
 <p><a id="X7DE8E16C7C2D387B" name="X7DE8E16C7C2D387B"></a></p>
 
-<h4>5.4 <span class="Heading">Operations</span></h4>
+<h4>5.3 <span class="Heading">Operations</span></h4>
 
 <p><a id="X82D9ACBF841454BE" name="X82D9ACBF841454BE"></a></p>
 
-<h5>5.4-1 ApplyObjectInCoPreSheafCategoryToObject</h5>
+<h5>5.3-1 ApplyObjectInCoPreSheafCategoryToObject</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyObjectInCoPreSheafCategoryToObject</code>( <var class="Arg">F</var>, <var class="Arg">c</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> cell</p>
@@ -235,10 +211,50 @@
 
 <p><a id="X81FA3BF77B233806" name="X81FA3BF77B233806"></a></p>
 
-<h5>5.4-2 ApplyMorphismInCoPreSheafCategoryToObject</h5>
+<h5>5.3-2 ApplyMorphismInCoPreSheafCategoryToObject</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyMorphismInCoPreSheafCategoryToObject</code>( <var class="Arg">eta</var>, <var class="Arg">o</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Apply the natural transformation <var class="Arg">eta</var> (as an object in the corresponding copresheaf category) to the object <var class="Arg">o</var>. The shorthand is <var class="Arg">eta</var>(<var class="Arg">o</var>).</p>
+
+<p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
+
+<h4>5.4 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
+
+<p><a id="X84ABD3D48297B7CE" name="X84ABD3D48297B7CE"></a></p>
+
+<h5>5.4-1 IsCoPreSheafCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCoPreSheafCategory</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of copresheaf categories.</p>
+
+<p><a id="X8703868580A3FA88" name="X8703868580A3FA88"></a></p>
+
+<h5>5.4-2 IsCellInCoPreSheafCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInCoPreSheafCategory</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of cells in a copresheaf category.</p>
+
+<p><a id="X7C7AFA8B81E59606" name="X7C7AFA8B81E59606"></a></p>
+
+<h5>5.4-3 IsObjectInCoPreSheafCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInCoPreSheafCategory</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of objects in a copresheaf category.</p>
+
+<p><a id="X8192BB517A3F6AA6" name="X8192BB517A3F6AA6"></a></p>
+
+<h5>5.4-4 IsMorphismInCoPreSheafCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInCoPreSheafCategory</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of morphisms in a copresheaf category.</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap4.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap6.html">[Next Chapter]</a>&nbsp;  </div>

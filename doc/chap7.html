@@ -41,6 +41,12 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap7.html#X80040ACD7DB0C6DD">7.3-3 IsObjectInAbelianClosure</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap7.html#X7C5928647B152795">7.3-4 IsMorphismInAbelianClosure</a></span>
 </div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap7.html#X7A489A5D79DA9E5C">7.4 <span class="Heading">Examples</span></a>
+</span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap7.html#X7F77AB6C8486994A">7.4-1 <span class="Heading">Proof of the snake lemma in a free Abelian category</span></a>
+</span>
+</div></div>
 </div>
 
 <h3>7 <span class="Heading">Free Abelian category of a finitely presented linear category</span></h3>
@@ -54,19 +60,9 @@
 <h5>7.1-1 AbelianClosure</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AbelianClosure</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfQuiversEnrichedOver</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FiniteCocompletion</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FiniteCompletion</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FunctorCategory</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FunctorCategory</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FunctorCategory</code>( <var class="Arg">B</var>, <var class="Arg">k</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Hom</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Hom</code>( <var class="Arg">B</var>, <var class="Arg">k</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>
 
-<p>Construct an Abelian closure category. Construct the category of quivers. Construct a finite cocompletion category. Construct a finite completion category.</p>
-
-<p>Construct the category <code class="code">FunctorCategory(</code> <var class="Arg">B</var>, <var class="Arg">C</var> <code class="code">)</code>= <code class="code">Hom(</code> <var class="Arg">B</var>, <var class="Arg">C</var> <code class="code">)</code> of functors from the small category <var class="Arg">B</var> to the category <var class="Arg">C</var> as objects and their natural transformations as morphisms.</p>
+<p>Construct an Abelian closure category.</p>
 
 <p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
 
@@ -76,12 +72,14 @@
 
 <h5>7.2-1 UnderlyingCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCategory</code>( <var class="Arg">finite_cocompletion</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCategory</code>( <var class="Arg">abelian_closure</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p><a id="X828EBD0E82B68958" name="X828EBD0E82B68958"></a></p>
 
 <h5>7.2-2 YonedaEmbeddingOfUnderlyingCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; YonedaEmbeddingOfUnderlyingCategory</code>( <var class="Arg">finite_cocompletion</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; YonedaEmbeddingOfUnderlyingCategory</code>( <var class="Arg">abelian_closure</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
+
 <p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
 
 <h4>7.3 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
@@ -121,6 +119,106 @@
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
 <p>The <strong class="pkg">GAP</strong> category of morphisms in an Abelian closure category.</p>
+
+<p><a id="X7A489A5D79DA9E5C" name="X7A489A5D79DA9E5C"></a></p>
+
+<h4>7.4 <span class="Heading">Examples</span></h4>
+
+<p><a id="X7F77AB6C8486994A" name="X7F77AB6C8486994A"></a></p>
+
+<h5>7.4-1 <span class="Heading">Proof of the snake lemma in a free Abelian category</span></h5>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">q := RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" );</span>
+q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Fq := FreeCategory( q );</span>
+FreeCategory( RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Q := HomalgFieldOfRationals( );</span>
+Q
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Qq := Q[Fq];</span>
+Algebroid( Q, FreeCategory( RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L := Qq / [ Qq.abc ];</span>
+Algebroid( Q, FreeCategory( RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) )
+/ relations
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := AbelianClosure( L );</span>
+AbelianClosure( Algebroid( Q, FreeCategory(
+RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := A.a;</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">b := A.b;</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c := A.c;</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsZero( PreCompose( [ a, b, c ] ) );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">d := CokernelProjection( a );</span>
+&lt;An epimorphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e := CokernelColift( a, PreCompose( b, c ) );</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f := KernelEmbedding( e );</span>
+&lt;A monomorphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">g := KernelEmbedding( c );</span>
+&lt;A monomorphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">h := KernelLift( c, PreCompose( a, b ) );</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">i := CokernelProjection( h );</span>
+&lt;An epimorphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ff := AsGeneralizedMorphism( f );</span>
+&lt;A morphism in Generalized morphism category of
+ AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">dd := AsGeneralizedMorphism( d );</span>
+&lt;A morphism in Generalized morphism category of
+ AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">bb := AsGeneralizedMorphism( b );</span>
+&lt;A morphism in Generalized morphism category of
+ AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gg := AsGeneralizedMorphism( g );</span>
+&lt;A morphism in Generalized morphism category of
+ AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ii := AsGeneralizedMorphism( i );</span>
+&lt;A morphism in Generalized morphism category of
+ AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ss := PreCompose( [ ff, PseudoInverse( dd ), bb, PseudoInverse( gg ), ii ] );</span>
+&lt;A morphism in Generalized morphism category of
+ AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsHonest( ss );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">s := HonestRepresentative( ss );</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">j := KernelObjectFunctorial( b, d, e );</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k := CokernelObjectFunctorial( h, g, b );</span>
+&lt;A morphism in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HK := HomologyObject( j, s );</span>
+&lt;An object in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsZero( HK );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HC := HomologyObject( s, k );</span>
+&lt;An object in AbelianClosure( Algebroid( Q, FreeCategory(
+ RightQuiver( "q(4)[a:1-&gt;2,b:2-&gt;3,c:3-&gt;4]" ) ) ) / relations )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsZero( HC );</span>
+true
+</pre></div>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap6.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap8.html">[Next Chapter]</a>&nbsp;  </div>

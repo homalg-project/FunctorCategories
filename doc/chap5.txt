@@ -118,41 +118,20 @@
   [33X[1;0Y[29X[2XUnderlyingCapTwoCategoryCell[102X( [3XF_or_eta[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor or natural transformation[133X
   
+  [1X5.2-9 CoYonedaEmbedding[101X
   
-  [1X5.3 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
+  [33X[1;0Y[29X[2XCoYonedaEmbedding[102X( [3XB[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
-  [1X5.3-1 IsCoPreSheafCategory[101X
+  [1X5.2-10 CoYonedaEmbeddingOfSourceCategory[101X
   
-  [33X[1;0Y[29X[2XIsCoPreSheafCategory[102X( [3Xcategory[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe [5XGAP[105X category of copresheaf categories.[133X
-  
-  [1X5.3-2 IsCellInCoPreSheafCategory[101X
-  
-  [33X[1;0Y[29X[2XIsCellInCoPreSheafCategory[102X( [3Xcell[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe [5XGAP[105X category of cells in a copresheaf category.[133X
-  
-  [1X5.3-3 IsObjectInCoPreSheafCategory[101X
-  
-  [33X[1;0Y[29X[2XIsObjectInCoPreSheafCategory[102X( [3Xobj[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe [5XGAP[105X category of objects in a copresheaf category.[133X
-  
-  [1X5.3-4 IsMorphismInCoPreSheafCategory[101X
-  
-  [33X[1;0Y[29X[2XIsMorphismInCoPreSheafCategory[102X( [3Xmor[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
-  
-  [33X[0;0YThe [5XGAP[105X category of morphisms in a copresheaf category.[133X
+  [33X[1;0Y[29X[2XCoYonedaEmbeddingOfSourceCategory[102X( [3XcoPSh[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
   
-  [1X5.4 [33X[0;0YOperations[133X[101X
+  [1X5.3 [33X[0;0YOperations[133X[101X
   
-  [1X5.4-1 ApplyObjectInCoPreSheafCategoryToObject[101X
+  [1X5.3-1 ApplyObjectInCoPreSheafCategoryToObject[101X
   
   [33X[1;0Y[29X[2XApplyObjectInCoPreSheafCategoryToObject[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
@@ -160,10 +139,41 @@
   [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding copresheaf category)
   to the cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
   
-  [1X5.4-2 ApplyMorphismInCoPreSheafCategoryToObject[101X
+  [1X5.3-2 ApplyMorphismInCoPreSheafCategoryToObject[101X
   
   [33X[1;0Y[29X[2XApplyMorphismInCoPreSheafCategoryToObject[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
   
   [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
   copresheaf category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
+  
+  
+  [1X5.4 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X
+  
+  [1X5.4-1 IsCoPreSheafCategory[101X
+  
+  [33X[1;0Y[29X[2XIsCoPreSheafCategory[102X( [3Xcategory[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of copresheaf categories.[133X
+  
+  [1X5.4-2 IsCellInCoPreSheafCategory[101X
+  
+  [33X[1;0Y[29X[2XIsCellInCoPreSheafCategory[102X( [3Xcell[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of cells in a copresheaf category.[133X
+  
+  [1X5.4-3 IsObjectInCoPreSheafCategory[101X
+  
+  [33X[1;0Y[29X[2XIsObjectInCoPreSheafCategory[102X( [3Xobj[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of objects in a copresheaf category.[133X
+  
+  [1X5.4-4 IsMorphismInCoPreSheafCategory[101X
+  
+  [33X[1;0Y[29X[2XIsMorphismInCoPreSheafCategory[102X( [3Xmor[103X ) [32X filter[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
+  
+  [33X[0;0YThe [5XGAP[105X category of morphisms in a copresheaf category.[133X
   
