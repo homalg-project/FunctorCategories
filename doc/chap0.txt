@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.10-23
+                                   2022.10-24
   
   
                                 22 October 2022
@@ -57,7 +57,7 @@
       1.2-6 ValuesOfFunctor
       1.2-7 ValuesOnAllObjects
       1.2-8 UnderlyingCapTwoCategoryCell
-      1.2-9 YonedaEmbedding
+      1.2-9 YonedaEmbeddingInFunctorCategory
       1.2-10 YonedaEmbeddingOfOppositeOfSourceCategory
       1.2-11 YonedaFibration
       1.2-12 YonedaProjection
@@ -89,7 +89,7 @@
       2.2-4 Range
       2.2-5 ValuesOnAllObjects
       2.2-6 UnderlyingCapTwoCategoryCell
-      2.2-7 YonedaEmbeddingInPreSheafCategory
+      2.2-7 YonedaEmbedding
       2.2-8 YonedaEmbeddingOfSourceCategory
       2.2-9 IndecomposableProjectiveObjects
       2.2-10 IndecomposableInjectiveObjects

@@ -95,9 +95,9 @@
   [33X[1;0Y[29X[2XUnderlyingCapTwoCategoryCell[102X( [3XF_or_eta[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor or natural transformation[133X
   
-  [1X2.2-7 YonedaEmbeddingInPreSheafCategory[101X
+  [1X2.2-7 YonedaEmbedding[101X
   
-  [33X[1;0Y[29X[2XYonedaEmbeddingInPreSheafCategory[102X( [3XB[103X ) [32X attribute[133X
+  [33X[1;0Y[29X[2XYonedaEmbedding[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
   [1X2.2-8 YonedaEmbeddingOfSourceCategory[101X

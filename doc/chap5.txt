@@ -6,9 +6,9 @@
   
   [1X5.1-1 CoPreSheaves[101X
   
-  [33X[1;0Y[29X[2XCoPreSheaves[102X( [3XB[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XCoPreSheaves[102X( [3XB[103X, [3XC[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XCoPreSheaves[102X( [3XB[103X, [3Xk[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XCoPreSheaves[102X( [3XB[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YConstruct  the  category [10XCoPreSheaves([110X [3XB[103X, [3XC[103X [10X)[110X= [10XFunctorCategory([110X [3XB[103X, [3XC[103X [10X)^op[110X of
