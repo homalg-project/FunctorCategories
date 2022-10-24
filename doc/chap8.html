@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>GAP (FunctorCategories) - Chapter 8: Precompilation</title>
+<title>GAP (FunctorCategories) - Chapter 8: Functors between the various categories</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -15,77 +15,50 @@
 <body class="chap8"  onload="jscontent()">
 
 
-<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chap9.html">9</a>  <a href="chapInd.html">Ind</a>  </div>
 
-<div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapInd.html">[Next Chapter]</a>&nbsp;  </div>
+<div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap9.html">[Next Chapter]</a>&nbsp;  </div>
 
 <p id="mathjaxlink" class="pcenter"><a href="chap8_mj.html">[MathJax on]</a></p>
-<p><a id="X7D7026828261C26B" name="X7D7026828261C26B"></a></p>
-<div class="ChapSects"><a href="chap8.html#X7D7026828261C26B">8 <span class="Heading">Precompilation</span></a>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8.html#X7CEE2ECE79790AF4">8.1 <span class="Heading">Precompiling the category of finite quivers</span></a>
+<p><a id="X865310497C9FF1C6" name="X865310497C9FF1C6"></a></p>
+<div class="ChapSects"><a href="chap8.html#X865310497C9FF1C6">8 <span class="Heading">Functors between the various categories</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8.html#X7C701DBF7BAE649A">8.1 <span class="Heading">Attributes</span></a>
 </span>
+<div class="ContSSBlock">
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7F19420C7BE7B11F">8.1-1 NakayamaLeftAdjoint</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X84261E637F19621A">8.1-2 NakayamaRightAdjoint</a></span>
+</div></div>
 </div>
-</div>
 
-<h3>8 <span class="Heading">Precompilation</span></h3>
+<h3>8 <span class="Heading">Functors between the various categories</span></h3>
 
-<p><a id="X7CEE2ECE79790AF4" name="X7CEE2ECE79790AF4"></a></p>
+<p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
 
-<h4>8.1 <span class="Heading">Precompiling the category of finite quivers</span></h4>
+<h4>8.1 <span class="Heading">Attributes</span></h4>
 
+<p><a id="X7F19420C7BE7B11F" name="X7F19420C7BE7B11F"></a></p>
 
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "FunctorCategories", false );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", "&gt;= 2022.09-02", false );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "FinSetsForCAP", "gap/CompilerLogic.gi" );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "FunctorCategories", "gap/CompilerLogic.gi" );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">category_constructor := { } -&gt; CategoryOfQuiversEnrichedOver( CategoryOfSkeletalFinSets( : FinalizeCategory := true ) );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">given_arguments := [ ];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">compiled_category_name := "FinQuiversPrecompiled";;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">package_name := "FunctorCategories";;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CapJitPrecompileCategoryAndCompareResult(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    category_constructor,</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    given_arguments,</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    package_name,</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    compiled_category_name</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">   : operations := [ "InitialObject",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     "Coproduct",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     #"InjectionOfCofactorOfCoproductWithGivenCoproduct",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     #"UniversalMorphismFromCoproductWithGivenCoproduct",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     #"CoproductOnMorphismsWithGivenCoproducts", # &lt;- derived and leads to an error</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     #"CoproductFunctorialWithGivenCoproducts", # &lt;- derived</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     "DistinguishedObjectOfHomomorphismStructure",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     "HomomorphismStructureOnObjects",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     #"HomomorphismStructureOnMorphismsWithGivenObjects",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     "InterpretMorphismFromDistinguishedObjectToHomomorphismStructureAsMorphism",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     "MorphismsOfExternalHom",</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">                     ]</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">FinQuiversPrecompiled( );</span>
-CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">cat := CategoryOfQuiversEnrichedOver( SkeletalFinSets );</span>
-CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput"># Now we check whether the compiled code is loaded automatically.</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput"># For this we use the name of the argument of `InitialObject`;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput"># for non-compiled code it is "cat", while for compiled code it is "cat_1":</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">argument_name := NamesLocalVariablesFunction(</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    Last( cat!.added_functions.InitialObject )[1] )[1];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">(ValueOption( "no_precompiled_code" ) = true and argument_name = "cat") or</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">    (ValueOption( "no_precompiled_code" ) = fail and argument_name = "cat_1");</span>
-true
-</pre></div>
+<h5>8.1-1 NakayamaLeftAdjoint</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NakayamaLeftAdjoint</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
+
+<p>Returns the Nakayama left adjoint functor from <code class="code">PreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ).</p>
+
+<p><a id="X84261E637F19621A" name="X84261E637F19621A"></a></p>
+
+<h5>8.1-2 NakayamaRightAdjoint</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NakayamaRightAdjoint</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
+
+<p>Returns the Nakayama right adjoint functor from <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
 
 
-<div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapInd.html">[Next Chapter]</a>&nbsp;  </div>
+<div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap9.html">[Next Chapter]</a>&nbsp;  </div>
 
 
-<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chap9.html">9</a>  <a href="chapInd.html">Ind</a>  </div>
 
 <hr />
 <p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>

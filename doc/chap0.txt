@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.10-27
+                                   2022.10-28
   
   
                                 24 October 2022
@@ -198,8 +198,12 @@
       7.3-4 IsMorphismInAbelianClosure
     7.4 [33X[0;0YExamples[133X
       7.4-1 [33X[0;0YProof of the snake lemma in a free Abelian category[133X
-  8 [33X[0;0YPrecompilation[133X
-    8.1 [33X[0;0YPrecompiling the category of finite quivers[133X
+  8 [33X[0;0YFunctors between the various categories[133X
+    8.1 [33X[0;0YAttributes[133X
+      8.1-1 NakayamaLeftAdjoint
+      8.1-2 NakayamaRightAdjoint
+  9 [33X[0;0YPrecompilation[133X
+    9.1 [33X[0;0YPrecompiling the category of finite quivers[133X
   
   
   [32X
