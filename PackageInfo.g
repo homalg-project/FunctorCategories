@@ -10,10 +10,10 @@ SetPackageInfo( rec(
 
 PackageName := "FunctorCategories",
 Subtitle := "Categories of functors",
-Version := "2022.10-31",
+Version := "2022.10-32",
 
-Date := "25/10/2022",
-Date := "25/10/2022",
+Date := "26/10/2022",
+Date := "26/10/2022",
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -89,7 +89,7 @@ Dependencies := rec(
   NeededOtherPackages := [
                    [ "GAPDoc", ">= 1.5" ],
                    [ "ToolsForHomalg", ">= 2022.09-06" ],
-                   [ "CAP", ">= 2022.09-23" ],
+                   [ "CAP", ">= 2022.10-07" ],
                    [ "MonoidalCategories", ">= 2022.06-04" ],
                    [ "CartesianCategories", ">= 2022.10-01" ],
                    [ "Algebroids", ">= 2022.10-11" ],

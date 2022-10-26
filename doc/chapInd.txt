@@ -59,8 +59,6 @@
       for IsCapCategory, IsHomalgRing 1.1-1 
   [2XHom[102X, for IsCapCategory, IsCapCategory 1.1-1 
       for IsCapCategory, IsHomalgRing 1.1-1 
-  [2XIndecomposableInjectiveObjects[102X, for IsPreSheafCategory 2.2-10 
-  [2XIndecomposableProjectiveObjects[102X, for IsPreSheafCategory 2.2-9 
   [2XIsAbelianClosure[102X, for IsCapCategory 7.3-1 
   [2XIsCategoryOfQuivers[102X, for IsCapCategory 4.5-1 
   [2XIsCellInAbelianClosure[102X, for IsCapCategoryCell 7.3-2 
@@ -91,7 +89,7 @@
   [2XIsPreSheafCategory[102X, for IsCapCategory 2.4-1 
   [2XNakayamaLeftAdjoint[102X, for IsAlgebroid 8.1-1 
   [2XNakayamaRightAdjoint[102X, for IsAlgebroid 8.1-2 
-  [2XNerveTruncatedInDegree2[102X, for IsCapCategory 2.2-12 
+  [2XNerveTruncatedInDegree2[102X, for IsCapCategory 2.2-10 
   [2XOppositeOfSource[102X, for IsCoPreSheafCategory 5.2-5 
       for IsFunctorCategory 1.2-5 
   [2XPreSheaves[102X, for IsCapCategory 2.1-1 
@@ -104,9 +102,9 @@
       for IsObjectInFunctorCategory 1.2-4 
       for IsObjectInPreSheafCategory 2.2-4 
       for IsPreSheafCategory 2.2-2 
-  [2XSievesOfPathsToTruth[102X, for IsMorphismInPreSheafCategory 2.2-13 
-      for IsPreSheafCategory, IsMorphismInPreSheafCategory 2.2-13 
-  [2XSimpleObjects[102X, for IsPreSheafCategory 2.2-11 
+  [2XSievesOfPathsToTruth[102X, for IsMorphismInPreSheafCategory 2.2-11 
+      for IsPreSheafCategory, IsMorphismInPreSheafCategory 2.2-11 
+  [2XSimpleObjects[102X, for IsPreSheafCategory 2.2-9 
   [2XSource[102X, for IsCoPreSheafCategory 5.2-1 
       for IsFunctorCategory 1.2-1 
       for IsObjectInCoPreSheafCategory 5.2-3 

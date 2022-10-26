@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.10-31
+                                   2022.10-32
   
   
-                                25 October 2022
+                                26 October 2022
   
   
                                 Mohamed Barakat
@@ -91,11 +91,9 @@
       2.2-6 UnderlyingCapTwoCategoryCell
       2.2-7 YonedaEmbedding
       2.2-8 YonedaEmbeddingOfSourceCategory
-      2.2-9 IndecomposableProjectiveObjects
-      2.2-10 IndecomposableInjectiveObjects
-      2.2-11 SimpleObjects
-      2.2-12 NerveTruncatedInDegree2
-      2.2-13 SievesOfPathsToTruth
+      2.2-9 SimpleObjects
+      2.2-10 NerveTruncatedInDegree2
+      2.2-11 SievesOfPathsToTruth
     2.3 [33X[0;0YOperations[133X
       2.3-1 ApplyObjectInPreSheafCategoryToObject
       2.3-2 ApplyMorphismInPreSheafCategoryToObject

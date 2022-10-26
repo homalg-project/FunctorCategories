@@ -105,25 +105,7 @@
   [33X[1;0Y[29X[2XYonedaEmbeddingOfSourceCategory[102X( [3XPSh[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
-  [1X2.2-9 IndecomposableProjectiveObjects[101X
-  
-  [33X[1;0Y[29X[2XIndecomposableProjectiveObjects[102X( [3XPSh[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list of objects[133X
-  
-  [33X[0;0YThe  input  is a category of presheaves [3XPSh[103X of an admissible [23Xk[123X-algebroid for
-  some field [23Xk[123X. The output is the list of indecomposable projective objects in
-  [3XPSh[103X up to isomorphism.[133X
-  
-  [1X2.2-10 IndecomposableInjectiveObjects[101X
-  
-  [33X[1;0Y[29X[2XIndecomposableInjectiveObjects[102X( [3XPSh[103X ) [32X attribute[133X
-  [6XReturns:[106X  [33X[0;10Ya list of objects[133X
-  
-  [33X[0;0YThe  input  is a category of presheaves [3XPSh[103X of an admissible [23Xk[123X-algebroid for
-  some  field [23Xk[123X. The output is the list of indecomposable injective objects in
-  [3XPSh[103X up to isomorphism.[133X
-  
-  [1X2.2-11 SimpleObjects[101X
+  [1X2.2-9 SimpleObjects[101X
   
   [33X[1;0Y[29X[2XSimpleObjects[102X( [3XPSh[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya list of objects[133X
@@ -269,7 +251,7 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
-  [1X2.2-12 NerveTruncatedInDegree2[101X
+  [1X2.2-10 NerveTruncatedInDegree2[101X
   
   [33X[1;0Y[29X[2XNerveTruncatedInDegree2[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya presheaf[133X
@@ -334,7 +316,7 @@
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
-  [1X2.2-13 SievesOfPathsToTruth[101X
+  [1X2.2-11 SievesOfPathsToTruth[101X
   
   [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3Xiota[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3XHom[103X, [3Xiota[103X ) [32X operation[133X
