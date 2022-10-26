@@ -2,9 +2,49 @@
   [1X8 [33X[0;0YFunctors between the various categories[133X[101X
   
   
-  [1X8.1 [33X[0;0YAttributes[133X[101X
+  [1X8.1 [33X[0;0YExamples[133X[101X
   
-  [1X8.1-1 NakayamaLeftAdjoint[101X
+  
+  [1X8.1-1 [33X[0;0YThe reflexive completion of the one object category $C 2$[133X[101X
+  
+  [33X[0;0YThe reflexive completion of the one object category [23XC_2[123X has four isomorphism
+  classes of objects:[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27Xq := RightQuiver( "q(1)[a:1->1]" );[127X[104X
+    [4X[28Xq(1)[a:1->1][128X[104X
+    [4X[25Xgap>[125X [27XC2 := Category( q, [ [ q.a^2, q.1 ] ] );[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ][128X[104X
+    [4X[25Xgap>[125X [27XPSh := PreSheaves( C2 );[127X[104X
+    [4X[28XPreSheaves( FreeCategory( RightQuiver( "q(1)[a:1->1]" ) )/ [ a*a = 1 ],[128X[104X
+    [4X[28XSkeletalFinSets )[128X[104X
+    [4X[25Xgap>[125X [27XL := PSh.1;[127X[104X
+    [4X[28X<A projective object in PreSheaves( FreeCategory([128X[104X
+    [4X[28X RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
+    [4X[25Xgap>[125X [27XP := DirectProduct( L, L );[127X[104X
+    [4X[28X<An object in PreSheaves( FreeCategory([128X[104X
+    [4X[28X RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
+    [4X[25Xgap>[125X [27XM := IsbellAdjunctionMonad( C2 );[127X[104X
+    [4X[28XComposition of Isbell left adjoint functor and Isbell right adjoint functor[128X[104X
+    [4X[25Xgap>[125X [27XM( L ) = L;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XM( TerminalObject( PSh ) ) = TerminalObject( PSh );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XM( InitialObject( PSh ) ) = InitialObject( PSh );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XM( P ) = P;[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XC := Coproduct( L, L );[127X[104X
+    [4X[28X<An object in PreSheaves( FreeCategory([128X[104X
+    [4X[28X RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
+    [4X[25Xgap>[125X [27XM( C ) = P;[127X[104X
+    [4X[28Xtrue[128X[104X
+  [4X[32X[104X
+  
+  
+  [1X8.2 [33X[0;0YAttributes[133X[101X
+  
+  [1X8.2-1 NakayamaLeftAdjoint[101X
   
   [33X[1;0Y[29X[2XNakayamaLeftAdjoint[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
@@ -12,11 +52,34 @@
   [33X[0;0YReturns  the  Nakayama  left  adjoint  functor  from  [10XPreSheaves[110X(  [3XB[103X  )  [23X\to[123X
   [10XCoPreSheaves[110X( [3XB[103X ).[133X
   
-  [1X8.1-2 NakayamaRightAdjoint[101X
+  [1X8.2-2 NakayamaRightAdjoint[101X
   
   [33X[1;0Y[29X[2XNakayamaRightAdjoint[102X( [3XB[103X ) [32X attribute[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
   
   [33X[0;0YReturns  the  Nakayama  right  adjoint  functor  from  [10XCoPreSheaves[110X( [3XB[103X ) [23X\to[123X
   [10XPreSheaves[110X( [3XB[103X ).[133X
+  
+  [1X8.2-3 IsbellLeftAdjoint[101X
+  
+  [33X[1;0Y[29X[2XIsbellLeftAdjoint[102X( [3XB[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YReturns   the   Isbell  left  adjoint  functor  from  [10XPreSheaves[110X(  [3XB[103X  )  [23X\to[123X
+  [10XCoPreSheaves[110X( [3XB[103X ).[133X
+  
+  [1X8.2-4 IsbellRightAdjoint[101X
+  
+  [33X[1;0Y[29X[2XIsbellRightAdjoint[102X( [3XB[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YReturns  the  Isbell  right  adjoint  functor  from  [10XCoPreSheaves[110X(  [3XB[103X  ) [23X\to[123X
+  [10XPreSheaves[110X( [3XB[103X ).[133X
+  
+  [1X8.2-5 IsbellAdjunctionMonad[101X
+  
+  [33X[1;0Y[29X[2XIsbellAdjunctionMonad[102X( [3XB[103X ) [32X attribute[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X functor[133X
+  
+  [33X[0;0YReturns the Isbell adjunction monad on [10XPreSheaves[110X( [3XB[103X ).[133X
   

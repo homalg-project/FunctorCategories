@@ -60,6 +60,9 @@
   [2XHom[102X, for IsCapCategory, IsCapCategory 1.1-1 
       for IsCapCategory, IsHomalgRing 1.1-1 
   [2XIsAbelianClosure[102X, for IsCapCategory 7.3-1 
+  [2XIsbellAdjunctionMonad[102X, for IsCapCategory 8.2-5 
+  [2XIsbellLeftAdjoint[102X, for IsCapCategory 8.2-3 
+  [2XIsbellRightAdjoint[102X, for IsCapCategory 8.2-4 
   [2XIsCategoryOfQuivers[102X, for IsCapCategory 4.5-1 
   [2XIsCellInAbelianClosure[102X, for IsCapCategoryCell 7.3-2 
   [2XIsCellInCategoryOfQuivers[102X, for IsCapCategoryCell 4.5-2 
@@ -87,8 +90,8 @@
   [2XIsObjectInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryObject 1.4-3 
   [2XIsObjectInPreSheafCategory[102X, for IsCellInPreSheafCategory andIsCapCategoryObject 2.4-3 
   [2XIsPreSheafCategory[102X, for IsCapCategory 2.4-1 
-  [2XNakayamaLeftAdjoint[102X, for IsAlgebroid 8.1-1 
-  [2XNakayamaRightAdjoint[102X, for IsAlgebroid 8.1-2 
+  [2XNakayamaLeftAdjoint[102X, for IsAlgebroid 8.2-1 
+  [2XNakayamaRightAdjoint[102X, for IsAlgebroid 8.2-2 
   [2XNerveTruncatedInDegree2[102X, for IsCapCategory 2.2-10 
   [2XOppositeOfSource[102X, for IsCoPreSheafCategory 5.2-5 
       for IsFunctorCategory 1.2-5 

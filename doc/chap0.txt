@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.10-32
+                                   2022.10-33
   
   
                                 26 October 2022
@@ -197,9 +197,14 @@
     7.4 [33X[0;0YExamples[133X
       7.4-1 [33X[0;0YProof of the snake lemma in a free Abelian category[133X
   8 [33X[0;0YFunctors between the various categories[133X
-    8.1 [33X[0;0YAttributes[133X
-      8.1-1 NakayamaLeftAdjoint
-      8.1-2 NakayamaRightAdjoint
+    8.1 [33X[0;0YExamples[133X
+      8.1-1 [33X[0;0YThe reflexive completion of the one object category $C 2$[133X
+    8.2 [33X[0;0YAttributes[133X
+      8.2-1 NakayamaLeftAdjoint
+      8.2-2 NakayamaRightAdjoint
+      8.2-3 IsbellLeftAdjoint
+      8.2-4 IsbellRightAdjoint
+      8.2-5 IsbellAdjunctionMonad
   9 [33X[0;0YPrecompilation[133X
     9.1 [33X[0;0YPrecompiling the category of finite quivers[133X
   
