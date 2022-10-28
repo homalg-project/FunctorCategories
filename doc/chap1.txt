@@ -339,10 +339,9 @@
   quotient modulo the ideal [23X\langle t^3 - 1 \rangle[123X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XPushOptions( rec( range_of_HomStructure := MatrixCategory( Q ) ) );[127X[104X
-    [4X[25Xgap>[125X [27XB := QF / [ QF.t^3 - IdentityMorphism( QF.1 ) ];[127X[104X
+    [4X[25Xgap>[125X [27XB := QuotientCategory( QF, [ QF.t^3 - IdentityMorphism( QF.1 ) ][127X[104X
+    [4X[25X>[125X [27X             : range_of_HomStructure := MatrixCategory( Q ) );[127X[104X
     [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations[128X[104X
-    [4X[25Xgap>[125X [27XPopOptions( );[127X[104X
     [4X[25Xgap>[125X [27XRelationsOfAlgebroid( B );[127X[104X
     [4X[28X[ (1)-[1*(t*t*t) - 1*(1)]->(1) ][128X[104X
   [4X[32X[104X
@@ -483,7 +482,7 @@
   need a finite dimensional vector space [23XV_0[123X[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XV0 := VectorSpaceObject( 3, Q );[127X[104X
+    [4X[25Xgap>[125X [27XV0 := 3 / A;[127X[104X
     [4X[28X<A vector space object over Q of dimension 3>[128X[104X
   [4X[32X[104X
   
@@ -494,7 +493,7 @@
     [4X[28X<A 3 x 3 matrix over an internal ring>[128X[104X
     [4X[25Xgap>[125X [27XV_obj := rec( 1 := V0 );[127X[104X
     [4X[28Xrec( 1 := <A vector space object over Q of dimension 3> )[128X[104X
-    [4X[25Xgap>[125X [27XV_mor := rec( t := VectorSpaceMorphism( V0, phi, V0 ) );[127X[104X
+    [4X[25Xgap>[125X [27XV_mor := rec( t := phi / A );[127X[104X
     [4X[28Xrec( t := <A morphism in Category of matrices over Q> )[128X[104X
     [4X[25Xgap>[125X [27XV := AsObjectInFunctorCategory( B, V_obj, V_mor );[127X[104X
     [4X[28X<(1)->3; (t)->3x3>[128X[104X
@@ -514,7 +513,7 @@
     [4X[28X<A 3 x 3 matrix over an internal ring>[128X[104X
     [4X[25Xgap>[125X [27XW_obj := rec( 1 := V0 );[127X[104X
     [4X[28Xrec( 1 := <A vector space object over Q of dimension 3> )[128X[104X
-    [4X[25Xgap>[125X [27XW_mor := rec( t := VectorSpaceMorphism( V0, psi, V0 ) );[127X[104X
+    [4X[25Xgap>[125X [27XW_mor := rec( t := psi / A );[127X[104X
     [4X[28Xrec( t := <A morphism in Category of matrices over Q> )[128X[104X
     [4X[25Xgap>[125X [27XW := AsObjectInFunctorCategory( B, W_obj, W_mor );[127X[104X
     [4X[28X<(1)->3; (t)->3x3>[128X[104X
@@ -616,11 +615,11 @@
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27Xpsi := HomalgMatrix( [ 0, 1,  -1, -1 ], 2, 2, Q );[127X[104X
     [4X[28X<A 2 x 2 matrix over an internal ring>[128X[104X
-    [4X[25Xgap>[125X [27XU := VectorSpaceObject( 2, Q );[127X[104X
+    [4X[25Xgap>[125X [27XU := 2 / A;[127X[104X
     [4X[28X<A vector space object over Q of dimension 2>[128X[104X
     [4X[25Xgap>[125X [27XU_obj := rec( 1 := U );[127X[104X
     [4X[28Xrec( 1 := <A vector space object over Q of dimension 2> )[128X[104X
-    [4X[25Xgap>[125X [27XU_mor := rec( t := VectorSpaceMorphism( U, psi, U ) );[127X[104X
+    [4X[25Xgap>[125X [27XU_mor := rec( t := psi / A );[127X[104X
     [4X[28Xrec( t := <A morphism in Category of matrices over Q> )[128X[104X
     [4X[25Xgap>[125X [27XU := CapFunctor( B, U_obj, U_mor );[127X[104X
     [4X[28XFunctor from[128X[104X
@@ -658,7 +657,7 @@
   component of [23X\eta[123X at this object.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xeta := rec( 1 := VectorSpaceMorphism( V( B.1 ), eta, U( B.1 ) ) );[127X[104X
+    [4X[25Xgap>[125X [27Xeta := rec( 1 := eta / A );[127X[104X
     [4X[28Xrec( 1 := <A morphism in Category of matrices over Q> )[128X[104X
   [4X[32X[104X
   
@@ -987,7 +986,7 @@
   functor again [23XV[123X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XV := AsObjectInFunctorCategory( B, [ 3 ], [ phi ] );[127X[104X
+    [4X[25Xgap>[125X [27XV := AsObjectInFunctorCategory( H, [ 3 ], [ phi ] );[127X[104X
     [4X[28X<(1)->3; (t)->3x3>[128X[104X
   [4X[32X[104X
   
@@ -1344,7 +1343,7 @@
     [4X[25Xgap>[125X [27Xd := [[1,1,0,0,0],[0,1,1,0,0],[0,0,1,0,0],[0,0,0,1,1],[0,0,0,0,1]];;[127X[104X
     [4X[25Xgap>[125X [27Xe := [[0,1,0,0],[0,0,1,0],[0,0,0,0],[0,1,0,1],[0,0,1,0]];;[127X[104X
     [4X[25Xgap>[125X [27Xf := [[1,1,0,0],[0,1,1,0],[0,0,1,0],[0,0,0,1]];;[127X[104X
-    [4X[25Xgap>[125X [27Xnine := AsObjectInFunctorCategory( A, [ 5, 4 ], [ d, e, f ] );[127X[104X
+    [4X[25Xgap>[125X [27Xnine := AsObjectInFunctorCategory( FunCat, [ 5, 4 ], [ d, e, f ] );[127X[104X
     [4X[28X<(1)->5, (2)->4; (a)->5x5, (b)->5x4, (c)->4x4>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( nine );[127X[104X
     [4X[28XImage of <(1)>:[128X[104X

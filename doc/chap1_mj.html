@@ -421,10 +421,9 @@ Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) )
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PushOptions( rec( range_of_HomStructure := MatrixCategory( Q ) ) );</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := QF / [ QF.t^3 - IdentityMorphism( QF.1 ) ];</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := QuotientCategory( QF, [ QF.t^3 - IdentityMorphism( QF.1 ) ]</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">             : range_of_HomStructure := MatrixCategory( Q ) );</span>
 Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PopOptions( );</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RelationsOfAlgebroid( B );</span>
 [ (1)-[1*(t*t*t) - 1*(1)]-&gt;(1) ]
 </pre></div>
@@ -561,7 +560,7 @@ true
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V0 := VectorSpaceObject( 3, Q );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V0 := 3 / A;</span>
 &lt;A vector space object over Q of dimension 3&gt;
 </pre></div>
 
@@ -573,7 +572,7 @@ true
 &lt;A 3 x 3 matrix over an internal ring&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V_obj := rec( 1 := V0 );</span>
 rec( 1 := &lt;A vector space object over Q of dimension 3&gt; )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V_mor := rec( t := VectorSpaceMorphism( V0, phi, V0 ) );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V_mor := rec( t := phi / A );</span>
 rec( t := &lt;A morphism in Category of matrices over Q&gt; )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := AsObjectInFunctorCategory( B, V_obj, V_mor );</span>
 &lt;(1)-&gt;3; (t)-&gt;3x3&gt;
@@ -595,7 +594,7 @@ true
 &lt;A 3 x 3 matrix over an internal ring&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">W_obj := rec( 1 := V0 );</span>
 rec( 1 := &lt;A vector space object over Q of dimension 3&gt; )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">W_mor := rec( t := VectorSpaceMorphism( V0, psi, V0 ) );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">W_mor := rec( t := psi / A );</span>
 rec( t := &lt;A morphism in Category of matrices over Q&gt; )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">W := AsObjectInFunctorCategory( B, W_obj, W_mor );</span>
 &lt;(1)-&gt;3; (t)-&gt;3x3&gt;
@@ -701,11 +700,11 @@ false
 <div class="example"><pre>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">psi := HomalgMatrix( [ 0, 1,  -1, -1 ], 2, 2, Q );</span>
 &lt;A 2 x 2 matrix over an internal ring&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U := VectorSpaceObject( 2, Q );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U := 2 / A;</span>
 &lt;A vector space object over Q of dimension 2&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U_obj := rec( 1 := U );</span>
 rec( 1 := &lt;A vector space object over Q of dimension 2&gt; )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U_mor := rec( t := VectorSpaceMorphism( U, psi, U ) );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U_mor := rec( t := psi / A );</span>
 rec( t := &lt;A morphism in Category of matrices over Q&gt; )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U := CapFunctor( B, U_obj, U_mor );</span>
 Functor from
@@ -741,7 +740,7 @@ false
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">eta := rec( 1 := VectorSpaceMorphism( V( B.1 ), eta, U( B.1 ) ) );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">eta := rec( 1 := eta / A );</span>
 rec( 1 := &lt;A morphism in Category of matrices over Q&gt; )
 </pre></div>
 
@@ -1084,7 +1083,7 @@ true
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := AsObjectInFunctorCategory( B, [ 3 ], [ phi ] );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := AsObjectInFunctorCategory( H, [ 3 ], [ phi ] );</span>
 &lt;(1)-&gt;3; (t)-&gt;3x3&gt;
 </pre></div>
 
@@ -1454,7 +1453,7 @@ Category of matrices over GF(3) ) given by the above data
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">d := [[1,1,0,0,0],[0,1,1,0,0],[0,0,1,0,0],[0,0,0,1,1],[0,0,0,0,1]];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e := [[0,1,0,0],[0,0,1,0],[0,0,0,0],[0,1,0,1],[0,0,1,0]];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f := [[1,1,0,0],[0,1,1,0],[0,0,1,0],[0,0,0,1]];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nine := AsObjectInFunctorCategory( A, [ 5, 4 ], [ d, e, f ] );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nine := AsObjectInFunctorCategory( FunCat, [ 5, 4 ], [ d, e, f ] );</span>
 &lt;(1)-&gt;5, (2)-&gt;4; (a)-&gt;5x5, (b)-&gt;5x4, (c)-&gt;4x4&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( nine );</span>
 Image of &lt;(1)&gt;:
