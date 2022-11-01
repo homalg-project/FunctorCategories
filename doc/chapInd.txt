@@ -124,6 +124,7 @@
       for IsCategoryOfQuivers 4.2-1 
       for IsFiniteCocompletion 3.2-1 
       for IsFiniteCompletion 6.2-1 
+  [2XUnitOfIsbellAdjunction[102X, for IsCapCategory 8.2-6 
   [2XValuesOfCoPreSheaf[102X, for IsObjectInCoPreSheafCategory 5.2-6 
   [2XValuesOfFunctor[102X, for IsObjectInFunctorCategory 1.2-6 
   [2XValuesOnAllObjects[102X, for IsMorphismInCoPreSheafCategory 5.2-7 

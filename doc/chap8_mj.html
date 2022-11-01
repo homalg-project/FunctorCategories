@@ -39,6 +39,7 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7C78BBDF8177ED77">8.2-3 IsbellLeftAdjoint</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X79FEC4A178828DB2">8.2-4 IsbellRightAdjoint</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7C3B837C7A240031">8.2-5 IsbellAdjunctionMonad</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X8621372A7BA5C846">8.2-6 UnitOfIsbellAdjunction</a></span>
 </div></div>
 </div>
 
@@ -63,27 +64,53 @@ FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PSh := PreSheaves( C2 );</span>
 PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )/ [ a*a = 1 ],
 SkeletalFinSets )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">iota := UnitOfIsbellAdjunction( C2 );</span>
+A Natural transformation from Identity functor of PreSheaves(
+FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ], SkeletalFinSets )
+to Composition of Isbell left adjoint functor and Isbell right adjoint functor
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIsomorphism( iota( TerminalObject( PSh ) ) );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIsomorphism( iota( InitialObject( PSh ) ) );</span>
+true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L := PSh.1;</span>
 &lt;A projective object in PreSheaves( FreeCategory(
  RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ], SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIsomorphism( iota( L ) );</span>
+true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P := DirectProduct( L, L );</span>
 &lt;An object in PreSheaves( FreeCategory(
  RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ], SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := IsbellAdjunctionMonad( C2 );</span>
-Composition of Isbell left adjoint functor and Isbell right adjoint functor
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M( L ) = L;</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M( TerminalObject( PSh ) ) = TerminalObject( PSh );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M( InitialObject( PSh ) ) = InitialObject( PSh );</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M( P ) = P;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">iotaP := iota( P );</span>
+&lt;A morphism in PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )
+ / [ a*a = 1 ], SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( iotaP );</span>
+Image of &lt;(1)&gt;:
+{ 0,..., 3 } ⱶ[ 0, 1, 2, 3 ]→ { 0,..., 3 }
+
+A morphism in PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )
+/ [ a*a = 1 ], SkeletalFinSets ) given by the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsOne( iotaP );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := Coproduct( L, L );</span>
 &lt;An object in PreSheaves( FreeCategory(
  RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ], SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M( C ) = P;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">iotaC := iota( C );</span>
+&lt;A morphism in PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )
+ / [ a*a = 1 ], SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( iotaC );</span>
+Image of &lt;(1)&gt;:
+{ 0,..., 3 } ⱶ[ 1, 2, 0, 3 ]→ { 0,..., 3 }
+
+A morphism in PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )
+/ [ a*a = 1 ], SkeletalFinSets ) given by the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIsomorphism( iotaC );</span>
 true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Source( iotaC ) = C;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Range( iotaC ) = P;</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIsomorphism( iota( Coproduct( L, L, L ) ) );</span>
+false
 </pre></div>
 
 <p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
@@ -134,6 +161,15 @@ true
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
 <p>Returns the Isbell adjunction monad on <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
+
+<p><a id="X8621372A7BA5C846" name="X8621372A7BA5C846"></a></p>
+
+<h5>8.2-6 UnitOfIsbellAdjunction</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnitOfIsbellAdjunction</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
+
+<p>Returns the unit of the Isbell adjunction on <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap9_mj.html">[Next Chapter]</a>&nbsp;  </div>
