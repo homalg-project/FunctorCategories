@@ -62,9 +62,9 @@ FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ]
 PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )/ [ a*a = 1 ],
 SkeletalFinSets )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">iota := UnitOfIsbellAdjunction( C2 );</span>
-A Natural transformation from Identity functor of PreSheaves(
+A natural transformation from Identity functor of PreSheaves(
 FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ], SkeletalFinSets )
-to Composition of Isbell left adjoint functor and Isbell right adjoint functor
+to Precomposition of Isbell left adjoint functor and Isbell right adjoint functor
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIsomorphism( iota( TerminalObject( PSh ) ) );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsIsomorphism( iota( InitialObject( PSh ) ) );</span>

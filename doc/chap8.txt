@@ -19,9 +19,9 @@
     [4X[28XPreSheaves( FreeCategory( RightQuiver( "q(1)[a:1->1]" ) )/ [ a*a = 1 ],[128X[104X
     [4X[28XSkeletalFinSets )[128X[104X
     [4X[25Xgap>[125X [27Xiota := UnitOfIsbellAdjunction( C2 );[127X[104X
-    [4X[28XA Natural transformation from Identity functor of PreSheaves([128X[104X
+    [4X[28XA natural transformation from Identity functor of PreSheaves([128X[104X
     [4X[28XFreeCategory( RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )[128X[104X
-    [4X[28Xto Composition of Isbell left adjoint functor and Isbell right adjoint functor[128X[104X
+    [4X[28Xto Precomposition of Isbell left adjoint functor and Isbell right adjoint functor[128X[104X
     [4X[25Xgap>[125X [27XIsIsomorphism( iota( TerminalObject( PSh ) ) );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XIsIsomorphism( iota( InitialObject( PSh ) ) );[127X[104X
