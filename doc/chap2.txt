@@ -328,7 +328,6 @@
   [1X2.2-11 SievesOfPathsToTruth[101X
   
   [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3Xiota[103X ) [32X attribute[133X
-  [33X[1;0Y[29X[2XSievesOfPathsToTruth[102X( [3XHom[103X, [3Xiota[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya monomorphisms in a Hom-category of functors[133X
   
   [33X[0;0YThe  input is a monomorphism [3Xiota[103X:[23XQ \to P[123X in the category of presheaves with

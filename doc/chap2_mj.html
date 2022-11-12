@@ -411,7 +411,6 @@ true
 <h5>2.2-11 SievesOfPathsToTruth</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SievesOfPathsToTruth</code>( <var class="Arg">iota</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SievesOfPathsToTruth</code>( <var class="Arg">Hom</var>, <var class="Arg">iota</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a monomorphisms in a Hom-category of functors</p>
 
 <p>The input is a monomorphism <var class="Arg">iota</var>:<span class="SimpleMath">\(Q \to P\)</span> in the category of presheaves with values in <code class="code">RangeCategoryOfHomomorphismStructure</code>(<span class="SimpleMath">\(C\)</span>) on the finitely presented category <span class="SimpleMath">\(C:=\)</span>(<code class="code">Source</code>(<span class="SimpleMath">\(P\)</span>)) with finite <span class="SimpleMath">\(\mathrm{Hom}\)</span>-sets. The output is the morphism from <span class="SimpleMath">\(P\)</span> to the <code class="code">SieveFunctor</code>(<span class="SimpleMath">\(C\)</span>) mapping for each <span class="SimpleMath">\(c \in C\)</span> the element <span class="SimpleMath">\(x \in P(c)\)</span> to its "paths to truth" <span class="SimpleMath">\(f: a \to c\)</span> translating <span class="SimpleMath">\(x\)</span> into <span class="SimpleMath">\(f(x) \in Q(a) \subseteq P(a)\)</span>.</p>

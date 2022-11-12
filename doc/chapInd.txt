@@ -106,7 +106,6 @@
       for IsObjectInPreSheafCategory 2.2-4 
       for IsPreSheafCategory 2.2-2 
   [2XSievesOfPathsToTruth[102X, for IsMorphismInPreSheafCategory 2.2-11 
-      for IsPreSheafCategory, IsMorphismInPreSheafCategory 2.2-11 
   [2XSimpleObjects[102X, for IsPreSheafCategory 2.2-9 
   [2XSource[102X, for IsCoPreSheafCategory 5.2-1 
       for IsFunctorCategory 1.2-1 
