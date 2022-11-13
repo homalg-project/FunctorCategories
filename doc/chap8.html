@@ -33,10 +33,10 @@
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X786A8F6E83B5B0EF">8.2-1 NakayamaLeftAdjoint</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7C515ADC841875EB">8.2-2 NakayamaRightAdjoint</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7C78BBDF8177ED77">8.2-3 IsbellLeftAdjoint</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X79FEC4A178828DB2">8.2-4 IsbellRightAdjoint</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7C3B837C7A240031">8.2-5 IsbellAdjunctionMonad</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X8621372A7BA5C846">8.2-6 UnitOfIsbellAdjunction</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X866BBC6C8138F441">8.2-3 IsbellLeftAdjoint</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7F72DD2187F4AF22">8.2-4 IsbellRightAdjoint</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X82CFAE0E811F1A9D">8.2-5 IsbellAdjunctionMonad</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7A2C26EC814AD684">8.2-6 UnitOfIsbellAdjunction</a></span>
 </div></div>
 </div>
 
@@ -61,7 +61,7 @@ FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PSh := PreSheaves( C2 );</span>
 PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )/ [ a*a = 1 ],
 SkeletalFinSets )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">iota := UnitOfIsbellAdjunction( C2 );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">iota := UnitOfIsbellAdjunction( PSh );</span>
 A natural transformation from Identity functor of PreSheaves(
 FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) ) / [ a*a = 1 ], SkeletalFinSets )
 to Precomposition of Isbell left adjoint functor and Isbell right adjoint functor
@@ -134,41 +134,44 @@ false
 
 <p>Returns the Nakayama right adjoint functor from <var class="Arg">coPSh</var> = <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <var class="Arg">PSh</var> = <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
 
-<p><a id="X7C78BBDF8177ED77" name="X7C78BBDF8177ED77"></a></p>
+<p><a id="X866BBC6C8138F441" name="X866BBC6C8138F441"></a></p>
 
 <h5>8.2-3 IsbellLeftAdjoint</h5>
 
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsbellLeftAdjoint</code>( <var class="Arg">PSh</var>, <var class="Arg">coPSh</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsbellLeftAdjoint</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
-<p>Returns the Isbell left adjoint functor from <code class="code">PreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ).</p>
+<p>Returns the Isbell left adjoint functor from <var class="Arg">PSh</var> = <code class="code">PreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <var class="Arg">coPSh</var> = <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ).</p>
 
-<p><a id="X79FEC4A178828DB2" name="X79FEC4A178828DB2"></a></p>
+<p><a id="X7F72DD2187F4AF22" name="X7F72DD2187F4AF22"></a></p>
 
 <h5>8.2-4 IsbellRightAdjoint</h5>
 
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsbellRightAdjoint</code>( <var class="Arg">coPSh</var>, <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsbellRightAdjoint</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
-<p>Returns the Isbell right adjoint functor from <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
+<p>Returns the Isbell right adjoint functor from <var class="Arg">coPSh</var> = <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <var class="Arg">PSh</var> = <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
 
-<p><a id="X7C3B837C7A240031" name="X7C3B837C7A240031"></a></p>
+<p><a id="X82CFAE0E811F1A9D" name="X82CFAE0E811F1A9D"></a></p>
 
 <h5>8.2-5 IsbellAdjunctionMonad</h5>
 
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsbellAdjunctionMonad</code>( <var class="Arg">PSh</var>, <var class="Arg">coPSh</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsbellAdjunctionMonad</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
-<p>Returns the Isbell adjunction monad on <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
+<p>Returns the Isbell adjunction monad on the presheaf category <var class="Arg">PSh</var>.</p>
 
-<p><a id="X8621372A7BA5C846" name="X8621372A7BA5C846"></a></p>
+<p><a id="X7A2C26EC814AD684" name="X7A2C26EC814AD684"></a></p>
 
 <h5>8.2-6 UnitOfIsbellAdjunction</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnitOfIsbellAdjunction</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnitOfIsbellAdjunction</code>( <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
-<p>Returns the unit of the Isbell adjunction on <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
+<p>Returns the unit of the Isbell adjunction on the presheaf category <var class="Arg">PSh</var>.</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap9.html">[Next Chapter]</a>&nbsp;  </div>
