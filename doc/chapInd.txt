@@ -91,7 +91,9 @@
   [2XIsObjectInPreSheafCategory[102X, for IsCellInPreSheafCategory andIsCapCategoryObject 2.4-3 
   [2XIsPreSheafCategory[102X, for IsCapCategory 2.4-1 
   [2XNakayamaLeftAdjoint[102X, for IsAlgebroid 8.2-1 
+      for IsPreSheafCategory, IsCoPreSheafCategory 8.2-1 
   [2XNakayamaRightAdjoint[102X, for IsAlgebroid 8.2-2 
+      for IsCoPreSheafCategory, IsPreSheafCategory 8.2-2 
   [2XNerveTruncatedInDegree2[102X, for IsCapCategory 2.2-10 
   [2XOppositeOfSource[102X, for IsCoPreSheafCategory 5.2-5 
       for IsFunctorCategory 1.2-5 

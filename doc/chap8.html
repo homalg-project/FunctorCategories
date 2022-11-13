@@ -31,8 +31,8 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8.html#X7C701DBF7BAE649A">8.2 <span class="Heading">Attributes</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7F19420C7BE7B11F">8.2-1 NakayamaLeftAdjoint</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X84261E637F19621A">8.2-2 NakayamaRightAdjoint</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X786A8F6E83B5B0EF">8.2-1 NakayamaLeftAdjoint</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7C515ADC841875EB">8.2-2 NakayamaRightAdjoint</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7C78BBDF8177ED77">8.2-3 IsbellLeftAdjoint</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X79FEC4A178828DB2">8.2-4 IsbellRightAdjoint</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8.html#X7C3B837C7A240031">8.2-5 IsbellAdjunctionMonad</a></span>
@@ -114,23 +114,25 @@ false
 
 <h4>8.2 <span class="Heading">Attributes</span></h4>
 
-<p><a id="X7F19420C7BE7B11F" name="X7F19420C7BE7B11F"></a></p>
+<p><a id="X786A8F6E83B5B0EF" name="X786A8F6E83B5B0EF"></a></p>
 
 <h5>8.2-1 NakayamaLeftAdjoint</h5>
 
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NakayamaLeftAdjoint</code>( <var class="Arg">PSh</var>, <var class="Arg">coPSh</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NakayamaLeftAdjoint</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
-<p>Returns the Nakayama left adjoint functor from <code class="code">PreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ).</p>
+<p>Returns the Nakayama left adjoint functor from <var class="Arg">PSh</var> = <code class="code">PreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <var class="Arg">coPSh</var> = <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ).</p>
 
-<p><a id="X84261E637F19621A" name="X84261E637F19621A"></a></p>
+<p><a id="X7C515ADC841875EB" name="X7C515ADC841875EB"></a></p>
 
 <h5>8.2-2 NakayamaRightAdjoint</h5>
 
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NakayamaRightAdjoint</code>( <var class="Arg">coPSh</var>, <var class="Arg">PSh</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NakayamaRightAdjoint</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> functor</p>
 
-<p>Returns the Nakayama right adjoint functor from <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
+<p>Returns the Nakayama right adjoint functor from <var class="Arg">coPSh</var> = <code class="code">CoPreSheaves</code>( <var class="Arg">B</var> ) <span class="Math">\to</span> <var class="Arg">PSh</var> = <code class="code">PreSheaves</code>( <var class="Arg">B</var> ).</p>
 
 <p><a id="X7C78BBDF8177ED77" name="X7C78BBDF8177ED77"></a></p>
 
