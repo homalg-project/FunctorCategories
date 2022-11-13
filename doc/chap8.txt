@@ -18,22 +18,24 @@
     [4X[25Xgap>[125X [27XPSh := PreSheaves( C2 );[127X[104X
     [4X[28XPreSheaves( FreeCategory( RightQuiver( "q(1)[a:1->1]" ) )/ [ a*a = 1 ],[128X[104X
     [4X[28XSkeletalFinSets )[128X[104X
-    [4X[25Xgap>[125X [27Xiota := UnitOfIsbellAdjunction( PSh );[127X[104X
-    [4X[28XA natural transformation from Identity functor of PreSheaves([128X[104X
-    [4X[28XFreeCategory( RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )[128X[104X
-    [4X[28Xto Precomposition of Isbell left adjoint functor and Isbell right adjoint functor[128X[104X
-    [4X[25Xgap>[125X [27XIsIsomorphism( iota( TerminalObject( PSh ) ) );[127X[104X
+    [4X[25Xgap>[125X [27XIsReflexive( TerminalObject( PSh ) );[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XIsIsomorphism( iota( InitialObject( PSh ) ) );[127X[104X
+    [4X[25Xgap>[125X [27XIsReflexive( InitialObject( PSh ) );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XL := PSh.1;[127X[104X
     [4X[28X<A projective object in PreSheaves( FreeCategory([128X[104X
     [4X[28X RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
-    [4X[25Xgap>[125X [27XIsIsomorphism( iota( L ) );[127X[104X
+    [4X[25Xgap>[125X [27XIsReflexive( L );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XP := DirectProduct( L, L );[127X[104X
     [4X[28X<An object in PreSheaves( FreeCategory([128X[104X
     [4X[28X RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
+    [4X[25Xgap>[125X [27XIsReflexive( P );[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xiota := UnitOfIsbellAdjunction( PSh );[127X[104X
+    [4X[28XA natural transformation from Identity functor of PreSheaves([128X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )[128X[104X
+    [4X[28Xto Precomposition of Isbell left adjoint functor and Isbell right adjoint functor[128X[104X
     [4X[25Xgap>[125X [27XiotaP := iota( P );[127X[104X
     [4X[28X<A morphism in PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1->1]" ) )[128X[104X
     [4X[28X / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
@@ -48,6 +50,8 @@
     [4X[25Xgap>[125X [27XC := Coproduct( L, L );[127X[104X
     [4X[28X<An object in PreSheaves( FreeCategory([128X[104X
     [4X[28X RightQuiver( "q(1)[a:1->1]" ) ) / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
+    [4X[25Xgap>[125X [27XIsReflexive( C );[127X[104X
+    [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XiotaC := iota( C );[127X[104X
     [4X[28X<A morphism in PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1->1]" ) )[128X[104X
     [4X[28X / [ a*a = 1 ], SkeletalFinSets )>[128X[104X
@@ -63,7 +67,7 @@
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XRange( iotaC ) = P;[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XIsIsomorphism( iota( Coproduct( L, L, L ) ) );[127X[104X
+    [4X[25Xgap>[125X [27XIsReflexive( Coproduct( L, L, L ) );[127X[104X
     [4X[28Xfalse[128X[104X
   [4X[32X[104X
   

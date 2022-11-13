@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.11-17
+                                   2022.11-18
   
   
                                 13 November 2022
@@ -206,8 +206,14 @@
       8.2-4 IsbellRightAdjoint
       8.2-5 IsbellAdjunctionMonad
       8.2-6 UnitOfIsbellAdjunction
-  9 [33X[0;0YPrecompilation[133X
-    9.1 [33X[0;0YPrecompiling the category of finite quivers[133X
+  9 [33X[0;0YFuther CAP operations[133X
+    9.1 [33X[0;0YAdd-methods[133X
+      9.1-1 AddIsReflexive
+  10 [33X[0;0YTools[133X
+    10.1 [33X[0;0YProperties[133X
+      10.1-1 IsReflexive
+  11 [33X[0;0YPrecompilation[133X
+    11.1 [33X[0;0YPrecompiling the category of finite quivers[133X
   
   
   [32X
