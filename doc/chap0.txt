@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.11-18
+                                   2022.11-21
   
   
-                                13 November 2022
+                                16 November 2022
   
   
                                 Mohamed Barakat
@@ -102,12 +102,17 @@
       2.4-2 IsCellInPreSheafCategory
       2.4-3 IsObjectInPreSheafCategory
       2.4-4 IsMorphismInPreSheafCategory
+      2.4-5 IsPreSheafCategoryOfFpEnrichedCategory
+      2.4-6 IsCellInPreSheafCategoryOfFpEnrichedCategory
+      2.4-7 IsObjectInPreSheafCategoryOfFpEnrichedCategory
+      2.4-8 IsMorphismInPreSheafCategoryOfFpEnrichedCategory
     2.5 [33X[0;0YGlobal variables[133X
       2.5-1 CAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY
       2.5-2 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY
       2.5-3 CAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY_WITH_DUALS
     2.6 [33X[0;0YExamples[133X
       2.6-1 [33X[0;0YThe subobject classifier[133X
+      2.6-2 [33X[0;0YPreSheaves of non-f.p. categories (experimental)[133X
   3 [33X[0;0YFinite cocompletion of a finitely presented (linear) category[133X
     3.1 [33X[0;0YConstructors[133X
       3.1-1 FiniteCocompletion

@@ -75,6 +75,7 @@
   [2XIsCellInFiniteCompletion[102X, for IsCapCategoryCell 6.3-2 
   [2XIsCellInFunctorCategory[102X, for IsCapCategoryCell 1.4-2 
   [2XIsCellInPreSheafCategory[102X, for IsCapCategoryCell 2.4-2 
+  [2XIsCellInPreSheafCategoryOfFpEnrichedCategory[102X, for IsCellInPreSheafCategory 2.4-6 
   [2XIsCoPreSheafCategory[102X, for IsCapCategory 5.4-1 
   [2XIsFiniteCocompletion[102X, for IsCapCategory 3.3-1 
   [2XIsFiniteCompletion[102X, for IsCapCategory 6.3-1 
@@ -86,6 +87,7 @@
   [2XIsMorphismInFiniteCompletion[102X, for IsCellInFiniteCompletion andIsCapCategoryMorphism 6.3-4 
   [2XIsMorphismInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryMorphism 1.4-4 
   [2XIsMorphismInPreSheafCategory[102X, for IsCellInPreSheafCategory andIsCapCategoryMorphism 2.4-4 
+  [2XIsMorphismInPreSheafCategoryOfFpEnrichedCategory[102X, for IsCellInPreSheafCategoryOfFpEnrichedCategory andIsMorphismInPreSheafCategory 2.4-8 
   [2XIsObjectInAbelianClosure[102X, for IsCellInAbelianClosure andIsCapCategoryObject 7.3-3 
   [2XIsObjectInCategoryOfQuivers[102X, for IsCellInCategoryOfQuivers andIsCapCategoryObject 4.5-3 
   [2XIsObjectInCoPreSheafCategory[102X, for IsCellInCoPreSheafCategory andIsCapCategoryObject 5.4-3 
@@ -93,7 +95,9 @@
   [2XIsObjectInFiniteCompletion[102X, for IsCellInFiniteCompletion andIsCapCategoryObject 6.3-3 
   [2XIsObjectInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryObject 1.4-3 
   [2XIsObjectInPreSheafCategory[102X, for IsCellInPreSheafCategory andIsCapCategoryObject 2.4-3 
+  [2XIsObjectInPreSheafCategoryOfFpEnrichedCategory[102X, for IsCellInPreSheafCategoryOfFpEnrichedCategory andIsObjectInPreSheafCategory 2.4-7 
   [2XIsPreSheafCategory[102X, for IsCapCategory 2.4-1 
+  [2XIsPreSheafCategoryOfFpEnrichedCategory[102X, for IsPreSheafCategory 2.4-5 
   [2XIsReflexive[102X, for IsCapCategoryObject 10.1-1 
   [2XNakayamaLeftAdjoint[102X, for IsAlgebroid 8.2-1 
       for IsPreSheafCategory, IsCoPreSheafCategory 8.2-1 

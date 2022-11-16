@@ -61,6 +61,10 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X87E694A77D44A1F0">2.4-2 IsCellInPreSheafCategory</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X869BBAB986FFB5D6">2.4-3 IsObjectInPreSheafCategory</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X8727C26D7CD65307">2.4-4 IsMorphismInPreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7D6A79907FA8C87F">2.4-5 IsPreSheafCategoryOfFpEnrichedCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7A0304637E934E63">2.4-6 IsCellInPreSheafCategoryOfFpEnrichedCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X869C3AEE85A01110">2.4-7 IsObjectInPreSheafCategoryOfFpEnrichedCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X81AF24BF84DADFA5">2.4-8 IsMorphismInPreSheafCategoryOfFpEnrichedCategory</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2_mj.html#X7D9044767BEB1523">2.5 <span class="Heading">Global variables</span></a>
 </span>
@@ -73,6 +77,8 @@
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X84E9E37085A85D7B">2.6-1 <span class="Heading">The subobject classifier</span></a>
+</span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap2_mj.html#X7D24566D80D64552">2.6-2 <span class="Heading">PreSheaves of non-f.p. categories (experimental)</span></a>
 </span>
 </div></div>
 </div>
@@ -475,6 +481,42 @@ true
 
 <p>The <strong class="pkg">GAP</strong> category of morphisms in a presheaf category.</p>
 
+<p><a id="X7D6A79907FA8C87F" name="X7D6A79907FA8C87F"></a></p>
+
+<h5>2.4-5 IsPreSheafCategoryOfFpEnrichedCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsPreSheafCategoryOfFpEnrichedCategory</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of a presheaf category of a finitely presented enriched category.</p>
+
+<p><a id="X7A0304637E934E63" name="X7A0304637E934E63"></a></p>
+
+<h5>2.4-6 IsCellInPreSheafCategoryOfFpEnrichedCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInPreSheafCategoryOfFpEnrichedCategory</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of cells in a presheaf category of a finitely presented enriched category.</p>
+
+<p><a id="X869C3AEE85A01110" name="X869C3AEE85A01110"></a></p>
+
+<h5>2.4-7 IsObjectInPreSheafCategoryOfFpEnrichedCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInPreSheafCategoryOfFpEnrichedCategory</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of objects in a presheaf category of a finitely presented enriched category.</p>
+
+<p><a id="X81AF24BF84DADFA5" name="X81AF24BF84DADFA5"></a></p>
+
+<h5>2.4-8 IsMorphismInPreSheafCategoryOfFpEnrichedCategory</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInPreSheafCategoryOfFpEnrichedCategory</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
+
+<p>The <strong class="pkg">GAP</strong> category of morphisms in a presheaf category of a finitely presented enriched category.</p>
+
 <p><a id="X7D9044767BEB1523" name="X7D9044767BEB1523"></a></p>
 
 <h4>2.5 <span class="Heading">Global variables</span></h4>
@@ -710,6 +752,27 @@ Image of &lt;(1)&gt;:
 A morphism in PreSheaves( FreeCategory( RightQuiver( "q(1)[a:1-&gt;1]" ) )
 / [ a*a*a = a*a ], SkeletalFinSets )
 given by the above data
+</pre></div>
+
+<p><a id="X7D24566D80D64552" name="X7D24566D80D64552"></a></p>
+
+<h5>2.6-2 <span class="Heading">PreSheaves of non-f.p. categories (experimental)</span></h5>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PSh := PreSheaves( SkeletalFinSets, SkeletalFinSets );</span>
+PreSheaves( SkeletalFinSets, SkeletalFinSets )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfoOfInstalledOperationsOfCategory( PSh );</span>
+45 primitive operations were used to derive 152 operations for this category which algorithmically
+* IsFiniteCocompleteCategory
+* IsFiniteCompleteCategory
+* IsDistributiveCategory
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CheckConstructivenessOfCategory( PSh, "IsElementaryTopos" );</span>
+[ "CartesianCoevaluationMorphismWithGivenRange",
+  "CartesianEvaluationMorphismWithGivenSource",
+  "ClassifyingMorphismOfSubobjectWithGivenSubobjectClassifier",
+  "ExponentialOnMorphismsWithGivenExponentials", "ExponentialOnObjects",
+  "SubobjectClassifier", "SubobjectOfClassifyingMorphism" ]
 </pre></div>
 
 
