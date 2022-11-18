@@ -22,7 +22,7 @@
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY[102X 2.5-2 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY_WITH_DUALS[102X 2.5-3 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY[102X 2.5-1 
-  [2XCategoryOfInternalCategories[102X, for IsCapCategory 2.1-4 
+  [2XCategoryOfInternalCategories[102X, for IsCapCategory 2.1-6 
   [2XCategoryOfQuiversEnrichedOver[102X, for IsCapCategory 4.1-1 
   [2XCoPreSheaves[102X, for IsCapCategory 5.1-1 
       for IsCapCategory, IsCapCategory 5.1-1 
@@ -118,6 +118,8 @@
       for IsPreSheafCategory 2.2-2 
   [2XSievesOfPathsToTruth[102X, for IsMorphismInPreSheafCategory 2.2-11 
   [2XSimpleObjects[102X, for IsPreSheafCategory 2.2-9 
+  [2XSomeDiagramOfGeneratingGenericFigures[102X, for IsObjectInPreSheafCategory 2.1-4 
+  [2XSomeDiagramOfRepresentables[102X, for IsObjectInPreSheafCategory 2.1-5 
   [2XSource[102X, for IsCoPreSheafCategory 5.2-1 
       for IsFunctorCategory 1.2-1 
       for IsObjectInCoPreSheafCategory 5.2-3 
