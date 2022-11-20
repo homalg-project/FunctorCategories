@@ -29,6 +29,7 @@
       for IsCapCategory, IsHomalgRing 5.1-1 
   [2XCoYonedaEmbedding[102X, for IsCapCategory 5.2-9 
   [2XCoYonedaEmbeddingOfSourceCategory[102X, for IsCoPreSheafCategory 5.2-10 
+  [2XCoYonedaLemma[102X, for IsObjectInPreSheafCategory 2.1-4 
   [2XCreateCoPreSheaf[102X, for IsCapCategory, IsList, IsList 5.1-2 
       for IsCapCategory, IsRecord, IsRecord 5.1-2 
       for IsCapFunctor 5.1-2 
@@ -118,7 +119,6 @@
       for IsPreSheafCategory 2.2-2 
   [2XSievesOfPathsToTruth[102X, for IsMorphismInPreSheafCategory 2.2-11 
   [2XSimpleObjects[102X, for IsPreSheafCategory 2.2-9 
-  [2XSomeDiagramOfGeneratingGenericFigures[102X, for IsObjectInPreSheafCategory 2.1-4 
   [2XSomeDiagramOfRepresentables[102X, for IsObjectInPreSheafCategory 2.1-5 
   [2XSource[102X, for IsCoPreSheafCategory 5.2-1 
       for IsFunctorCategory 1.2-1 
