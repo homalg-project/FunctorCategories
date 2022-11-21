@@ -10,10 +10,10 @@ SetPackageInfo( rec(
 
 PackageName := "FunctorCategories",
 Subtitle := "Categories of functors",
-Version := "2022.11-27",
+Version := "2022.11-28",
 
-Date := "20/11/2022",
-Date := "20/11/2022",
+Date := "21/11/2022",
+Date := "21/11/2022",
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -98,8 +98,8 @@ Dependencies := rec(
                    [ "FreydCategoriesForCAP", ">= 2019.11.02" ],
                    [ "CategoryConstructor", ">= 2022.11-02" ],
                    [ "SubcategoriesForCAP", ">= 2021.12-01" ],
-                   [ "Toposes", ">= 2022.11-02" ],
-                   [ "FinSetsForCAP", ">= 2022.11-04" ],
+                   [ "Toposes", ">= 2022.11-03" ],
+                   [ "FinSetsForCAP", ">= 2022.11-05" ],
                    ],
   SuggestedOtherPackages := [ ],
   ExternalConditions := [ ],

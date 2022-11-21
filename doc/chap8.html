@@ -114,6 +114,97 @@ true
 false
 </pre></div>
 
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">q := RightQuiver( "q(1)[t:1-&gt;1]" );</span>
+q(1)[t:1-&gt;1]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := FreeCategory( q );</span>
+FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Q := HomalgFieldOfRationals( );</span>
+Q
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Qq := Q[F];</span>
+Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := Qq / [ Qq.t^3 ];</span>
+Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PSh := PreSheaves( A );</span>
+PreSheaves(
+Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations,
+Rows( Q ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CommutativeRingOfLinearCategory( PSh );</span>
+Q
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( PSh.1 );</span>
+Image of &lt;(1)&gt;:
+A row module over Q of rank 3
+
+Image of (1)-[{ 1*(t) }]-&gt;(1):
+Source:
+A row module over Q of rank 3
+
+Matrix:
+[ [  0,  1,  0 ],
+  [  0,  0,  1 ],
+  [  0,  0,  0 ] ]
+
+Range:
+A row module over Q of rank 3
+
+A morphism in Rows( Q )
+
+An object in PreSheaves(
+Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations,
+Rows( Q ) ) given by the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( PSh.t );</span>
+Image of &lt;(1)&gt;:
+Source:
+A row module over Q of rank 3
+
+Matrix:
+[ [  0,  1,  0 ],
+  [  0,  0,  1 ],
+  [  0,  0,  0 ] ]
+
+Range:
+A row module over Q of rank 3
+
+A morphism in Rows( Q )
+
+A morphism in PreSheaves(
+Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations,
+Rows( Q ) ) given by the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">phi := PreCompose( PSh.t, PSh.t );</span>
+&lt;(1)-&gt;3x3&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := DirectSum( [ PSh.1, KernelObject( phi ), ImageObject( phi ) ] );</span>
+&lt;(1)-&gt;6; (t)-&gt;6x6&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( V );</span>
+Image of &lt;(1)&gt;:
+A row module over Q of rank 6
+
+Image of (1)-[{ 1*(t) }]-&gt;(1):
+Source:
+A row module over Q of rank 6
+
+Matrix:
+[ [  0,  1,  0,  0,  0,  0 ],
+  [  0,  0,  1,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  1,  0 ],
+  [  0,  0,  0,  0,  0,  0 ],
+  [  0,  0,  0,  0,  0,  0 ] ]
+
+Range:
+A row module over Q of rank 6
+
+A morphism in Rows( Q )
+
+An object in PreSheaves(
+Algebra( Q, FreeCategory( RightQuiver( "q(1)[t:1-&gt;1]" ) ) ) / relations,
+Rows( Q ) ) given by the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsProjective( V );</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsReflexive( V );</span>
+true
+</pre></div>
+
 <p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
 
 <h4>8.2 <span class="Heading">Attributes</span></h4>

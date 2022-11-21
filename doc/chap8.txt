@@ -71,6 +71,96 @@
     [4X[28Xfalse[128X[104X
   [4X[32X[104X
   
+  [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27Xq := RightQuiver( "q(1)[t:1->1]" );[127X[104X
+    [4X[28Xq(1)[t:1->1][128X[104X
+    [4X[25Xgap>[125X [27XF := FreeCategory( q );[127X[104X
+    [4X[28XFreeCategory( RightQuiver( "q(1)[t:1->1]" ) )[128X[104X
+    [4X[25Xgap>[125X [27XQ := HomalgFieldOfRationals( );[127X[104X
+    [4X[28XQ[128X[104X
+    [4X[25Xgap>[125X [27XQq := Q[F];[127X[104X
+    [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) )[128X[104X
+    [4X[25Xgap>[125X [27XA := Qq / [ Qq.t^3 ];[127X[104X
+    [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations[128X[104X
+    [4X[25Xgap>[125X [27XPSh := PreSheaves( A );[127X[104X
+    [4X[28XPreSheaves([128X[104X
+    [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations,[128X[104X
+    [4X[28XRows( Q ) )[128X[104X
+    [4X[25Xgap>[125X [27XCommutativeRingOfLinearCategory( PSh );[127X[104X
+    [4X[28XQ[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( PSh.1 );[127X[104X
+    [4X[28XImage of <(1)>:[128X[104X
+    [4X[28XA row module over Q of rank 3[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (1)-[{ 1*(t) }]->(1):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 3[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  0,  1,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  1 ],[128X[104X
+    [4X[28X  [  0,  0,  0 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 3[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in PreSheaves([128X[104X
+    [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations,[128X[104X
+    [4X[28XRows( Q ) ) given by the above data[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( PSh.t );[127X[104X
+    [4X[28XImage of <(1)>:[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 3[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  0,  1,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  1 ],[128X[104X
+    [4X[28X  [  0,  0,  0 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 3[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in PreSheaves([128X[104X
+    [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations,[128X[104X
+    [4X[28XRows( Q ) ) given by the above data[128X[104X
+    [4X[25Xgap>[125X [27Xphi := PreCompose( PSh.t, PSh.t );[127X[104X
+    [4X[28X<(1)->3x3>[128X[104X
+    [4X[25Xgap>[125X [27XV := DirectSum( [ PSh.1, KernelObject( phi ), ImageObject( phi ) ] );[127X[104X
+    [4X[28X<(1)->6; (t)->6x6>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( V );[127X[104X
+    [4X[28XImage of <(1)>:[128X[104X
+    [4X[28XA row module over Q of rank 6[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XImage of (1)-[{ 1*(t) }]->(1):[128X[104X
+    [4X[28XSource:[128X[104X
+    [4X[28XA row module over Q of rank 6[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XMatrix:[128X[104X
+    [4X[28X[ [  0,  1,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  1,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  1,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0 ],[128X[104X
+    [4X[28X  [  0,  0,  0,  0,  0,  0 ] ][128X[104X
+    [4X[28X[128X[104X
+    [4X[28XRange:[128X[104X
+    [4X[28XA row module over Q of rank 6[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XA morphism in Rows( Q )[128X[104X
+    [4X[28X[128X[104X
+    [4X[28XAn object in PreSheaves([128X[104X
+    [4X[28XAlgebra( Q, FreeCategory( RightQuiver( "q(1)[t:1->1]" ) ) ) / relations,[128X[104X
+    [4X[28XRows( Q ) ) given by the above data[128X[104X
+    [4X[25Xgap>[125X [27XIsProjective( V );[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XIsReflexive( V );[127X[104X
+    [4X[28Xtrue[128X[104X
+  [4X[32X[104X
+  
   
   [1X8.2 [33X[0;0YAttributes[133X[101X
   
