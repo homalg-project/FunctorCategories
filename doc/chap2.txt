@@ -350,18 +350,24 @@
   
   [1X2.3-1 ApplyObjectInPreSheafCategoryToObject[101X
   
-  [33X[1;0Y[29X[2XApplyObjectInPreSheafCategoryToObject[102X( [3XF[103X, [3Xc[103X ) [32X operation[133X
-  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X cell[133X
+  [33X[1;0Y[29X[2XApplyObjectInPreSheafCategoryToObject[102X( [3XF[103X, [3Xobj[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X object[133X
   
-  [33X[0;0YApply  the functor [3XF[103X (as an object in the corresponding Hom-category) to the
-  cell [3Xc[103X. The shorthand is [3XF[103X([3Xc[103X).[133X
+  [33X[0;0YApply the presheaf [3XF[103X to the object [3Xobj[103X. The shorthand is [3XF[103X([3Xobj[103X).[133X
   
-  [1X2.3-2 ApplyMorphismInPreSheafCategoryToObject[101X
+  [1X2.3-2 ApplyObjectInPreSheafCategoryToMorphism[101X
   
-  [33X[1;0Y[29X[2XApplyMorphismInPreSheafCategoryToObject[102X( [3Xeta[103X, [3Xo[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XApplyObjectInPreSheafCategoryToMorphism[102X( [3XF[103X, [3Xmor[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X morphism[133X
   
-  [33X[0;0YApply  the  natural  transformation  [3Xeta[103X  (as an object in the corresponding
-  Hom-category) to the object [3Xo[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
+  [33X[0;0YApply the presheaf [3XF[103X to the morphism [3Xmor[103X. The shorthand is [3XF[103X([3Xmor[103X).[133X
+  
+  [1X2.3-3 ApplyMorphismInPreSheafCategoryToObject[101X
+  
+  [33X[1;0Y[29X[2XApplyMorphismInPreSheafCategoryToObject[102X( [3Xeta[103X, [3Xobj[103X ) [32X operation[133X
+  [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X morphism[133X
+  
+  [33X[0;0YApply the presheaf morphism [3Xeta[103X to the object [3Xobj[103X. The shorthand is [3Xeta[103X([3Xo[103X).[133X
   
   
   [1X2.4 [33X[0;0Y[5XGAP[105X[101X[1X Categories[133X[101X

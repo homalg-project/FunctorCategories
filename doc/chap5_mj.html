@@ -50,7 +50,8 @@
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5_mj.html#X82D9ACBF841454BE">5.3-1 ApplyObjectInCoPreSheafCategoryToObject</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5_mj.html#X81FA3BF77B233806">5.3-2 ApplyMorphismInCoPreSheafCategoryToObject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5_mj.html#X82668DE87DFBA69E">5.3-2 ApplyObjectInCoPreSheafCategoryToMorphism</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap5_mj.html#X81FA3BF77B233806">5.3-3 ApplyMorphismInCoPreSheafCategoryToObject</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap5_mj.html#X7D03633A7D98026B">5.4 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
 </span>
@@ -207,17 +208,28 @@
 
 <h5>5.3-1 ApplyObjectInCoPreSheafCategoryToObject</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyObjectInCoPreSheafCategoryToObject</code>( <var class="Arg">F</var>, <var class="Arg">c</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> cell</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyObjectInCoPreSheafCategoryToObject</code>( <var class="Arg">F</var>, <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> object</p>
 
-<p>Apply the functor <var class="Arg">F</var> (as an object in the corresponding copresheaf category) to the cell <var class="Arg">c</var>. The shorthand is <var class="Arg">F</var>(<var class="Arg">c</var>).</p>
+<p>Apply the presheaf <var class="Arg">F</var> to the object <var class="Arg">obj</var>. The shorthand is <var class="Arg">F</var>(<var class="Arg">obj</var>).</p>
+
+<p><a id="X82668DE87DFBA69E" name="X82668DE87DFBA69E"></a></p>
+
+<h5>5.3-2 ApplyObjectInCoPreSheafCategoryToMorphism</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyObjectInCoPreSheafCategoryToMorphism</code>( <var class="Arg">F</var>, <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> morphism</p>
+
+<p>Apply the presheaf <var class="Arg">F</var> to the morphism <var class="Arg">mor</var>. The shorthand is <var class="Arg">F</var>(<var class="Arg">mor</var>).</p>
 
 <p><a id="X81FA3BF77B233806" name="X81FA3BF77B233806"></a></p>
 
-<h5>5.3-2 ApplyMorphismInCoPreSheafCategoryToObject</h5>
+<h5>5.3-3 ApplyMorphismInCoPreSheafCategoryToObject</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyMorphismInCoPreSheafCategoryToObject</code>( <var class="Arg">eta</var>, <var class="Arg">o</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Apply the natural transformation <var class="Arg">eta</var> (as an object in the corresponding copresheaf category) to the object <var class="Arg">o</var>. The shorthand is <var class="Arg">eta</var>(<var class="Arg">o</var>).</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyMorphismInCoPreSheafCategoryToObject</code>( <var class="Arg">eta</var>, <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p>Returns: a <strong class="pkg">CAP</strong> morphism</p>
+
+<p>Apply the presheaf morphism <var class="Arg">eta</var> to the object <var class="Arg">obj</var>. The shorthand is <var class="Arg">eta</var>(<var class="Arg">o</var>).</p>
 
 <p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
 
