@@ -1,7 +1,7 @@
 name: FunctorCategories
-version: "2022.11-29"
+version: "2022.11-30"
 license: "GPL-2.0-or-later"
-date: 2022-11-22
+date: 2022-11-23
 description: |
     Categories of functors
 
@@ -66,11 +66,11 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.11-29/FunctorCategories-2022.11-29.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.11-30/FunctorCategories-2022.11-30.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.11-29/FunctorCategories-2022.11-29.zip
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.11-30/FunctorCategories-2022.11-30.zip
 
-pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.11-29/FunctorCategories-2022.11-29.pdf
+pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2022.11-30/FunctorCategories-2022.11-30.pdf
 
 abstract: |
 
@@ -83,7 +83,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS22</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2022.11-29</i>
+             Version 2022.11-30</i>
      (<span class='BibYear'>2022</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/FunctorCategories">https://homalg-project.github.io/pkg/FunctorCategories</a></span>.
@@ -91,10 +91,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2022.11-29,
+    @misc{ FunctorCategories2022.11-30,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{FunctorCategories}, Categories of functors, {V}ersion
-                          2022.11-29},
+                          2022.11-30},
       month =            {Nov},
       year =             {2022},
       note =             {GAP package},
