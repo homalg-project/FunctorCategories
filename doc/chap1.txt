@@ -446,7 +446,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XH := FunctorCategory( B, A :[127X[104X
-    [4X[25X>[125X [27X       doctrines := [ [ "IsRigidSymmetricClosedMonoidalCategory", true ] ] );[127X[104X
+    [4X[25X>[125X [27X       doctrines := [ "IsRigidSymmetricClosedMonoidalCategory" ] );[127X[104X
     [4X[28XFunctorCategory( HopfAlgebra( Q, FreeCategory([128X[104X
     [4X[28XRightQuiver( "q(1)[t:1->1]" ) ) ) / relations, Category of matrices over Q )[128X[104X
   [4X[32X[104X
@@ -942,7 +942,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XH := FunctorCategory( B, A :[127X[104X
-    [4X[25X>[125X [27X       doctrines := [ [ "IsRigidSymmetricClosedMonoidalCategory", true ] ] );[127X[104X
+    [4X[25X>[125X [27X       doctrines := [ "IsRigidSymmetricClosedMonoidalCategory" ] );[127X[104X
     [4X[28XFunctorCategory( HopfAlgebra( Q, FreeCategory([128X[104X
     [4X[28XRightQuiver( "q(1)[t:1->1]" ) ) ), Category of matrices over Q )[128X[104X
   [4X[32X[104X
