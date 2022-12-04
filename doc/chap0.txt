@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.12-07
+                                   2022.12-08
   
   
                                 4 December 2022
@@ -94,9 +94,10 @@
       2.2-6 UnderlyingCapTwoCategoryCell
       2.2-7 YonedaEmbedding
       2.2-8 YonedaEmbeddingOfSourceCategory
-      2.2-9 SimpleObjects
-      2.2-10 NerveTruncatedInDegree2
-      2.2-11 SievesOfPathsToTruth
+      2.2-9 ImageOfYonedaEmbeddingOfSource
+      2.2-10 SimpleObjects
+      2.2-11 NerveTruncatedInDegree2
+      2.2-12 SievesOfPathsToTruth
     2.3 [33X[0;0YOperations[133X
       2.3-1 ApplyObjectInPreSheafCategoryToObject
       2.3-2 ApplyObjectInPreSheafCategoryToMorphism
@@ -216,6 +217,8 @@
       8.2-4 IsbellRightAdjoint
       8.2-5 IsbellAdjunctionMonad
       8.2-6 UnitOfIsbellAdjunction
+      8.2-7 IsomorphismFromSourceIntoImageOfYonedaEmbeddingOfSource
+      8.2-8 IsomorphismFromImageOfYonedaEmbeddingOfSourceIntoSource
   9 [33X[0;0YFuther CAP operations[133X
     9.1 [33X[0;0YAdd-methods[133X
       9.1-1 AddIsReflexive

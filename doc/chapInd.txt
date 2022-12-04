@@ -64,6 +64,7 @@
       for IsCapCategory, IsHomalgRing 1.1-1 
   [2XHom[102X, for IsCapCategory, IsCapCategory 1.1-1 
       for IsCapCategory, IsHomalgRing 1.1-1 
+  [2XImageOfYonedaEmbeddingOfSource[102X, for IsPreSheafCategory 2.2-9 
   [2XIsAbelianClosure[102X, for IsCapCategory 7.3-1 
   [2XIsbellAdjunctionMonad[102X, for IsCapCategory 8.2-5 
       for IsPreSheafCategory, IsCoPreSheafCategory 8.2-5 
@@ -100,6 +101,8 @@
   [2XIsObjectInFunctorCategory[102X, for IsCellInFunctorCategory andIsCapCategoryObject 1.4-3 
   [2XIsObjectInPreSheafCategory[102X, for IsCellInPreSheafCategory andIsCapCategoryObject 2.4-3 
   [2XIsObjectInPreSheafCategoryOfFpEnrichedCategory[102X, for IsCellInPreSheafCategoryOfFpEnrichedCategory andIsObjectInPreSheafCategory 2.4-7 
+  [2XIsomorphismFromImageOfYonedaEmbeddingOfSourceIntoSource[102X, for IsPreSheafCategory 8.2-8 
+  [2XIsomorphismFromSourceIntoImageOfYonedaEmbeddingOfSource[102X, for IsPreSheafCategory 8.2-7 
   [2XIsPreSheafCategory[102X, for IsCapCategory 2.4-1 
   [2XIsPreSheafCategoryOfFpEnrichedCategory[102X, for IsPreSheafCategory 2.4-5 
   [2XIsReflexive[102X, for IsCapCategoryObject 10.1-1 
@@ -107,7 +110,7 @@
       for IsPreSheafCategory, IsCoPreSheafCategory 8.2-1 
   [2XNakayamaRightAdjoint[102X, for IsAlgebroid 8.2-2 
       for IsCoPreSheafCategory, IsPreSheafCategory 8.2-2 
-  [2XNerveTruncatedInDegree2[102X, for IsCapCategory 2.2-10 
+  [2XNerveTruncatedInDegree2[102X, for IsCapCategory 2.2-11 
   [2XOppositeOfSource[102X, for IsCoPreSheafCategory 5.2-5 
       for IsFunctorCategory 1.2-5 
   [2XPreSheaves[102X, for IsCapCategory 2.1-1 
@@ -120,8 +123,8 @@
       for IsObjectInFunctorCategory 1.2-4 
       for IsObjectInPreSheafCategory 2.2-4 
       for IsPreSheafCategory 2.2-2 
-  [2XSievesOfPathsToTruth[102X, for IsMorphismInPreSheafCategory 2.2-11 
-  [2XSimpleObjects[102X, for IsPreSheafCategory 2.2-9 
+  [2XSievesOfPathsToTruth[102X, for IsMorphismInPreSheafCategory 2.2-12 
+  [2XSimpleObjects[102X, for IsPreSheafCategory 2.2-10 
   [2XSomeDiagramOfRepresentables[102X, for IsObjectInPreSheafCategory 2.1-5 
   [2XSource[102X, for IsCoPreSheafCategory 5.2-1 
       for IsFunctorCategory 1.2-1 
