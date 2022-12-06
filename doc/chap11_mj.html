@@ -42,11 +42,11 @@
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "CompilerForCAP", "&gt;= 2022.09-02", false );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "FinSetsForCAP", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "FinSetsForCAP", "gap/CompilerLogic.gi" );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "Algebroids", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "Algebroids", "gap/CompilerLogic.gi" );</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackage( "FunctorCategories", "gap/CompilerLogic.gi" );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ReadPackageOnce( "FunctorCategories", "gap/CompilerLogic.gi" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">category_constructor := { } -&gt; CategoryOfQuiversEnrichedOver( CategoryOfSkeletalFinSets( : FinalizeCategory := true ) );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">given_arguments := [ ];;</span>
