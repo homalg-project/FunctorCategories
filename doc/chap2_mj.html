@@ -438,6 +438,41 @@ SkeletalFinSets ), ObjectMembershipFunction )
 true
 </pre></div>
 
+<p>We compute the nerve of the full subcategory of the simplicial category <span class="SimpleMath">\(\Delta\)</span> on the objects <span class="SimpleMath">\([0], [1], [2]\)</span>.</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Delta2 := CategoryFromNerveData( SimplicialCategoryTruncatedInDegree( 2 ) );</span>
+FreeCategory( RightQuiver(
+  "Delta(C0,C1,C2)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1,
+                   is:C2-&gt;C1,it:C2-&gt;C1,
+                   ps:C1-&gt;C2,pt:C1-&gt;C2,mu:C1-&gt;C2]" ) ) / relations
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := NerveTruncatedInDegree2( Delta2 );</span>
+&lt;An object in PreSheaves( FreeCategory( RightQuiver(
+  "Delta(C0,C1,C2)[id:C1-&gt;C0,s:C0-&gt;C1,t:C0-&gt;C1,
+                   is:C2-&gt;C1,it:C2-&gt;C1,
+                   ps:C1-&gt;C2,pt:C1-&gt;C2,mu:C1-&gt;C2]" ) ) / relations,
+ SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( N );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.C0;</span>
+|3|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.C0 );</span>
+{ 0, 1, 2 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.C1;</span>
+|31|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.C1 );</span>
+{ 0,..., 30 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.C2;</span>
+|393|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.C2 );</span>
+{ 0,..., 392 }
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N.id;</span>
+|3| → |31|
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( N.id );</span>
+{ 0, 1, 2 } ⱶ[ 0, 5, 21 ]→ { 0,..., 30 }
+</pre></div>
+
 <p><a id="X87B457D77A0B8836" name="X87B457D77A0B8836"></a></p>
 
 <h5>2.2-12 SievesOfPathsToTruth</h5>
