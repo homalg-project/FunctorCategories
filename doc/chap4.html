@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>GAP (FunctorCategories) - Chapter 4: The elementary topos of finite quivers</title>
+<title>GAP (FunctorCategories) - Chapter 4: The elementary topos of finite bouquets</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -15,31 +15,31 @@
 <body class="chap4"  onload="jscontent()">
 
 
-<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chap9.html">9</a>  <a href="chap10.html">10</a>  <a href="chap11.html">11</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chap9.html">9</a>  <a href="chap10.html">10</a>  <a href="chap11.html">11</a>  <a href="chap12.html">12</a>  <a href="chap13.html">13</a>  <a href="chapInd.html">Ind</a>  </div>
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap3.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap5.html">[Next Chapter]</a>&nbsp;  </div>
 
 <p id="mathjaxlink" class="pcenter"><a href="chap4_mj.html">[MathJax on]</a></p>
-<p><a id="X8384850C79884B40" name="X8384850C79884B40"></a></p>
-<div class="ChapSects"><a href="chap4.html#X8384850C79884B40">4 <span class="Heading">The elementary topos of finite quivers</span></a>
+<p><a id="X84AAC9047BE83886" name="X84AAC9047BE83886"></a></p>
+<div class="ChapSects"><a href="chap4.html#X84AAC9047BE83886">4 <span class="Heading">The elementary topos of finite bouquets</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4.html#X86EC0F0A78ECBC10">4.1 <span class="Heading">Constructors</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X781706D9832596CE">4.1-1 CategoryOfQuiversEnrichedOver</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X8562B66D79E6C5A2">4.1-2 CreateQuiver</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X8000ECEB832CD404">4.1-3 CreateQuiver</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7EFC7BC887725FAB">4.1-4 CreateQuiverMorphism</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7A338F777CA7ABE4">4.1-5 Subobject</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X86840AC0858D01F6">4.1-6 Subobject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X82FE0D8F79221568">4.1-1 CategoryOfBouquetsEnrichedOver</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7FF7CAAB7909E6C4">4.1-2 CreateBouquet</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X8112E6E77D1E2218">4.1-3 CreateBouquet</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X85F28F9886E50198">4.1-4 CreateBouquetMorphism</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X802569DA8766A5D0">4.1-5 Subobject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X8270BAB084D96D76">4.1-6 Subobject</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4.html#X7C701DBF7BAE649A">4.2 <span class="Heading">Attributes</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7DAF6FFA7B03D21A">4.2-1 UnderlyingCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X84A10CD77B1E6429">4.2-2 YonedaEmbeddingOfUnderlyingCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7E6392AF81723F7E">4.2-3 Arrows</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X781C1429811010F4">4.2-4 SvgString</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7CB4FC90789A544E">4.2-5 DotVertexLabelledDigraph</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7EE9FEA87B4444E3">4.2-1 UnderlyingCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7F1D58FD7F03E673">4.2-2 YonedaEmbeddingOfUnderlyingCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X858CB4C37D2F10F0">4.2-3 Loops</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7BF1ADD085BF8AD3">4.2-4 SvgString</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7D13B55679BD1B33">4.2-5 DotVertexLabelledDigraph</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4.html#X7DE8E16C7C2D387B">4.3 <span class="Heading">Operations</span></a>
 </span>
@@ -47,63 +47,58 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4.html#X7D9044767BEB1523">4.4 <span class="Heading">Global variables</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7F629078861AD91B">4.4-1 QuiverOfCategoryOfQuivers</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7ADD743185E65B78">4.4-2 FinQuivers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7D2B0D1A7C73470A">4.4-1 QuiverOfCategoryOfBouquets</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X85C55C0181E94C26">4.4-2 FinBouquets</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4.html#X7D03633A7D98026B">4.5 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7F231C1D79603359">4.5-1 IsCategoryOfQuivers</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X815EB6D28497AA28">4.5-2 IsCellInCategoryOfQuivers</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7898F8258142A8F9">4.5-3 IsObjectInCategoryOfQuivers</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7D0D2D4B806C0C53">4.5-4 IsMorphismInCategoryOfQuivers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7C57808984EB76A1">4.5-1 IsCategoryOfBouquets</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7D0FBAB67BB043ED">4.5-2 IsCellInCategoryOfBouquets</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X80974A4A81A64100">4.5-3 IsObjectInCategoryOfBouquets</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X868694738088D994">4.5-4 IsMorphismInCategoryOfBouquets</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4.html#X85861B017AEEC50B">4.6 <span class="Heading">Example</span></a>
 </span>
-<div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X7A6ECE687D46C687">4.6-1 <span class="Heading">Topos operations</span></a>
-</span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4.html#X86507536811161A7">4.6-2 <span class="Heading">Double-pushout rewriting</span></a>
-</span>
-</div></div>
+</div>
 </div>
 
-<h3>4 <span class="Heading">The elementary topos of finite quivers</span></h3>
+<h3>4 <span class="Heading">The elementary topos of finite bouquets</span></h3>
 
 <p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 
 <h4>4.1 <span class="Heading">Constructors</span></h4>
 
-<p><a id="X781706D9832596CE" name="X781706D9832596CE"></a></p>
+<p><a id="X82FE0D8F79221568" name="X82FE0D8F79221568"></a></p>
 
-<h5>4.1-1 CategoryOfQuiversEnrichedOver</h5>
+<h5>4.1-1 CategoryOfBouquetsEnrichedOver</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfQuiversEnrichedOver</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfBouquetsEnrichedOver</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>
 
-<p>Construct the category of quivers.</p>
+<p>Construct the category of bouquets.</p>
 
-<p><a id="X8562B66D79E6C5A2" name="X8562B66D79E6C5A2"></a></p>
+<p><a id="X7FF7CAAB7909E6C4" name="X7FF7CAAB7909E6C4"></a></p>
 
-<h5>4.1-2 CreateQuiver</h5>
+<h5>4.1-2 CreateBouquet</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateQuiver</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p><a id="X8000ECEB832CD404" name="X8000ECEB832CD404"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateBouquet</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><a id="X8112E6E77D1E2218" name="X8112E6E77D1E2218"></a></p>
 
-<h5>4.1-3 CreateQuiver</h5>
+<h5>4.1-3 CreateBouquet</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateQuiver</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p><a id="X7EFC7BC887725FAB" name="X7EFC7BC887725FAB"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateBouquet</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><a id="X85F28F9886E50198" name="X85F28F9886E50198"></a></p>
 
-<h5>4.1-4 CreateQuiverMorphism</h5>
+<h5>4.1-4 CreateBouquetMorphism</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateQuiverMorphism</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var>, <var class="Arg">arg4</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p><a id="X7A338F777CA7ABE4" name="X7A338F777CA7ABE4"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateBouquetMorphism</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var>, <var class="Arg">arg4</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><a id="X802569DA8766A5D0" name="X802569DA8766A5D0"></a></p>
 
 <h5>4.1-5 Subobject</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Subobject</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p><a id="X86840AC0858D01F6" name="X86840AC0858D01F6"></a></p>
+<p><a id="X8270BAB084D96D76" name="X8270BAB084D96D76"></a></p>
 
 <h5>4.1-6 Subobject</h5>
 
@@ -112,27 +107,27 @@
 
 <h4>4.2 <span class="Heading">Attributes</span></h4>
 
-<p><a id="X7DAF6FFA7B03D21A" name="X7DAF6FFA7B03D21A"></a></p>
+<p><a id="X7EE9FEA87B4444E3" name="X7EE9FEA87B4444E3"></a></p>
 
 <h5>4.2-1 UnderlyingCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCategory</code>( <var class="Arg">fin_quivers</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p><a id="X84A10CD77B1E6429" name="X84A10CD77B1E6429"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCategory</code>( <var class="Arg">fin_bouquets</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X7F1D58FD7F03E673" name="X7F1D58FD7F03E673"></a></p>
 
 <h5>4.2-2 YonedaEmbeddingOfUnderlyingCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; YonedaEmbeddingOfUnderlyingCategory</code>( <var class="Arg">fin_quivers</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p><a id="X7E6392AF81723F7E" name="X7E6392AF81723F7E"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; YonedaEmbeddingOfUnderlyingCategory</code>( <var class="Arg">fin_bouquets</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X858CB4C37D2F10F0" name="X858CB4C37D2F10F0"></a></p>
 
-<h5>4.2-3 Arrows</h5>
+<h5>4.2-3 Loops</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Arrows</code>( <var class="Arg">quiver</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p><a id="X781C1429811010F4" name="X781C1429811010F4"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Loops</code>( <var class="Arg">bouquet</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X7BF1ADD085BF8AD3" name="X7BF1ADD085BF8AD3"></a></p>
 
 <h5>4.2-4 SvgString</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SvgString</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p><a id="X7CB4FC90789A544E" name="X7CB4FC90789A544E"></a></p>
+<p><a id="X7D13B55679BD1B33" name="X7D13B55679BD1B33"></a></p>
 
 <h5>4.2-5 DotVertexLabelledDigraph</h5>
 
@@ -145,330 +140,132 @@
 
 <h4>4.4 <span class="Heading">Global variables</span></h4>
 
-<p>The quiver generating the category of quivers</p>
+<p>The quiver generating the category of bouquets</p>
 
-<p><a id="X7F629078861AD91B" name="X7F629078861AD91B"></a></p>
+<p><a id="X7D2B0D1A7C73470A" name="X7D2B0D1A7C73470A"></a></p>
 
-<h5>4.4-1 QuiverOfCategoryOfQuivers</h5>
+<h5>4.4-1 QuiverOfCategoryOfBouquets</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; QuiverOfCategoryOfQuivers</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
-<p>The category of quivers as a category of presheaves with values in <code class="code">SkeletalFinSets</code>.</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; QuiverOfCategoryOfBouquets</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
+<p>The category of bouquets as a category of presheaves with values in <code class="code">SkeletalFinSets</code>.</p>
 
-<p><a id="X7ADD743185E65B78" name="X7ADD743185E65B78"></a></p>
+<p><a id="X85C55C0181E94C26" name="X85C55C0181E94C26"></a></p>
 
-<h5>4.4-2 FinQuivers</h5>
+<h5>4.4-2 FinBouquets</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FinQuivers</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; FinBouquets</code></td><td class="tdright">(&nbsp;global variable&nbsp;)</td></tr></table></div>
 <p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
 
 <h4>4.5 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
 
-<p><a id="X7F231C1D79603359" name="X7F231C1D79603359"></a></p>
+<p><a id="X7C57808984EB76A1" name="X7C57808984EB76A1"></a></p>
 
-<h5>4.5-1 IsCategoryOfQuivers</h5>
+<h5>4.5-1 IsCategoryOfBouquets</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCategoryOfQuivers</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCategoryOfBouquets</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of the category of quivers.</p>
+<p>The <strong class="pkg">GAP</strong> category of the category of bouquets.</p>
 
-<p><a id="X815EB6D28497AA28" name="X815EB6D28497AA28"></a></p>
+<p><a id="X7D0FBAB67BB043ED" name="X7D0FBAB67BB043ED"></a></p>
 
-<h5>4.5-2 IsCellInCategoryOfQuivers</h5>
+<h5>4.5-2 IsCellInCategoryOfBouquets</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInCategoryOfQuivers</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInCategoryOfBouquets</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of cells in the category of quivers.</p>
+<p>The <strong class="pkg">GAP</strong> category of cells in the category of bouquets.</p>
 
-<p><a id="X7898F8258142A8F9" name="X7898F8258142A8F9"></a></p>
+<p><a id="X80974A4A81A64100" name="X80974A4A81A64100"></a></p>
 
-<h5>4.5-3 IsObjectInCategoryOfQuivers</h5>
+<h5>4.5-3 IsObjectInCategoryOfBouquets</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInCategoryOfQuivers</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInCategoryOfBouquets</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of objects in the category of quivers.</p>
+<p>The <strong class="pkg">GAP</strong> category of objects in the category of bouquets.</p>
 
-<p><a id="X7D0D2D4B806C0C53" name="X7D0D2D4B806C0C53"></a></p>
+<p><a id="X868694738088D994" name="X868694738088D994"></a></p>
 
-<h5>4.5-4 IsMorphismInCategoryOfQuivers</h5>
+<h5>4.5-4 IsMorphismInCategoryOfBouquets</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInCategoryOfQuivers</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInCategoryOfBouquets</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of morphisms in the category of quivers.</p>
+<p>The <strong class="pkg">GAP</strong> category of morphisms in the category of bouquets.</p>
 
 <p><a id="X85861B017AEEC50B" name="X85861B017AEEC50B"></a></p>
 
 <h4>4.6 <span class="Heading">Example</span></h4>
 
-<p><a id="X7A6ECE687D46C687" name="X7A6ECE687D46C687"></a></p>
-
-<h5>4.6-1 <span class="Heading">Topos operations</span></h5>
-
-<p>In the following we construct the category of finite quivers:</p>
+<p>In the following we construct the category of finite bouquets (or finite multisets or finite maps):</p>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">FinQuivers;</span>
-CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := FinQuivers.V;</span>
-&lt;A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">FinBouquets;</span>
+CategoryOfBouquetsEnrichedOver( SkeletalFinSets )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">C := UnderlyingCategory( FinBouquets );</span>
+FreeCategory( RightQuiver( "q(V,L)[b:V-&gt;L]" ) )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := FinBouquets.V;</span>
+&lt;A projective object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( V );</span>
 ( { 0 }, { } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := FinQuivers.A;</span>
-&lt;A projective object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( A );</span>
-( { 0, 1 }, { 0 := [ 0, 1 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T := TerminalObject( FinQuivers );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L := FinBouquets.L;</span>
+&lt;A projective object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( L );</span>
+( { 0 }, { 0 ↦ 0 } )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">b := FinBouquets.b;</span>
+&lt;A monomorphism in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( b );</span>
+Image of &lt;(V)&gt;:
+{ 0 } ⱶ[ 0 ]→ { 0 }
+
+Image of &lt;(L)&gt;:
+∅ ⱶ[  ]→ { 0 }
+
+A morphism in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )
+given by the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T := TerminalObject( FinBouquets );</span>
+&lt;An object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( T );</span>
-( { 0 }, { 0 := [ 0, 0 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G := CreateQuiver( 3, [ 0,1, 0,1, 1,2, 2,1, 2,2 ] );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( G );</span>
-( { 0, 1, 2 },
-  { 0 := [ 0, 1 ], 1 := [ 0, 1 ], 2 := [ 1, 2 ],
-    3 := [ 2, 1 ], 4 := [ 2, 2 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">global_G := HomStructure( T, G );</span>
-|1|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( global_G );</span>
-{ 0 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">discrete := DirectProduct( G, V );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( discrete );</span>
-( { 0, 1, 2 }, { } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">global_discrete := HomStructure( T, discrete );</span>
-|0|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( global_discrete );</span>
-∅
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">complete := Exponential( V, G );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( complete );</span>
-( { 0, 1, 2 },
-  { 0 := [ 0, 0 ], 1 := [ 1, 0 ], 2 := [ 2, 0 ], 3 := [ 0, 1 ], 4 := [ 1, 1 ],
-    5 := [ 2, 1 ], 6 := [ 0, 2 ], 7 := [ 1, 2 ], 8 := [ 2, 2 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">global_complete := HomStructure( T, complete );</span>
-|3|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( global_complete );</span>
-{ 0, 1, 2 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GA := DirectProduct( G, A );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( GA );</span>
-( { 0,..., 5 },
-  { 0 := [ 0, 4 ], 1 := [ 0, 4 ], 2 := [ 1, 5 ],
-    3 := [ 2, 4 ], 4 := [ 2, 5 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">homAG := HomStructure( A, G );</span>
-|5|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( homAG );</span>
-{ 0,..., 4 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">arrows := Exponential( A, G );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( arrows );</span>
-( { 0,..., 8 },
-  { 0 := [ 0, 3 ], 1 := [ 0, 4 ], 2 := [ 0, 5 ], 3 := [ 3, 3 ], 4 := [ 3, 4 ],
-    5 := [ 3, 5 ], 6 := [ 6, 3 ], 7 := [ 6, 4 ], 8 := [ 6, 5 ], 9 := [ 0, 3 ],
-    10 := [ 0, 4 ], 11 := [ 0, 5 ], 12 := [ 3, 3 ], 13 := [ 3, 4 ],
-    14 := [ 3, 5 ], 15 := [ 6, 3 ], 16 := [ 6, 4 ], 17 := [ 6, 5 ],
-    18 := [ 2, 3 ], 19 := [ 2, 4 ], 20 := [ 2, 5 ], 21 := [ 5, 3 ],
-    22 := [ 5, 4 ], 23 := [ 5, 5 ], 24 := [ 8, 3 ], 25 := [ 8, 4 ],
-    26 := [ 8, 5 ], 27 := [ 1, 6 ], 28 := [ 1, 7 ], 29 := [ 1, 8 ],
-    30 := [ 4, 6 ], 31 := [ 4, 7 ], 32 := [ 4, 8 ], 33 := [ 7, 6 ],
-    34 := [ 7, 7 ], 35 := [ 7, 8 ], 36 := [ 2, 6 ], 37 := [ 2, 7 ],
-    38 := [ 2, 8 ], 39 := [ 5, 6 ], 40 := [ 5, 7 ], 41 := [ 5, 8 ],
-    42 := [ 8, 6 ], 43 := [ 8, 7 ], 44 := [ 8, 8 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">global_arrows := HomStructure( T, arrows );</span>
-|5|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( global_arrows );</span>
-{ 0,..., 4 }
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">prjG := ProjectionInFactorOfDirectProduct( [ G, V ], 1 );</span>
-&lt;A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( prjG );</span>
-Image of &lt;(V)&gt;:
-{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0,..., 4 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEpimorphism( prjG );</span>
-false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">prj_discrete := ProjectionInFactorOfDirectProduct( [ discrete, V ], 1 );</span>
-&lt;A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( prj_discrete );</span>
-Image of &lt;(V)&gt;:
-{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ ∅
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEpimorphism( prj_discrete );</span>
+( { 0 }, { 0 ↦ 0 } )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T = L;</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( Exponential( T, G ) );</span>
-( { 0, 1, 2 },
-  { 0 := [ 0, 1 ], 1 := [ 0, 1 ], 2 := [ 2, 1 ],
-    3 := [ 1, 2 ], 4 := [ 2, 2 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">t := UniversalMorphismIntoTerminalObject( V );</span>
-&lt;A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( t );</span>
-Image of &lt;(V)&gt;:
-{ 0 } ⱶ[ 0 ]→ { 0 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">embG := Exponential( t, G );</span>
-&lt;A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( embG );</span>
-Image of &lt;(V)&gt;:
-{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }
-
-Image of &lt;(A)&gt;:
-{ 0,..., 4 } ⱶ[ 3, 3, 5, 7, 8 ]→ { 0,..., 8 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEpimorphism( embG );</span>
-false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">emb_complete := Exponential( t, complete );</span>
-&lt;A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( emb_complete );</span>
-Image of &lt;(V)&gt;:
-{ 0, 1, 2 } ⱶ[ 0, 1, 2 ]→ { 0, 1, 2 }
-
-Image of &lt;(A)&gt;:
-{ 0,..., 8 } ⱶ[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]→ { 0,..., 8 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEpimorphism( emb_complete );</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">M := CreateBouquet( 3, [ 1, 1, 1, 2 ] );</span>
+&lt;An object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( M );</span>
+( { 0, 1, 2 }, { 0 ↦ 1, 1 ↦ 1, 2 ↦ 1, 3 ↦ 2 } )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N := Colimit( [ V, V, V, L, L, L, L ],</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">             [ [ 1, b, 3 ],</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">               [ 1, b, 4 ],</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">               [ 1, b, 5 ],</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">               [ 2, b, 6 ] ] );</span>
+&lt;An object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">N = M;</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">s := FinQuivers.s;</span>
-&lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( s );</span>
-Image of &lt;(V)&gt;:
-{ 0 } ⱶ[ 0 ]→ { 0, 1 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">t := FinQuivers.t;</span>
-&lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( t );</span>
-Image of &lt;(V)&gt;:
-{ 0 } ⱶ[ 1 ]→ { 0, 1 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">omega := SubobjectClassifier( FinQuivers );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LL := Coproduct( L, L );</span>
+&lt;An object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L2 := CreateBouquet( 1, [ 0, 0 ] );</span>
+&lt;An object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">epsilon := CreateBouquetMorphism( LL, [ 0, 0 ], [ 0, 1 ], L2 );</span>
+&lt;A morphism in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( epsilon );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsEpimorphism( epsilon );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsSplitEpimorphism( epsilon );</span>
+false
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">omega := SubobjectClassifier( FinBouquets );</span>
+&lt;An object in CategoryOfBouquetsEnrichedOver( SkeletalFinSets )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( omega );</span>
-( { 0, 1 },
-  { 0 := [ 0, 0 ], 1 := [ 1, 0 ], 2 := [ 0, 1 ],
-    3 := [ 1, 1 ], 4 := [ 1, 1 ] } )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HomStructure( A, omega );</span>
-|5|
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">subsA := ListOfSubobjects( A );</span>
-[ &lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;,
-  &lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;,
-  &lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;,
-  &lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;,
-  &lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt; ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Perform( subsA, Display );</span>
-Image of &lt;(V)&gt;:
-∅ ⱶ[  ]→ { 0, 1 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-Image of &lt;(V)&gt;:
-{ 0 } ⱶ[ 0 ]→ { 0, 1 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-Image of &lt;(V)&gt;:
-{ 0 } ⱶ[ 1 ]→ { 0, 1 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-Image of &lt;(V)&gt;:
-{ 0, 1 } ⱶ[ 0, 1 ]→ { 0, 1 }
-
-Image of &lt;(A)&gt;:
-∅ ⱶ[  ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-Image of &lt;(V)&gt;:
-{ 0, 1 } ⱶ[ 0, 1 ]→ { 0, 1 }
-
-Image of &lt;(A)&gt;:
-{ 0 } ⱶ[ 0 ]→ { 0 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
-</pre></div>
-
-<p><a id="X86507536811161A7" name="X86507536811161A7"></a></p>
-
-<h5>4.6-2 <span class="Heading">Double-pushout rewriting</span></h5>
-
-<p>We compute the double-pushout rewriting of a quiver <span class="Math">G</span>, given rewriting span <span class="Math">l, r</span> and the matching <span class="Math">m: L \rightarrow G</span>:</p>
-
-
-<div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L := CreateQuiver( 3, [ 1,0,  2,0,  2,2 ] );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">R := CreateQuiver( 4, [ 0,1,  2,0,  0,3 ] );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">l := Subobject( L, [ 0, 1 ], [ ] );</span>
-&lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">r := Subobject( R, [ 0, 1 ], [ ] );</span>
-&lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G := CreateQuiver( 4, [ 1,0,  3,0,  3,3,  2,0,  2,1 ] );</span>
-&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">m := Subobject( G, [ 3, 1, 2 ] );</span>
-&lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Source( m ) = L;</span>
-true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">p := DPO( m, l, r );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">p[2];</span>
-&lt;A monomorphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( p[2] );</span>
-Image of &lt;(V)&gt;:
-{ 0,..., 3 } ⱶ[ 0, 2, 3, 4 ]→ { 0,..., 4 }
-
-Image of &lt;(A)&gt;:
-{ 0, 1, 2 } ⱶ[ 2, 3, 4 ]→ { 0,..., 4 }
-
-A morphism in CategoryOfQuiversEnrichedOver( SkeletalFinSets )
-given by the above data
+( { 0, 1 }, { 0 ↦ 0, 1 ↦ 1, 2 ↦ 1 } )
 </pre></div>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap3.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap5.html">[Next Chapter]</a>&nbsp;  </div>
 
 
-<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chap9.html">9</a>  <a href="chap10.html">10</a>  <a href="chap11.html">11</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chap9.html">9</a>  <a href="chap10.html">10</a>  <a href="chap11.html">11</a>  <a href="chap12.html">12</a>  <a href="chap13.html">13</a>  <a href="chapInd.html">Ind</a>  </div>
 
 <hr />
 <p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
