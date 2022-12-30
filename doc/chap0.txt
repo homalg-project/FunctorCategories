@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2022.12-25
+                                   2022.12-26
   
   
-                                29 December 2022
+                                30 December 2022
   
   
                                 Mohamed Barakat
@@ -179,78 +179,101 @@
     5.6 [33X[0;0YExample[133X
   6 [33X[0;0YTopos operations[133X
     6.1 [33X[0;0YDouble-pushout rewriting[133X
-  7 [33X[0;0YCategory of copresheaves of a finitely presented (linear) category[133X
+  7 [33X[0;0YThe elementary topos of decorated finite quivers[133X
     7.1 [33X[0;0YConstructors[133X
-      7.1-1 CoPreSheaves
-      7.1-2 CreateCoPreSheaf
-      7.1-3 CreateCoPreSheafMorphismByValues
+      7.1-1 CategoryOfDecoratedQuiversEnrichedOver
+      7.1-2 CreateDecoratedQuiver
+      7.1-3 CreateDecoratedQuiverMorphism
+      7.1-4 Subobject
+      7.1-5 Subobject
     7.2 [33X[0;0YAttributes[133X
-      7.2-1 Source
-      7.2-2 Range
-      7.2-3 Source
-      7.2-4 Range
-      7.2-5 OppositeOfSource
-      7.2-6 ValuesOfCoPreSheaf
-      7.2-7 ValuesOnAllObjects
-      7.2-8 UnderlyingCapTwoCategoryCell
-      7.2-9 CoYonedaEmbedding
-      7.2-10 CoYonedaEmbeddingOfSourceCategory
+      7.2-1 UnderlyingCategory
+      7.2-2 DecorationOfVertices
+      7.2-3 DecorationOfArrows
+      7.2-4 YonedaEmbeddingOfUnderlyingCategory
+      7.2-5 Arrows
+      7.2-6 SvgString
+      7.2-7 DotVertexLabelledDigraph
     7.3 [33X[0;0YOperations[133X
-      7.3-1 ApplyObjectInCoPreSheafCategoryToObject
-      7.3-2 ApplyObjectInCoPreSheafCategoryToMorphism
-      7.3-3 ApplyMorphismInCoPreSheafCategoryToObject
-    7.4 [33X[0;0Y[5XGAP[105X Categories[133X
-      7.4-1 IsCoPreSheafCategory
-      7.4-2 IsCellInCoPreSheafCategory
-      7.4-3 IsObjectInCoPreSheafCategory
-      7.4-4 IsMorphismInCoPreSheafCategory
-  8 [33X[0;0YFinite completion of a finitely presented (linear) category[133X
+    7.4 [33X[0;0YGlobal variables[133X
+    7.5 [33X[0;0Y[5XGAP[105X Categories[133X
+      7.5-1 IsCategoryOfDecoratedQuivers
+      7.5-2 IsCellInCategoryOfDecoratedQuivers
+      7.5-3 IsObjectInCategoryOfDecoratedQuivers
+      7.5-4 IsMorphismInCategoryOfDecoratedQuivers
+    7.6 [33X[0;0YExample[133X
+  8 [33X[0;0YCategory of copresheaves of a finitely presented (linear) category[133X
     8.1 [33X[0;0YConstructors[133X
-      8.1-1 FiniteCompletion
+      8.1-1 CoPreSheaves
+      8.1-2 CreateCoPreSheaf
+      8.1-3 CreateCoPreSheafMorphismByValues
     8.2 [33X[0;0YAttributes[133X
-      8.2-1 UnderlyingCategory
-      8.2-2 YonedaEmbeddingOfUnderlyingCategory
-    8.3 [33X[0;0Y[5XGAP[105X Categories[133X
-      8.3-1 IsFiniteCompletion
-      8.3-2 IsCellInFiniteCompletion
-      8.3-3 IsObjectInFiniteCompletion
-      8.3-4 IsMorphismInFiniteCompletion
-    8.4 [33X[0;0YExamples[133X
-      8.4-1 [33X[0;0YThe terminal category as a finite completion of the initial
-      category[133X
-  9 [33X[0;0YFree Abelian category of a finitely presented linear category[133X
+      8.2-1 Source
+      8.2-2 Range
+      8.2-3 Source
+      8.2-4 Range
+      8.2-5 OppositeOfSource
+      8.2-6 ValuesOfCoPreSheaf
+      8.2-7 ValuesOnAllObjects
+      8.2-8 UnderlyingCapTwoCategoryCell
+      8.2-9 CoYonedaEmbedding
+      8.2-10 CoYonedaEmbeddingOfSourceCategory
+    8.3 [33X[0;0YOperations[133X
+      8.3-1 ApplyObjectInCoPreSheafCategoryToObject
+      8.3-2 ApplyObjectInCoPreSheafCategoryToMorphism
+      8.3-3 ApplyMorphismInCoPreSheafCategoryToObject
+    8.4 [33X[0;0Y[5XGAP[105X Categories[133X
+      8.4-1 IsCoPreSheafCategory
+      8.4-2 IsCellInCoPreSheafCategory
+      8.4-3 IsObjectInCoPreSheafCategory
+      8.4-4 IsMorphismInCoPreSheafCategory
+  9 [33X[0;0YFinite completion of a finitely presented (linear) category[133X
     9.1 [33X[0;0YConstructors[133X
-      9.1-1 AbelianClosure
+      9.1-1 FiniteCompletion
     9.2 [33X[0;0YAttributes[133X
       9.2-1 UnderlyingCategory
       9.2-2 YonedaEmbeddingOfUnderlyingCategory
     9.3 [33X[0;0Y[5XGAP[105X Categories[133X
-      9.3-1 IsAbelianClosure
-      9.3-2 IsCellInAbelianClosure
-      9.3-3 IsObjectInAbelianClosure
-      9.3-4 IsMorphismInAbelianClosure
+      9.3-1 IsFiniteCompletion
+      9.3-2 IsCellInFiniteCompletion
+      9.3-3 IsObjectInFiniteCompletion
+      9.3-4 IsMorphismInFiniteCompletion
     9.4 [33X[0;0YExamples[133X
-      9.4-1 [33X[0;0YProof of the snake lemma in a free Abelian category[133X
-  10 [33X[0;0YFunctors between the various categories[133X
-    10.1 [33X[0;0YExamples[133X
-      10.1-1 [33X[0;0YThe reflexive completion of the one object category $C 2$[133X
+      9.4-1 [33X[0;0YThe terminal category as a finite completion of the initial
+      category[133X
+  10 [33X[0;0YFree Abelian category of a finitely presented linear category[133X
+    10.1 [33X[0;0YConstructors[133X
+      10.1-1 AbelianClosure
     10.2 [33X[0;0YAttributes[133X
-      10.2-1 NakayamaLeftAdjoint
-      10.2-2 NakayamaRightAdjoint
-      10.2-3 IsbellLeftAdjoint
-      10.2-4 IsbellRightAdjoint
-      10.2-5 IsbellAdjunctionMonad
-      10.2-6 UnitOfIsbellAdjunction
-      10.2-7 IsomorphismFromSourceIntoImageOfYonedaEmbeddingOfSource
-      10.2-8 IsomorphismFromImageOfYonedaEmbeddingOfSourceIntoSource
-  11 [33X[0;0YFuther CAP operations[133X
-    11.1 [33X[0;0YAdd-methods[133X
-      11.1-1 AddIsReflexive
-  12 [33X[0;0YTools[133X
-    12.1 [33X[0;0YProperties[133X
-      12.1-1 IsReflexive
-  13 [33X[0;0YPrecompilation[133X
-    13.1 [33X[0;0YPrecompiling the category of finite quivers[133X
+      10.2-1 UnderlyingCategory
+      10.2-2 YonedaEmbeddingOfUnderlyingCategory
+    10.3 [33X[0;0Y[5XGAP[105X Categories[133X
+      10.3-1 IsAbelianClosure
+      10.3-2 IsCellInAbelianClosure
+      10.3-3 IsObjectInAbelianClosure
+      10.3-4 IsMorphismInAbelianClosure
+    10.4 [33X[0;0YExamples[133X
+      10.4-1 [33X[0;0YProof of the snake lemma in a free Abelian category[133X
+  11 [33X[0;0YFunctors between the various categories[133X
+    11.1 [33X[0;0YExamples[133X
+      11.1-1 [33X[0;0YThe reflexive completion of the one object category $C 2$[133X
+    11.2 [33X[0;0YAttributes[133X
+      11.2-1 NakayamaLeftAdjoint
+      11.2-2 NakayamaRightAdjoint
+      11.2-3 IsbellLeftAdjoint
+      11.2-4 IsbellRightAdjoint
+      11.2-5 IsbellAdjunctionMonad
+      11.2-6 UnitOfIsbellAdjunction
+      11.2-7 IsomorphismFromSourceIntoImageOfYonedaEmbeddingOfSource
+      11.2-8 IsomorphismFromImageOfYonedaEmbeddingOfSourceIntoSource
+  12 [33X[0;0YFuther CAP operations[133X
+    12.1 [33X[0;0YAdd-methods[133X
+      12.1-1 AddIsReflexive
+  13 [33X[0;0YTools[133X
+    13.1 [33X[0;0YProperties[133X
+      13.1-1 IsReflexive
+  14 [33X[0;0YPrecompilation[133X
+    14.1 [33X[0;0YPrecompiling the category of finite quivers[133X
   
   
   [32X
