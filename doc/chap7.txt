@@ -4,9 +4,9 @@
   
   [1X7.1 [33X[0;0YConstructors[133X[101X
   
-  [1X7.1-1 CategoryOfDecoratedQuiversEnrichedOver[101X
+  [1X7.1-1 CategoryOfDecoratedQuivers[101X
   
-  [33X[1;0Y[29X[2XCategoryOfDecoratedQuiversEnrichedOver[102X( [3Xquiver[103X, [3Xdecoration_of_vertices[103X, [3Xdecoration_of_arrows[103X ) [32X operation[133X
+  [33X[1;0Y[29X[2XCategoryOfDecoratedQuivers[102X( [3Xquiver[103X, [3Xdecoration_of_vertices[103X, [3Xdecoration_of_arrows[103X ) [32X operation[133X
   [6XReturns:[106X  [33X[0;10Ya [5XCAP[105X category[133X
   
   [33X[0;0YConstruct  the  category  of  decorated  quivers  over the decorating quiver
@@ -114,18 +114,18 @@
     [4X[28X  { 0 := [ 0, 0 ], 1 := [ 1, 0 ], 2 := [ 0, 1 ],[128X[104X
     [4X[28X    3 := [ 1, 1 ], 4 := [ 1, 1 ] } )[128X[104X
     [4X[25Xgap>[125X [27XDecoratedFinQuivers :=[127X[104X
-    [4X[25X>[125X [27X  CategoryOfDecoratedQuiversEnrichedOver( decorating_quiver,[127X[104X
+    [4X[25X>[125X [27X  CategoryOfDecoratedQuivers( decorating_quiver,[127X[104X
     [4X[25X>[125X [27X          [ "magenta", "cyan" ],[127X[104X
     [4X[25X>[125X [27X          [ "red", "brown", "orange", "blue", "green" ] );[127X[104X
-    [4X[28XCategoryOfDecoratedQuiversEnrichedOver( decorating_quiver )[128X[104X
+    [4X[28XCategoryOfDecoratedQuivers( decorating_quiver )[128X[104X
     [4X[25Xgap>[125X [27XB := TerminalObject( DecoratedFinQuivers );[127X[104X
-    [4X[28X<An object in CategoryOfDecoratedQuiversEnrichedOver( decorating_quiver )>[128X[104X
+    [4X[28X<An object in CategoryOfDecoratedQuivers( decorating_quiver )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( B );[127X[104X
     [4X[28X( { 0 := "magenta", 1 := "cyan" },[128X[104X
     [4X[28X  { 0 := [ 0, 0, "red" ], 1 := [ 1, 0, "brown" ], 2 := [ 0, 1, "orange" ],[128X[104X
     [4X[28X    3 := [ 1, 1, "blue" ], 4 := [ 1, 1, "green" ] } )[128X[104X
     [4X[25Xgap>[125X [27Xiota := Subobject( B, [ 0 ], [ 3, 4 ] );[127X[104X
-    [4X[28X<A monomorphism in CategoryOfDecoratedQuiversEnrichedOver( decorating_quiver )>[128X[104X
+    [4X[28X<A monomorphism in CategoryOfDecoratedQuivers( decorating_quiver )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( iota );[127X[104X
     [4X[28XImage of <(V)>:[128X[104X
     [4X[28X{ 0, 1 } ⱶ[ 0, 1 ]→ { 0, 1 }[128X[104X
@@ -133,12 +133,12 @@
     [4X[28XImage of <(A)>:[128X[104X
     [4X[28X{ 0, 1 } ⱶ[ 3, 4 ]→ { 0,..., 4 }[128X[104X
     [4X[28X[128X[104X
-    [4X[28XA morphism in CategoryOfDecoratedQuiversEnrichedOver( decorating_quiver )[128X[104X
+    [4X[28XA morphism in CategoryOfDecoratedQuivers( decorating_quiver )[128X[104X
     [4X[28Xgiven by the above data[128X[104X
     [4X[25Xgap>[125X [27Xdq1 := CreateDecoratedQuiver( DecoratedFinQuivers,[127X[104X
     [4X[25X>[125X [27X               [ 0, 1, 1, 1 ], # decoration of [ 0, 1, 2, 3 ][127X[104X
     [4X[25X>[125X [27X               [ 0,0,0,  0,1,2,  1,0,1,  1,2,3,  2,3,4,  3,2,3 ] );[127X[104X
-    [4X[28X<An object in CategoryOfDecoratedQuiversEnrichedOver( decorating_quiver )>[128X[104X
+    [4X[28X<An object in CategoryOfDecoratedQuivers( decorating_quiver )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( dq1 );[127X[104X
     [4X[28X( { 0 := "magenta", 1 := "cyan", 2 := "cyan", 3 := "cyan" },[128X[104X
     [4X[28X  { 0 := [ 0, 0, "red" ], 1 := [ 0, 1, "orange" ], 2 := [ 1, 0, "brown" ],[128X[104X
@@ -146,7 +146,7 @@
     [4X[25Xgap>[125X [27XIsWellDefined( dq1 );[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27Xomega := SubobjectClassifier( DecoratedFinQuivers );[127X[104X
-    [4X[28X<An object in CategoryOfDecoratedQuiversEnrichedOver( decorating_quiver )>[128X[104X
+    [4X[28X<An object in CategoryOfDecoratedQuivers( decorating_quiver )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( omega );[127X[104X
     [4X[28X( { 0 := "magenta", 1 := "cyan", 2 := "magenta", 3 := "cyan" },[128X[104X
     [4X[28X  { 0 := [ 0, 0, "red" ], 1 := [ 1, 0, "brown" ], 2 := [ 0, 1, "orange" ],[128X[104X

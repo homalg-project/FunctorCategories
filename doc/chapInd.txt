@@ -27,7 +27,7 @@
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_MONOIDAL_PRESHEAF_CATEGORY_WITH_DUALS[102X 2.5-3 
   [2XCAP_INTERNAL_METHOD_NAME_LIST_FOR_PRESHEAF_CATEGORY[102X 2.5-1 
   [2XCategoryOfBouquetsEnrichedOver[102X, for IsCapCategory 4.1-1 
-  [2XCategoryOfDecoratedQuiversEnrichedOver[102X, for IsObjectInCategoryOfQuivers, IsList, IsList 7.1-1 
+  [2XCategoryOfDecoratedQuivers[102X, for IsObjectInCategoryOfQuivers, IsList, IsList 7.1-1 
   [2XCategoryOfInternalCategories[102X, for IsCapCategory 2.1-6 
   [2XCategoryOfQuiversEnrichedOver[102X, for IsCapCategory 5.1-1 
   [2XCoPreSheaves[102X, for IsCapCategory 8.1-1 
