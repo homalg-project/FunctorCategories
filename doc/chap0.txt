@@ -6,10 +6,10 @@
                             [1X Categories of functors [101X
   
   
-                                   2023.01-02
+                                   2023.01-03
   
   
-                                 4 January 2023
+                                 5 January 2023
   
   
                                 Mohamed Barakat
@@ -232,7 +232,7 @@
       9.1-1 FiniteCompletion
     9.2 [33X[0;0YAttributes[133X
       9.2-1 UnderlyingCategory
-      9.2-2 YonedaEmbeddingOfUnderlyingCategory
+      9.2-2 CoYonedaEmbeddingOfUnderlyingCategory
     9.3 [33X[0;0Y[5XGAP[105X Categories[133X
       9.3-1 IsFiniteCompletion
       9.3-2 IsCellInFiniteCompletion
