@@ -124,6 +124,8 @@
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( T );[127X[104X
     [4X[28X( { 0 }, { 0 := [ 0, 0 ] } )[128X[104X
+    [4X[25Xgap>[125X [27XT = V;[127X[104X
+    [4X[28Xfalse[128X[104X
     [4X[25Xgap>[125X [27XG := CreateQuiver( 3, [ 0,1, 0,1, 1,2, 2,1, 2,2 ] );[127X[104X
     [4X[28X<An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )>[128X[104X
     [4X[25Xgap>[125X [27XDisplay( G );[127X[104X

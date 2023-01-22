@@ -8,7 +8,7 @@
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<title>GAP (FunctorCategories) - Chapter 8: Category of copresheaves of a finitely presented (linear) category</title>
+<title>GAP (FunctorCategories) - Chapter 8: The elementary topos of decorated finite quivers</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -18,264 +18,244 @@
 <body class="chap8"  onload="jscontent()">
 
 
-<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chap7_mj.html">7</a>  <a href="chap8_mj.html">8</a>  <a href="chap9_mj.html">9</a>  <a href="chap10_mj.html">10</a>  <a href="chap11_mj.html">11</a>  <a href="chap12_mj.html">12</a>  <a href="chap13_mj.html">13</a>  <a href="chap14_mj.html">14</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chap7_mj.html">7</a>  <a href="chap8_mj.html">8</a>  <a href="chap9_mj.html">9</a>  <a href="chap10_mj.html">10</a>  <a href="chap11_mj.html">11</a>  <a href="chap12_mj.html">12</a>  <a href="chap13_mj.html">13</a>  <a href="chap14_mj.html">14</a>  <a href="chap15_mj.html">15</a>  <a href="chapInd_mj.html">Ind</a>  </div>
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap9_mj.html">[Next Chapter]</a>&nbsp;  </div>
 
 <p id="mathjaxlink" class="pcenter"><a href="chap8.html">[MathJax off]</a></p>
-<p><a id="X7EBA4AF486E4BE94" name="X7EBA4AF486E4BE94"></a></p>
-<div class="ChapSects"><a href="chap8_mj.html#X7EBA4AF486E4BE94">8 <span class="Heading">Category of copresheaves of a finitely presented (linear) category</span></a>
+<p><a id="X8218044F85522BAA" name="X8218044F85522BAA"></a></p>
+<div class="ChapSects"><a href="chap8_mj.html#X8218044F85522BAA">8 <span class="Heading">The elementary topos of decorated finite quivers</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8_mj.html#X86EC0F0A78ECBC10">8.1 <span class="Heading">Constructors</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7D230F8F78704ED0">8.1-1 CoPreSheaves</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7E3B14BD784B37CD">8.1-2 CreateCoPreSheaf</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7E2A03EB7A33BD7C">8.1-3 CreateCoPreSheafMorphismByValues</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X878660D17E0ED797">8.1-1 CategoryOfDecoratedQuivers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7C66AD0781CDB559">8.1-2 CreateDecoratedQuiver</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7AF42667843DED51">8.1-3 CreateDecoratedQuiverMorphism</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X84E6BF8F79D8275A">8.1-4 Subobject</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7C67D8527CAE12B7">8.1-5 Subobject</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8_mj.html#X7C701DBF7BAE649A">8.2 <span class="Heading">Attributes</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7D88A20C84672320">8.2-1 Source</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X81FF9D717CC7A021">8.2-2 Range</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7ED7DF2D83A35A30">8.2-3 Source</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7D4DAC5585704B4D">8.2-4 Range</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X86B73C957B7979B5">8.2-5 OppositeOfSource</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7900AA8E7811E71D">8.2-6 ValuesOfCoPreSheaf</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X80DE332181751B34">8.2-7 ValuesOnAllObjects</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X79010C787816D714">8.2-8 UnderlyingCapTwoCategoryCell</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X84703D9B7951CC4D">8.2-9 CoYonedaEmbedding</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7C8CED1E7A18FB19">8.2-10 CoYonedaEmbeddingOfSourceCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7F1DFF608247843B">8.2-1 UnderlyingCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7DAE0B3E7CF63DCA">8.2-2 DecorationOfVertices</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7F7D1EA47B4F2F11">8.2-3 DecorationOfArrows</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X866AB5A981D47EA6">8.2-4 YonedaEmbeddingOfUnderlyingCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X8283E51E7A51CAD4">8.2-5 Arrows</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X78EEB8207C9BE1BC">8.2-6 SvgString</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X858A48CD862EF593">8.2-7 DotVertexLabelledDigraph</a></span>
 </div></div>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8_mj.html#X7DE8E16C7C2D387B">8.3 <span class="Heading">Operations</span></a>
 </span>
-<div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X82D9ACBF841454BE">8.3-1 ApplyObjectInCoPreSheafCategoryToObject</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X82668DE87DFBA69E">8.3-2 ApplyObjectInCoPreSheafCategoryToMorphism</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X81FA3BF77B233806">8.3-3 ApplyMorphismInCoPreSheafCategoryToObject</a></span>
-</div></div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8_mj.html#X7D03633A7D98026B">8.4 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
+</div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8_mj.html#X7D9044767BEB1523">8.4 <span class="Heading">Global variables</span></a>
+</span>
+</div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8_mj.html#X7D03633A7D98026B">8.5 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X84ABD3D48297B7CE">8.4-1 IsCoPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X8703868580A3FA88">8.4-2 IsCellInCoPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7C7AFA8B81E59606">8.4-3 IsObjectInCoPreSheafCategory</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X8192BB517A3F6AA6">8.4-4 IsMorphismInCoPreSheafCategory</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7E496EF47B578904">8.5-1 IsCategoryOfDecoratedQuivers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X8777EF3878EF431E">8.5-2 IsCellInCategoryOfDecoratedQuivers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X802F34AE81D19536">8.5-3 IsObjectInCategoryOfDecoratedQuivers</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap8_mj.html#X7F430DFE8688DFF3">8.5-4 IsMorphismInCategoryOfDecoratedQuivers</a></span>
 </div></div>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap8_mj.html#X85861B017AEEC50B">8.6 <span class="Heading">Example</span></a>
+</span>
+</div>
 </div>
 
-<h3>8 <span class="Heading">Category of copresheaves of a finitely presented (linear) category</span></h3>
+<h3>8 <span class="Heading">The elementary topos of decorated finite quivers</span></h3>
 
 <p><a id="X86EC0F0A78ECBC10" name="X86EC0F0A78ECBC10"></a></p>
 
 <h4>8.1 <span class="Heading">Constructors</span></h4>
 
-<p><a id="X7D230F8F78704ED0" name="X7D230F8F78704ED0"></a></p>
+<p><a id="X878660D17E0ED797" name="X878660D17E0ED797"></a></p>
 
-<h5>8.1-1 CoPreSheaves</h5>
+<h5>8.1-1 CategoryOfDecoratedQuivers</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CoPreSheaves</code>( <var class="Arg">B</var>, <var class="Arg">C</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CoPreSheaves</code>( <var class="Arg">B</var>, <var class="Arg">k</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CoPreSheaves</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CategoryOfDecoratedQuivers</code>( <var class="Arg">quiver</var>, <var class="Arg">decoration_of_vertices</var>, <var class="Arg">decoration_of_arrows</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p>Returns: a <strong class="pkg">CAP</strong> category</p>
 
-<p>Construct the category <code class="code">CoPreSheaves(</code> <var class="Arg">B</var>, <var class="Arg">C</var> <code class="code">)</code>= <code class="code">FunctorCategory(</code> <var class="Arg">B</var>, <var class="Arg">C</var> <code class="code">)^op</code> of copresheaves from the small category <var class="Arg">B</var> to the category <var class="Arg">C</var> as objects and their natural transformations as morphisms.</p>
+<p>Construct the category of decorated quivers over the decorating quiver <var class="Arg">quiver</var> and the two lists of colors <var class="Arg">decoration_of_vertices</var> and <var class="Arg">decoration_of_arrows</var>.</p>
 
-<p><a id="X7E3B14BD784B37CD" name="X7E3B14BD784B37CD"></a></p>
+<p><a id="X7C66AD0781CDB559" name="X7C66AD0781CDB559"></a></p>
 
-<h5>8.1-2 CreateCoPreSheaf</h5>
+<h5>8.1-2 CreateDecoratedQuiver</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheaf</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheaf</code>( <var class="Arg">B</var>, <var class="Arg">rec_images_of_objects</var>, <var class="Arg">rec_images_of_morphisms</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheaf</code>( <var class="Arg">B</var>, <var class="Arg">images_of_objects</var>, <var class="Arg">images_of_morphisms</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: an object in a <strong class="pkg">CAP</strong> category</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateDecoratedQuiver</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><a id="X7AF42667843DED51" name="X7AF42667843DED51"></a></p>
 
-<p>Turn the functor <code class="code"><var class="Arg">F</var>:<var class="Arg">B</var></code> <span class="SimpleMath">\(\to\)</span> <code class="code">C</code> into an object in the category of functors <code class="code"><var class="Arg">coPSh</var> := CoPreSheaves( <var class="Arg">B</var>, C )</code>. An alternative input is the source category <var class="Arg">B</var> and two defining records <var class="Arg">rec_images_of_objects</var> and <var class="Arg">rec_images_of_morphisms</var> of <var class="Arg">F</var>. Another alternative input is the source category <var class="Arg">B</var> and two defining lists <var class="Arg">images_of_objects</var> and <var class="Arg">images_of_morphisms</var> of <var class="Arg">F</var>. The order of their entries must correspond to that of the vertices and arrows of the underlying quiver.</p>
+<h5>8.1-3 CreateDecoratedQuiverMorphism</h5>
 
-<p>For the convenience of the user the following input is also valid: If <var class="Arg">images_of_objects</var> is a list of nonnegative integers, <var class="Arg">images_of_morphisms</var> is a list of matrices, and <span class="SimpleMath">\(k:=\)</span> <code class="code">CommutativeRingOfLinearCategory</code>( B ) is a field then the two lists are interpreted as objects and morphisms in a matrix category or a category of rows over <span class="SimpleMath">\(k\)</span>, respectively.</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateDecoratedQuiverMorphism</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var>, <var class="Arg">arg4</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><a id="X84E6BF8F79D8275A" name="X84E6BF8F79D8275A"></a></p>
 
-<p><a id="X7E2A03EB7A33BD7C" name="X7E2A03EB7A33BD7C"></a></p>
+<h5>8.1-4 Subobject</h5>
 
-<h5>8.1-3 CreateCoPreSheafMorphismByValues</h5>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Subobject</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
+<p><a id="X7C67D8527CAE12B7" name="X7C67D8527CAE12B7"></a></p>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheafMorphismByValues</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var>, <var class="Arg">arg4</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheafMorphism</code>( <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheafMorphism</code>( <var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheafMorphism</code>( <var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CreateCoPreSheafMorphism</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var>, <var class="Arg">arg3</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a morphism in a <strong class="pkg">CAP</strong> category</p>
+<h5>8.1-5 Subobject</h5>
 
-<p>Turn the natrual transformation <var class="Arg">eta</var>:<span class="SimpleMath">\(F \to G\)</span> into a morphism <code class="code"><var class="Arg">U</var> := CreateCoPreSheaf( F )</code> <span class="SimpleMath">\(\to\)</span> <code class="code"><var class="Arg">V</var> := CreateCoPreSheaf( G )</code> in the category of functors <code class="code"><var class="Arg">coPSh</var> := CoPreSheaves( B, C )</code>, where <code class="code">B := Source( F ) = Source( G )</code> and <code class="code">C := Range( F ) = Range( G )</code>.</p>
-
-<p>An alternative input is the triple (<var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var>), where <var class="Arg">e</var> is a defining record of <var class="Arg">eta</var>.</p>
-
-<p>Another alternative input is the triple (<var class="Arg">U</var>, <var class="Arg">e</var>, <var class="Arg">V</var>), where <var class="Arg">e</var> is a defining list of <var class="Arg">eta</var>.</p>
-
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Subobject</code>( <var class="Arg">arg1</var>, <var class="Arg">arg2</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p><a id="X7C701DBF7BAE649A" name="X7C701DBF7BAE649A"></a></p>
 
 <h4>8.2 <span class="Heading">Attributes</span></h4>
 
-<p><a id="X7D88A20C84672320" name="X7D88A20C84672320"></a></p>
+<p><a id="X7F1DFF608247843B" name="X7F1DFF608247843B"></a></p>
 
-<h5>8.2-1 Source</h5>
+<h5>8.2-1 UnderlyingCategory</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Source</code>( <var class="Arg">cat</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCategory</code>( <var class="Arg">decorated_fin_quivers</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X7DAE0B3E7CF63DCA" name="X7DAE0B3E7CF63DCA"></a></p>
 
-<p>The source category of the copresheaf category <var class="Arg">cat</var>.</p>
+<h5>8.2-2 DecorationOfVertices</h5>
 
-<p><a id="X81FF9D717CC7A021" name="X81FF9D717CC7A021"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; DecorationOfVertices</code>( <var class="Arg">decorated_fin_quivers</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X7F7D1EA47B4F2F11" name="X7F7D1EA47B4F2F11"></a></p>
 
-<h5>8.2-2 Range</h5>
+<h5>8.2-3 DecorationOfArrows</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Range</code>( <var class="Arg">cat</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; DecorationOfArrows</code>( <var class="Arg">decorated_fin_quivers</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X866AB5A981D47EA6" name="X866AB5A981D47EA6"></a></p>
 
-<p>The range category of the copresheaf category <var class="Arg">cat</var>.</p>
+<h5>8.2-4 YonedaEmbeddingOfUnderlyingCategory</h5>
 
-<p><a id="X7ED7DF2D83A35A30" name="X7ED7DF2D83A35A30"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; YonedaEmbeddingOfUnderlyingCategory</code>( <var class="Arg">decorated_fin_quivers</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X8283E51E7A51CAD4" name="X8283E51E7A51CAD4"></a></p>
 
-<h5>8.2-3 Source</h5>
+<h5>8.2-5 Arrows</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Source</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Arrows</code>( <var class="Arg">quiver</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X78EEB8207C9BE1BC" name="X78EEB8207C9BE1BC"></a></p>
 
-<p>The source of the functor underlying functor object <var class="Arg">F</var>.</p>
+<h5>8.2-6 SvgString</h5>
 
-<p><a id="X7D4DAC5585704B4D" name="X7D4DAC5585704B4D"></a></p>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SvgString</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
+<p><a id="X858A48CD862EF593" name="X858A48CD862EF593"></a></p>
 
-<h5>8.2-4 Range</h5>
+<h5>8.2-7 DotVertexLabelledDigraph</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Range</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
-
-<p>The target of the functor underlying the functor object <var class="Arg">F</var>.</p>
-
-<p><a id="X86B73C957B7979B5" name="X86B73C957B7979B5"></a></p>
-
-<h5>8.2-5 OppositeOfSource</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OppositeOfSource</code>( <var class="Arg">coPSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> category</p>
-
-<p>The opposite of the source category of the copresheaf category <var class="Arg">coPSh</var>.</p>
-
-<p><a id="X7900AA8E7811E71D" name="X7900AA8E7811E71D"></a></p>
-
-<h5>8.2-6 ValuesOfCoPreSheaf</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ValuesOfCoPreSheaf</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a pair of lists</p>
-
-<p>The input is functor <var class="Arg">F</var> in a copresheaf category <var class="Arg">coPSh</var>. The output is pair of lists. The first is the list of values of the functor <var class="Arg">F</var> on all objects of the source category of <var class="Arg">coPSh</var>. The second is the list of values of the functor <var class="Arg">F</var> on all *generating* morphisms of the source category of <var class="Arg">coPSh</var>.</p>
-
-<p><a id="X80DE332181751B34" name="X80DE332181751B34"></a></p>
-
-<h5>8.2-7 ValuesOnAllObjects</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ValuesOnAllObjects</code>( <var class="Arg">eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a list</p>
-
-<p>Returns the values of the natural transformation <var class="Arg">eta</var> in a copresheaf category <var class="Arg">coPSh</var> on all objects of the source category of <var class="Arg">coPSh</var>.</p>
-
-<p>The 2-cell underlying the functor object <var class="Arg">F_or_eta</var>.</p>
-
-<p><a id="X79010C787816D714" name="X79010C787816D714"></a></p>
-
-<h5>8.2-8 UnderlyingCapTwoCategoryCell</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingCapTwoCategoryCell</code>( <var class="Arg">F_or_eta</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> functor or natural transformation</p>
-
-<p><a id="X84703D9B7951CC4D" name="X84703D9B7951CC4D"></a></p>
-
-<h5>8.2-9 CoYonedaEmbedding</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CoYonedaEmbedding</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
-
-<p><a id="X7C8CED1E7A18FB19" name="X7C8CED1E7A18FB19"></a></p>
-
-<h5>8.2-10 CoYonedaEmbeddingOfSourceCategory</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CoYonedaEmbeddingOfSourceCategory</code>( <var class="Arg">coPSh</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> functor</p>
-
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; DotVertexLabelledDigraph</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <p><a id="X7DE8E16C7C2D387B" name="X7DE8E16C7C2D387B"></a></p>
 
 <h4>8.3 <span class="Heading">Operations</span></h4>
 
-<p><a id="X82D9ACBF841454BE" name="X82D9ACBF841454BE"></a></p>
+<p><a id="X7D9044767BEB1523" name="X7D9044767BEB1523"></a></p>
 
-<h5>8.3-1 ApplyObjectInCoPreSheafCategoryToObject</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyObjectInCoPreSheafCategoryToObject</code>( <var class="Arg">F</var>, <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> object</p>
-
-<p>Apply the presheaf <var class="Arg">F</var> to the object <var class="Arg">obj</var>. The shorthand is <var class="Arg">F</var>(<var class="Arg">obj</var>).</p>
-
-<p><a id="X82668DE87DFBA69E" name="X82668DE87DFBA69E"></a></p>
-
-<h5>8.3-2 ApplyObjectInCoPreSheafCategoryToMorphism</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyObjectInCoPreSheafCategoryToMorphism</code>( <var class="Arg">F</var>, <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> morphism</p>
-
-<p>Apply the presheaf <var class="Arg">F</var> to the morphism <var class="Arg">mor</var>. The shorthand is <var class="Arg">F</var>(<var class="Arg">mor</var>).</p>
-
-<p><a id="X81FA3BF77B233806" name="X81FA3BF77B233806"></a></p>
-
-<h5>8.3-3 ApplyMorphismInCoPreSheafCategoryToObject</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ApplyMorphismInCoPreSheafCategoryToObject</code>( <var class="Arg">eta</var>, <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>Returns: a <strong class="pkg">CAP</strong> morphism</p>
-
-<p>Apply the presheaf morphism <var class="Arg">eta</var> to the object <var class="Arg">obj</var>. The shorthand is <var class="Arg">eta</var>(<var class="Arg">o</var>).</p>
+<h4>8.4 <span class="Heading">Global variables</span></h4>
 
 <p><a id="X7D03633A7D98026B" name="X7D03633A7D98026B"></a></p>
 
-<h4>8.4 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
+<h4>8.5 <span class="Heading"><strong class="pkg">GAP</strong> Categories</span></h4>
 
-<p><a id="X84ABD3D48297B7CE" name="X84ABD3D48297B7CE"></a></p>
+<p><a id="X7E496EF47B578904" name="X7E496EF47B578904"></a></p>
 
-<h5>8.4-1 IsCoPreSheafCategory</h5>
+<h5>8.5-1 IsCategoryOfDecoratedQuivers</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCoPreSheafCategory</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCategoryOfDecoratedQuivers</code>( <var class="Arg">category</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of copresheaf categories.</p>
+<p>The <strong class="pkg">GAP</strong> category of the category of quivers.</p>
 
-<p><a id="X8703868580A3FA88" name="X8703868580A3FA88"></a></p>
+<p><a id="X8777EF3878EF431E" name="X8777EF3878EF431E"></a></p>
 
-<h5>8.4-2 IsCellInCoPreSheafCategory</h5>
+<h5>8.5-2 IsCellInCategoryOfDecoratedQuivers</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInCoPreSheafCategory</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsCellInCategoryOfDecoratedQuivers</code>( <var class="Arg">cell</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of cells in a copresheaf category.</p>
+<p>The <strong class="pkg">GAP</strong> category of cells in the category of quivers.</p>
 
-<p><a id="X7C7AFA8B81E59606" name="X7C7AFA8B81E59606"></a></p>
+<p><a id="X802F34AE81D19536" name="X802F34AE81D19536"></a></p>
 
-<h5>8.4-3 IsObjectInCoPreSheafCategory</h5>
+<h5>8.5-3 IsObjectInCategoryOfDecoratedQuivers</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInCoPreSheafCategory</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsObjectInCategoryOfDecoratedQuivers</code>( <var class="Arg">obj</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of objects in a copresheaf category.</p>
+<p>The <strong class="pkg">GAP</strong> category of objects in the category of quivers.</p>
 
-<p><a id="X8192BB517A3F6AA6" name="X8192BB517A3F6AA6"></a></p>
+<p><a id="X7F430DFE8688DFF3" name="X7F430DFE8688DFF3"></a></p>
 
-<h5>8.4-4 IsMorphismInCoPreSheafCategory</h5>
+<h5>8.5-4 IsMorphismInCategoryOfDecoratedQuivers</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInCoPreSheafCategory</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsMorphismInCategoryOfDecoratedQuivers</code>( <var class="Arg">mor</var> )</td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="keyw">true</code> or <code class="keyw">false</code></p>
 
-<p>The <strong class="pkg">GAP</strong> category of morphisms in a copresheaf category.</p>
+<p>The <strong class="pkg">GAP</strong> category of morphisms in the category of quivers.</p>
+
+<p><a id="X85861B017AEEC50B" name="X85861B017AEEC50B"></a></p>
+
+<h4>8.6 <span class="Heading">Example</span></h4>
+
+<p>In the following we construct the category of decorated finite quivers:</p>
+
+
+<div class="example"><pre>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "FunctorCategories" );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">FinQuivers;</span>
+CategoryOfQuiversEnrichedOver( SkeletalFinSets )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">decorating_quiver := SubobjectClassifier( FinQuivers );</span>
+&lt;An object in CategoryOfQuiversEnrichedOver( SkeletalFinSets )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( decorating_quiver );</span>
+( { 0, 1 },
+  { 0 := [ 0, 0 ], 1 := [ 1, 0 ], 2 := [ 0, 1 ],
+    3 := [ 1, 1 ], 4 := [ 1, 1 ] } )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DecoratedFinQuivers :=</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">  CategoryOfDecoratedQuivers( decorating_quiver,</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">          [ "magenta", "cyan" ],</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">          [ "red", "brown", "orange", "blue", "green" ] );</span>
+CategoryOfDecoratedQuivers( decorating_quiver )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := TerminalObject( DecoratedFinQuivers );</span>
+&lt;An object in CategoryOfDecoratedQuivers( decorating_quiver )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( B );</span>
+( { 0 := "magenta", 1 := "cyan" },
+  { 0 := [ 0, 0, "red" ], 1 := [ 1, 0, "brown" ], 2 := [ 0, 1, "orange" ],
+    3 := [ 1, 1, "blue" ], 4 := [ 1, 1, "green" ] } )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">iota := Subobject( B, [ 0 ], [ 3, 4 ] );</span>
+&lt;A monomorphism in CategoryOfDecoratedQuivers( decorating_quiver )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( iota );</span>
+Image of &lt;(V)&gt;:
+{ 0, 1 } ⱶ[ 0, 1 ]→ { 0, 1 }
+
+Image of &lt;(A)&gt;:
+{ 0, 1 } ⱶ[ 3, 4 ]→ { 0,..., 4 }
+
+A morphism in CategoryOfDecoratedQuivers( decorating_quiver )
+given by the above data
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">dq1 := CreateDecoratedQuiver( DecoratedFinQuivers,</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">               [ 0, 1, 1, 1 ], # decoration of [ 0, 1, 2, 3 ]</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">               [ 0,0,0,  0,1,2,  1,0,1,  1,2,3,  2,3,4,  3,2,3 ] );</span>
+&lt;An object in CategoryOfDecoratedQuivers( decorating_quiver )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( dq1 );</span>
+( { 0 := "magenta", 1 := "cyan", 2 := "cyan", 3 := "cyan" },
+  { 0 := [ 0, 0, "red" ], 1 := [ 0, 1, "orange" ], 2 := [ 1, 0, "brown" ],
+    3 := [ 1, 2, "blue" ], 4 := [ 2, 3, "green" ], 5 := [ 3, 2, "blue" ] } )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsWellDefined( dq1 );</span>
+true
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">omega := SubobjectClassifier( DecoratedFinQuivers );</span>
+&lt;An object in CategoryOfDecoratedQuivers( decorating_quiver )&gt;
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( omega );</span>
+( { 0 := "magenta", 1 := "cyan", 2 := "magenta", 3 := "cyan" },
+  { 0 := [ 0, 0, "red" ], 1 := [ 1, 0, "brown" ], 2 := [ 0, 1, "orange" ],
+    3 := [ 1, 1, "blue" ], 4 := [ 1, 1, "green" ], 5 := [ 2, 0, "red" ],
+    6 := [ 3, 0, "brown" ], 7 := [ 2, 1, "orange" ], 8 := [ 3, 1, "blue" ],
+    9 := [ 3, 1, "green" ], 10 := [ 0, 2, "red" ], 11 := [ 1, 2, "brown" ],
+    12 := [ 0, 3, "orange" ], 13 := [ 1, 3, "blue" ], 14 := [ 1, 3, "green" ],
+    15 := [ 2, 2, "red" ], 16 := [ 3, 2, "brown" ], 17 := [ 2, 3, "orange" ],
+    18 := [ 3, 3, "blue" ], 19 := [ 3, 3, "green" ], 20 := [ 2, 2, "red" ],
+    21 := [ 3, 2, "brown" ], 22 := [ 2, 3, "orange" ], 23 := [ 3, 3, "blue" ],
+    24 := [ 3, 3, "green" ] } )
+</pre></div>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap7_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap9_mj.html">[Next Chapter]</a>&nbsp;  </div>
 
 
-<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chap7_mj.html">7</a>  <a href="chap8_mj.html">8</a>  <a href="chap9_mj.html">9</a>  <a href="chap10_mj.html">10</a>  <a href="chap11_mj.html">11</a>  <a href="chap12_mj.html">12</a>  <a href="chap13_mj.html">13</a>  <a href="chap14_mj.html">14</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chap7_mj.html">7</a>  <a href="chap8_mj.html">8</a>  <a href="chap9_mj.html">9</a>  <a href="chap10_mj.html">10</a>  <a href="chap11_mj.html">11</a>  <a href="chap12_mj.html">12</a>  <a href="chap13_mj.html">13</a>  <a href="chap14_mj.html">14</a>  <a href="chap15_mj.html">15</a>  <a href="chapInd_mj.html">Ind</a>  </div>
 
 <hr />
 <p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
