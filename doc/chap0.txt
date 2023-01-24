@@ -6,7 +6,7 @@
                             [1X Categories of functors [101X
   
   
-                                   2023.01-12
+                                   2023.01-13
   
   
                                 24 January 2023
@@ -291,6 +291,7 @@
       12.2-6 UnitOfIsbellAdjunction
       12.2-7 IsomorphismFromSourceIntoImageOfYonedaEmbeddingOfSource
       12.2-8 IsomorphismFromImageOfYonedaEmbeddingOfSourceIntoSource
+      12.2-9 EquivalenceFromFullSubcategoryOfProjectivesObjectsIntoAdditiveClosureOfSource
   13 [33X[0;0YFuther CAP operations[133X
     13.1 [33X[0;0YAdd-methods[133X
       13.1-1 AddIsReflexive

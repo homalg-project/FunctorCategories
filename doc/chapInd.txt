@@ -73,6 +73,7 @@
       for IsCellInCategoryOfDecoratedQuivers 8.2-7 
       for IsCellInCategoryOfQuivers 5.2-5 
       for IsCellInCategoryOfReflexiveQuivers 7.2-6 
+  [2XEquivalenceFromFullSubcategoryOfProjectivesObjectsIntoAdditiveClosureOfSource[102X, for IsPreSheafCategory 12.2-9 
   [2XFinBouquets[102X 4.4-2 
   [2XFiniteCocompletion[102X, for IsCapCategory 3.1-1 
       for IsCapCategory, IsCapCategory 3.1-1 
