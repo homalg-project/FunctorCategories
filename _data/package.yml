@@ -1,7 +1,7 @@
 name: FunctorCategories
-version: "2023.01-13"
+version: "2023.01-14"
 license: "GPL-2.0-or-later"
-date: 2023-01-24
+date: 2023-01-26
 description: |
     Categories of functors
 
@@ -57,7 +57,7 @@ needed-pkgs:
       version: ">= 2022.11-03"
       url: "https://homalg-project.github.io/pkg/Toposes"
     - name: "FinSetsForCAP"
-      version: ">= 2022.11-05"
+      version: ">= 2023.01-02"
       url: "https://homalg-project.github.io/pkg/FinSetsForCAP"
 
 www: https://homalg-project.github.io/pkg/FunctorCategories
@@ -66,11 +66,11 @@ packageinfo: https://homalg-project.github.io/FunctorCategories/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2023.01-13/FunctorCategories-2023.01-13.tar.gz
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2023.01-14/FunctorCategories-2023.01-14.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2023.01-13/FunctorCategories-2023.01-13.zip
+      url: https://github.com/homalg-project/FunctorCategories/releases/download/v2023.01-14/FunctorCategories-2023.01-14.zip
 
-pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2023.01-13/FunctorCategories-2023.01-13.pdf
+pdf: https://github.com/homalg-project/FunctorCategories/releases/download/v2023.01-14/FunctorCategories-2023.01-14.pdf
 
 abstract: |
 
@@ -83,7 +83,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BS23</span>]   <b class='BibAuthor'>Barakat, M. and Saleh, K.</b>,
      <i class='BibTitle'>FunctorCategories, Categories of functors,
-             Version 2023.01-13</i>
+             Version 2023.01-14</i>
      (<span class='BibYear'>2023</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/FunctorCategories">https://homalg-project.github.io/pkg/FunctorCategories</a></span>.
@@ -91,10 +91,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ FunctorCategories2023.01-13,
+    @misc{ FunctorCategories2023.01-14,
       author =           {Barakat, M. and Saleh, K.},
       title =            {{FunctorCategories}, Categories of functors, {V}ersion
-                          2023.01-13},
+                          2023.01-14},
       month =            {Jan},
       year =             {2023},
       note =             {GAP package},
